@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Rafael Faustini</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="scss/styles.min.css"
+      media="screen"
+    />
+  </head>
+  <body>
+    <div id="app" class="content">
+      <header class="menu-bg">
+        <div class="menu">
+          <div class="menu-logo"><a>Rafael Faustini</a></div>
+          <nav>
+            <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#portifolio">Portifólio</a></li>
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="https://rafaelfaustini.com/" class="seletor"><img src="img/english.svg"></a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="inicio" id="inicio">
+        <div class="conteudo">
+          <div class="textos">
+            <h1><img src="img/brasil.svg" class="bandeira">Rafael Faustini<img src="img/italia.svg" class="bandeira"></h1>
+            <p>Quero melhorar a vida das pessoas com a tecnologia</p>
+          </div>
+        </div>
+      </section>
+      <section class="sobre" id="sobre">
+        <div class="conteudo">
+          <div class="sobre-info">
+            <h1>🧑🏻‍ Um pouco sobre de mim</h1>
+            <p>
+              Meu nome é Rafael Faustini, tenho 21 anos, sou um estudante brasileiro
+              e italiano de sistemas de informação no
+              <a href="#">Centro Universitário La Salle do Rio de Janeiro</a>
+            </p>
+
+            <p>
+              Comecei a programar quando eu tinha 11 anos de idade e nunca parei e
+              desde então sempre procurando novas soluções para novos problemas
+              
+            </p>
+          </div>
+          <div class="sobre-img">
+            <img src="img/eu.png" alt="Imagem" />
+          </div>
+        </div>
+      </section>
+      <section class="experiencia">
+        <div class="conteudo">
+          <div class="sobre-info">
+            <div class="conteudo">
+              <h1>💼 Experiência Profissional</h1>
+              <div class="funcoes-atuais">
+                <div class="card">
+                  <div class="card-title"><h2>Estagiário em desenvolvimento de software - 2tech Sistemas, jan 2020 - agora</h2></div>
+                  <div class="card-body">
+                    <p>- ASP .NET WEB API</p>
+                    <p>- Layout Bootstrap 4/3</p>
+                    <p>- Biblioteca Vue</p>
+                    <p>- ASP Clássico</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-title"><h2>Aluno Pesquisador - Centro Universitário La Salle do Rio de Janeiro, abr 2020 - agora
+                  </h2></div>
+                  <div class="card-body">
+                    <p>- Análise de dados com Python</p>
+                    <p>- Deeplearning com Keras</p>
+                    <p>- Gerador de dados usando Javascript</p>
+                  </div>
+                </div>
+              </div>
+              <div class="experiencia-anterior">
+                <div class="card">
+                  <div class="card-title"><h2>Estagiário em desenvolvimento de software - CFM Energy Consultancy, set 2018 - dez 2018</h2></div>
+                  <div class="card-body">
+                    <p>- Ajuda com experiência de usuário em aplicação web</p>
+                    <p>- Layout Bootstrap 4</p>
+                    <p>- JavaScript e um pouco de React</p>
+                    <p>- Php e MySQL</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-title"><h2>Estudante Pesquisador - Centro Universitário La Salle do Rio de Janeiro, jun 2018 - set 2018</h2></div>
+                  <div class="card-body">
+                    <p>- Pesquisa de ambientes imersivos</p>
+                    <p>- Manipulação básica de arduínos</p>
+                    <p>- Programação em C com arduínos</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-title"><h2>Consultor de sistemas de informação - La Salle Júnior Consultoria Empresarial, mar 2017 - jul 2017</h2></div>
+                  <div class="card-body">
+                    <p>- Estruturação de custos</p>
+                    <p>- Análise e modelagem de negócios</p>
+                    <p>- Bootstrap, Php e MySQL</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portifolio">
+        <div class="conteudo">
+          <h1>Portifólio</h1>
+          <projetos :dados="projetos"></projetos>
+          <div class="vejamais">
+            <a href="https://github.com/rafaelfaustini" class="btn btn-primary">Veja mais</a>
+          </div>
+        </div>
+      </section>
+      <footer class="rodape"> 
+        <div class="rodape-wrapper">
+          <ul>
+            <li>📬 contato@rafaelfaustini.com.br</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/Projetos.js?78987"></script>
+    <script src="js/index.js?34344"></script>
+  </body>
+</html>

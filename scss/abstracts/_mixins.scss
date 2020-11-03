@@ -1,0 +1,26 @@
+// SCSS Mixins
+
+// Fonts
+@mixin font-style($size, $color, $weight: 400, $style: normal, $align: left) {
+	font-size: $size;
+	color: $color;
+	font-weight: $weight;
+	font-style: $style;
+	text-align: $align;
+}
+
+@mixin create-button(
+  $name, 
+  $bg,
+  $txt: color-contrast($bg)
+  ){
+    .btn-#{$name}{
+    color: $txt;
+    background-color: $bg;  
+  }
+    .btn-outline-#{$name}{
+      background-color: transparent;
+      color: #222222;
+      border: 1px solid $bg;
+    }
+}

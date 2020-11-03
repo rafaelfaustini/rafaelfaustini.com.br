@@ -1,0 +1,14 @@
+// Typography rules
+
+// Root elements
+:root {
+	--font-family-sans-serif: 'Work Sans', sans-serif;
+}
+
+html,
+body {
+	font-family: var(--font-family-sans-serif) !important;
+	color: $theme-text;
+	color: #222;
+	font-weight: 400;
+}

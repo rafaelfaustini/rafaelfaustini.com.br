@@ -1,0 +1,52 @@
+@import 'abstracts/variables';
+@import 'abstracts/colors';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+@import 'abstracts/classes';
+@import 'abstracts/animations';
+
+// Vendors
+@import 'vendors/example-library';
+
+// Base
+@import 'base/base';
+@import 'base/reset';
+@import 'base/typography';
+
+// Layout (alphabetical order)
+@import 'layout/experiencia';
+@import 'layout/footer';
+@import 'layout/forms';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/inicio';
+@import 'layout/menu';
+@import 'layout/sobre';
+@import 'layout/portifolio';
+@import 'layout/rodape';
+@import 'layout/tables';
+
+// Components (alphabetical order)
+@import 'components/badge';
+@import 'components/buttons';
+@import 'components/card';
+@import 'components/dropdown';
+@import 'components/input';
+@import 'components/loaders';
+@import 'components/material-buttons';
+@import 'components/modals';
+@import 'components/projetos';
+@import 'components/timeline';
+
+
+// Vendors Extensions (alphabetical order)
+@import 'vendors-extensions/example-library';
+
+// Pages (alphabetical order)
+@import 'pages/contact';
+@import 'pages/home';
+@import 'pages/user-profile';
+
+// Themes (alphabetical order)
+@import 'themes/admin';
+@import 'themes/authenticated';
