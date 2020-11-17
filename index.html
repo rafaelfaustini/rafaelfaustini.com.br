@@ -16,7 +16,13 @@
     />
   </head>
   <body>
-    <div id="app" class="content">
+    <div id="app" class="content" v-cloak>
+      <modal ref="modalLang">
+        <h2 class="f2">Please select an option</h2>
+        <p class="f7 my-7">We've detected that you are accessing from a non portuguese speaker location, choose the language that you feel more comfortable</p>
+        <button class="btn btn-accent f9" @click="choosePortuguese()">Português</button>
+        <button class="btn btn-primary f9" @click="chooseEnglish();">English</button>
+      </modal>
       <header class="menu-bg">
         <div class="menu">
           <div class="menu-logo"><a>Rafael Faustini</a></div>
@@ -134,7 +140,11 @@
       </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="js/Projetos.js?78987"></script>
-    <script src="js/index.js?34344"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"></script>
+    <script src="js/geo.js?absdasbd"></script>
+    <script src="js/Projetos.js?basdbasdbas"></script>
+    <script src="js/Modal.js?45454"></script>
+    <script src="js/index.js?dbasbdasbd"></script>
   </body>
 </html>
