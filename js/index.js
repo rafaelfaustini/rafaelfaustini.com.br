@@ -50,17 +50,46 @@ var app = new Vue({
         site_name:"Visualizar",fundo:"#ee6002",height:"30"},
       ]    
     },
+    async mounted() {
+      //var foreigner = await this.checkLang();
+      foreigner = true;
+      if(foreigner){
+        this.$refs.modalLang.open();
+      }
+    },
     methods: {
-  
+      async checkLang(){
+        try {
+          const response = await axios.get(`http://api.ipstack.com/check`, {
+            params: {
+              access_key: k
+            }
+          })
+          //console.log(response)
+          let foreigner = true
+          let linguas = response.data.location.languages
+          linguas.forEach((elemento)=>{
+            if(elemento.code == "pt"){
+              foreigner = false;
+            }
+          })
+          //console.log(foreigner)
+          return foreigner
+        } catch (error) {
+          console.log(error)
+          return false;
+        }
+        
+      },
+      redirectEnglish(){
+        window.location.href = 'http://rafaelfaustini.com';
+      }
     },
     computed: {
       age() {
         return moment().diff('1999-04-17', 'years');
-      }
+      },
     },
-    mounted() {
-
-    }
   })
   
   

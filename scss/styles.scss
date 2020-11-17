@@ -5,9 +5,6 @@
 @import 'abstracts/classes';
 @import 'abstracts/animations';
 
-// Vendors
-@import 'vendors/example-library';
-
 // Base
 @import 'base/base';
 @import 'base/reset';
@@ -38,9 +35,6 @@
 @import 'components/projetos';
 @import 'components/timeline';
 
-
-// Vendors Extensions (alphabetical order)
-@import 'vendors-extensions/example-library';
 
 // Pages (alphabetical order)
 @import 'pages/contact';
