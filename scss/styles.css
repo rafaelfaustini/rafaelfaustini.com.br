@@ -1374,31 +1374,35 @@ input:focus + label {
 }
 
 .modal {
+  display: flex;
   position: fixed;
-  /* Stay in place */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   z-index: 1;
-  /* Sit on top */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   backdrop-filter: blur(2px);
 }
 
-/* Modal Content/Box */
 .modal-content {
+  flex: 1 1 329px;
+  max-width: 40%;
+  padding: 15px 2%;
   background-color: #fefefe;
-  margin: 15% auto;
-  /* 15% from the top and centered */
-  padding: 20px;
   border-radius: 10px;
-  max-width: 60%;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.55);
+}
+
+@media screen and (max-width: 767px) {
+  .modal-content {
+    padding: 15px 5%;
+    min-width: 88%;
+  }
 }
 
 .projeto-texto {
