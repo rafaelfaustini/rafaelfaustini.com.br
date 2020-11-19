@@ -1,0 +1,19 @@
+.conquistas .wrapper{
+    display: flex;
+    max-width: 1566px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    h1 {
+        flex: 0 0 100%;
+        padding: 5px 15px;  
+    }
+    section{
+        flex: 1 1 329px;
+        padding: 5px 15px;
+    }
+}
+

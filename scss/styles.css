@@ -60,6 +60,23 @@ body {
   }
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Fundo */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px grey;
+  border-radius: 0px;
+}
+
+/* Barra */
+::-webkit-scrollbar-thumb {
+  background: #e65050;
+  border-radius: 10px;
+}
+
 html,
 body {
   padding: 0;
@@ -105,6 +122,26 @@ body {
   color: var(--theme-text);
   color: #222;
   font-weight: 400;
+}
+
+.conquistas .wrapper {
+  display: flex;
+  max-width: 1566px;
+  margin: 0 auto;
+  padding: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.conquistas .wrapper h1 {
+  flex: 0 0 100%;
+  padding: 5px 15px;
+}
+
+.conquistas .wrapper section {
+  flex: 1 1 329px;
+  padding: 5px 15px;
 }
 
 .experiencia {
@@ -347,6 +384,7 @@ body {
 
 .rodape {
   margin-top: 30px;
+  margin-bottom: 2px;
   background-color: #e65050;
   border-radius: 0px 0px 5px 5px;
 }
