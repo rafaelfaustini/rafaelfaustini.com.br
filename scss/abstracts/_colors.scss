@@ -1,16 +1,14 @@
 // Colors
 
 // SCSS Color Variables | Named with this: http://chir.ag/projects/name-that-color
-$white: #fff;
-$pickled-bluewood: #2f404f;
-$persianRed: #d32f2f;
+$primary-color: #e65050;
+$secondary-color: #6002ee;
+$background-color: #fff;
+$outer-background-color: #f2f2f2;
 
-// Theme CSS Color Variables
-:root {
-	--theme-text: #{$pickled-bluewood};
-	--theme-background: #{$white};
-	--theme-error: #{$persianRed};
-}
+$header-color: #222;
+$text-light: #7c7c7c;
+$text-dark: #222;
 
 // Theme SCSS Color Variables
 $theme-text: var(--theme-text);

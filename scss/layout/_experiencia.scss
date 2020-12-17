@@ -1,43 +1,54 @@
-.experiencia{
-    background-color: #e65050;
-    clip-path: polygon(50% 0%, 80% 10%, 100% 0, 100% 100%, 79% 100%, 53% 100%, 18% 100%, 0 100%, 0 0, 20% 10%);
+.experiencia {
+	background-color: $primary-color;
+	clip-path: polygon(
+		50% 0%,
+		80% 10%,
+		100% 0,
+		100% 100%,
+		79% 100%,
+		53% 100%,
+		18% 100%,
+		0 100%,
+		0 0,
+		20% 10%
+	);
 }
 
 .experiencia .conteudo {
-    max-width: 1242px;
-    margin: 0 auto;
-    padding: 150px 0 5px 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+	max-width: 1242px;
+	margin: 0 auto;
+	padding: 150px 0 5px 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 }
 
-.funcoes-atuais{
-    max-width: 1242px;
-    margin: 0 auto;
-    padding: 60px 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+.funcoes-atuais {
+	max-width: 1242px;
+	margin: 0 auto;
+	padding: 60px 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 }
-.funcoes-atuais .card{
-    flex: 1 1 100px;
-    margin: 5px 10px;
-    min-height: 369px;
+.funcoes-atuais .card {
+	flex: 1 1 100px;
+	margin: 5px 10px;
+	min-height: 369px;
 }
 
-.experiencia-anterior{
-    max-width: 1042px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+.experiencia-anterior {
+	max-width: 1042px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 }
-.experiencia-anterior .card{
-    flex: 1 1 300px;
-    margin: 5px 10px;
-    min-height: 469px;
+.experiencia-anterior .card {
+	flex: 1 1 300px;
+	margin: 5px 10px;
+	min-height: 469px;
 }
