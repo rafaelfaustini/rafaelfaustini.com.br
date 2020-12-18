@@ -1,55 +1,57 @@
+'use strict';
 Vue.component('projetos', {
-	props: {
+    props: {
         dados: { type: Array, default: null, required: true },
-        tamanho: {type: Number, default: 50},
-        placeholder: {type: String, default: "Busque por uma palavra chave, tecnologia ou ano"}
-	},
-   data: function(){
+        tamanho: { type: Number, default: 50 },
+        placeholder: { type: String, default: 'Busque por uma palavra chave, tecnologia ou ano' },
+    },
+    data: function () {
         return {
-            filtro: ""
-        }
-   },
-  computed: {
-     filtrada: function () {
-       var resultado
-        if(this.filtro){
-          resultado = this.dados.filter((item)=> {
-            let result = false;
-            for (var [key, value] of Object.entries(item)) {
-              if(typeof value === 'string'){
-                console.log(result)
-                result = result || value.toLowerCase().trim().includes(this.filtro.toLowerCase().trim())
-              }
+            filtro: '',
+        };
+    },
+    computed: {
+        filtrada: function () {
+            var resultado;
+            if (this.filtro) {
+                resultado = this.dados.filter(item => {
+                    let result = false;
+                    for (var [, value] of Object.entries(item)) {
+                        if (typeof value === 'string') {
+                            result = result || value.toLowerCase().trim().includes(this.filtro.toLowerCase().trim());
+                        }
+                    }
+                    return result;
+                });
+            } else {
+                resultado = this.dados;
             }
-            return result
-          });
-        } else {
-          resultado = this.dados
-        }
-       let sortBy = [{
-        prop:'ano',
-        direction: -1
-      },
-      {
-        prop:'destaque',
-        direction: -1
-      },
-      {
-        prop:'titulo',
-        direction: 1
-      }];
-       return resultado.sort(function(a,b){
-          let i = 0, result = 0;
-          while(i < sortBy.length && result === 0) {
-            result = sortBy[i].direction*(a[ sortBy[i].prop ].toString() < b[ sortBy[i].prop ].toString() ? -1 : (a[ sortBy[i].prop].toString() > b[ sortBy[i].prop ].toString() ? 1 : 0));
-            i++;
-          }
-          return result;
-        })
-       
-      }
-  },
-	template: `
+            let sortBy = [
+                {
+                    prop: 'ano',
+                    direction: -1,
+                },
+                {
+                    prop: 'destaque',
+                    direction: -1,
+                },
+                {
+                    prop: 'titulo',
+                    direction: 1,
+                },
+            ];
+            return resultado.sort(function (a, b) {
+                let i = 0,
+                    result = 0;
+                while (i < sortBy.length && result === 0) {
+                    result = sortBy[i].direction * (a[sortBy[i].prop].toString() < b[sortBy[i].prop].toString() ? -1 : a[sortBy[i].prop].toString() > b[sortBy[i].prop].toString() ? 1 : 0);
+                    i++;
+                }
+                return result;
+            });
+        },
+    },
+    template: `
     <div class="container section">
         <div class="row">
           <div class="col-md-12 py-2">
@@ -85,8 +87,8 @@ Vue.component('projetos', {
                     </h3>
                     <p class="showcase__description mb-4 color-gray" v-html="projeto.descricao" v-if="projeto.descricao"></p>
                     <div class="projeto-botoes">
-                    <a :href="projeto.site" v-if="projeto.site" class="btn btn-primary" target="_blank">{{projeto.site_name}}</a>
-                    <a :href="projeto.source" v-if="projeto.source" class="btn btn-outline-primary" target="_blank">{{projeto.source_name}}</a>
+                    <a :href="projeto.site" v-if="projeto.site" class="btn btn-primary" target="_blank">{{projeto.siteName}}</a>
+                    <a :href="projeto.source" v-if="projeto.source" class="btn btn-outline-primary" target="_blank">{{projeto.sourceName}}</a>
                     </div>
                 </div>
                 </div>
@@ -94,5 +96,5 @@ Vue.component('projetos', {
             </div>
             </div>
         </div>
-    `
-})
+    `,
+});
