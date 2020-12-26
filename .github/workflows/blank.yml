@@ -20,11 +20,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-
-- name: Call Hook PROD success
+      - uses: actions/checkout@v2
+        
+      - name: Teste
         uses: distributhor/workflow-webhook@v1
         if: ${{ always() }}
         env:
-          webhook_url: ${{ secrets.WEBHOOK_URL_PROD }}
-          webhook_secret: ${{ secrets.WEBHOOK_SECRET }}
-          data: ${{ toJson(steps) }}
+          webhook_url: ${{ secrets.WEBHOOK_URL }}
