@@ -1,0 +1,9 @@
+User-Agent: *
+Disallow: /home
+Allow: /gene
+Allow: /minify
+Allow: /cover
+Allow: /caixeiroviajante
+Allow: /blog
+Allow: /anima
+Sitemap: https://www.rafaelfaustini.com.br/sitemap.xml

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<urlset xmlns="http://www.google.com/schemas/sitemap/0.84" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+		<url>
+			<loc>https://rafaelfaustini.com.br/</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://rafaelfaustini.com.br/gene</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://rafaelfaustini.com.br/caixeiroviajante</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://rafaelfaustini.com.br/anima</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://rafaelfaustini.com.br/blog</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://rafaelfaustini.com.br/minify</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://rafaelfaustini.com.br/docs/curriculo.pdf</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+	</urlset>
+
