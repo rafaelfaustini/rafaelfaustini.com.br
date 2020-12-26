@@ -1,9 +1,3 @@
-:root {
-  --theme-text: #2f404f;
-  --theme-background: #fff;
-  --theme-error: #d32f2f;
-}
-
 .center-image {
   display: block;
   margin: 0 auto;
@@ -777,7 +771,7 @@
 
 html,
 body {
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
 
 .content {
@@ -837,13 +831,12 @@ img {
 }
 
 :root {
-  --font-family-sans-serif: 'Work Sans', sans-serif;
+  --font-family-sans-serif: "Work Sans", sans-serif;
 }
 
 html,
 body {
   font-family: var(--font-family-sans-serif) !important;
-  color: var(--theme-text);
   color: #222;
   font-weight: 400;
 }
@@ -945,7 +938,7 @@ body {
 .inicio {
   background-color: #e65050;
   height: 85vh;
-  animation: circle-out .65s;
+  animation: circle-out 0.65s;
 }
 
 .inicio .conteudo {
@@ -1021,7 +1014,7 @@ body {
   font-size: 1.25em;
   display: block;
   padding: 10px;
-  transition: all .1s;
+  transition: all 0.1s;
   outline: 0;
 }
 
@@ -1064,7 +1057,7 @@ body {
 
 .sobre-info h1 {
   font-size: 3em;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .sobre-info p {
@@ -1077,7 +1070,7 @@ body {
 .sobre-info a {
   color: inherit;
   border-bottom: solid 1px #d32f2f;
-  transition: font-weight .4s ease-out, text-shadow .4s ease-out, color .8s ease-out;
+  transition: font-weight 0.4s ease-out, text-shadow 0.4s ease-out, color 0.8s ease-out;
   font-weight: 200;
 }
 
@@ -1167,13 +1160,13 @@ body {
   color: #000;
   background-color: #e65050;
   display: inline-block;
-  padding: .3em .4em;
+  padding: 0.3em 0.4em;
   font-size: 75%;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 .card {
@@ -1277,17 +1270,12 @@ input:focus + label {
   margin: 1em 0em;
   border: 0;
   background-color: white;
-  transition: .6s ease-in-out;
+  transition: 0.6s ease-in-out;
   outline: none;
   border-radius: 5px;
   font-weight: 600;
   overflow: hidden;
   cursor: pointer;
-}
-
-.btn:hover, .btn-round:hover {
-  box-shadow: 0 4px 65px rgba(0, 0, 0, 0.23);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .btn:active, .btn:focus {
@@ -1314,63 +1302,41 @@ input:focus + label {
   opacity: 0;
 }
 
-.btn:focus:after, .btn:active:after {
+.btn:hover {
+  box-shadow: 0 4px 65px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-round:hover {
+  box-shadow: 0 4px 65px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:focus:after,
+.btn:active:after {
   display: block;
 }
 
 .btn-primary {
   color: #fff;
-  background-color: #6002ee;
+  background-color: #e65050;
 }
 
 .btn-outline-primary {
   background-color: transparent;
-  color: #222222;
+  color: #222;
+  border: 1px solid #e65050;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #6002ee;
+}
+
+.btn-outline-secondary {
+  background-color: transparent;
+  color: #222;
   border: 1px solid #6002ee;
-}
-
-.btn-accent {
-  color: #fff;
-  background-color: #ee6002;
-}
-
-.btn-outline-accent {
-  background-color: transparent;
-  color: #222222;
-  border: 1px solid #ee6002;
-}
-
-.btn-blue {
-  color: #fff;
-  background-color: #1565c0;
-}
-
-.btn-outline-blue {
-  background-color: transparent;
-  color: #222222;
-  border: 1px solid #1565c0;
-}
-
-.btn-yellow {
-  color: #fff;
-  background-color: #fbc02d;
-}
-
-.btn-outline-yellow {
-  background-color: transparent;
-  color: #222222;
-  border: 1px solid #fbc02d;
-}
-
-.btn-green {
-  color: #fff;
-  background-color: lime;
-}
-
-.btn-outline-green {
-  background-color: transparent;
-  color: #222222;
-  border: 1px solid lime;
 }
 
 .modal {

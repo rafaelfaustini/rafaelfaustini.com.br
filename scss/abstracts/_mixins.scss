@@ -9,87 +9,72 @@
 	text-align: $align;
 }
 
-@mixin create-button(
-  $name, 
-  $bg,
-  $txt: color-contrast($bg)
-  ){
-    .btn-#{$name}{
-    color: $txt;
-    background-color: $bg;  
-  }
-    .btn-outline-#{$name}{
-      background-color: transparent;
-      color: #222222;
-      border: 1px solid $bg;
-    }
+@mixin create-button($name, $bg, $txt: color-contrast($bg)) {
+	.btn-#{$name} {
+		color: $txt;
+		background-color: $bg;
+	}
+	.btn-outline-#{$name} {
+		background-color: transparent;
+		color: $header-color;
+		border: 1px solid $bg;
+	}
 }
 
-@mixin font-size(
-  $index,
-  $size
-){
-  
-  .f#{$index}{
-    font-size: $size;
-  }
-
+@mixin font-size($index, $size) {
+	.f#{$index} {
+		font-size: $size;
+	}
 }
 
-@mixin margin-size(
-  $index,
-  $margin
-){
-  .m-#{$index}{
-    margin: $margin;
-  }
-  .mt-#{$index}{
-    margin-top: $margin;
-  }
-  .mb-#{$index}{
-    margin-bottom: $margin;
-  }
-  .my-#{$index}{
-    margin-top: $margin;
-    margin-bottom: $margin
-  }
-  .ml-#{$index}{
-    margin-left: $margin;
-  }
-  .mr-#{$index}{
-    margin-right: $margin;
-  }
-  .mx-#{$index}{
-    margin-left: $margin;
-    margin-right: $margin;
-  }
+@mixin margin-size($index, $margin) {
+	.m-#{$index} {
+		margin: $margin;
+	}
+	.mt-#{$index} {
+		margin-top: $margin;
+	}
+	.mb-#{$index} {
+		margin-bottom: $margin;
+	}
+	.my-#{$index} {
+		margin-top: $margin;
+		margin-bottom: $margin;
+	}
+	.ml-#{$index} {
+		margin-left: $margin;
+	}
+	.mr-#{$index} {
+		margin-right: $margin;
+	}
+	.mx-#{$index} {
+		margin-left: $margin;
+		margin-right: $margin;
+	}
 }
 
-@mixin padding-size(
-  $index,
-  $padding
-){
-  .p-#{$index}{
-    padding: $padding;
-  }
-  .pt-#{$index}{
-    padding-top: $padding;
-  }
-  .pb-#{$index}{
-    padding-bottom: $padding;
-  }
-  .py-#{$index}{
-    padding-top: $padding;
-    padding-bottom: $padding
-  }
-  .pl-#{$index}{
-    padding-left: $padding;
-  }
-  .pr-#{$index}{
-    padding-right: $padding;
-  }
-  .px-#{$index}{
-    padding-left: $padding;
-    padding-right: $padding;
-  }
+@mixin padding-size($index, $padding) {
+	.p-#{$index} {
+		padding: $padding;
+	}
+	.pt-#{$index} {
+		padding-top: $padding;
+	}
+	.pb-#{$index} {
+		padding-bottom: $padding;
+	}
+	.py-#{$index} {
+		padding-top: $padding;
+		padding-bottom: $padding;
+	}
+	.pl-#{$index} {
+		padding-left: $padding;
+	}
+	.pr-#{$index} {
+		padding-right: $padding;
+	}
+	.px-#{$index} {
+		padding-left: $padding;
+		padding-right: $padding;
+	}
 }
