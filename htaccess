@@ -1,0 +1,87 @@
+<IfModule mod_headers.c>
+Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+Cache-Control: max-age=31536000
+
+Options -Indexes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW ERRORPAGEID:paDeha
+ErrorDocument 404 /404.html
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE paDeha:ERRORPAGEID
+
+
+
+
+
+
+
+
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW ERRORPAGEID:PeReSe
+ErrorDocument 403 /403.html
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE PeReSe:ERRORPAGEID
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW ERRORPAGEID:uGyjyZ
+ErrorDocument 401 /401.html
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE uGyjyZ:ERRORPAGEID
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW ERRORPAGEID:bumype
+ErrorDocument 400 /400.html
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE bumype:ERRORPAGEID
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW ERRORPAGEID:yruZaZ
+ErrorDocument 500 /500.html
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE yruZaZ:ERRORPAGEID
+
+
+
+
+
+
+
+
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW UPGRADE_INSECURE_REQUESTS:rafaelfaustini.com.br
+Header always set Content-Security-Policy: upgrade-insecure-requests
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW UPGRADE_INSECURE_REQUESTS:rafaelfaustini.com.br
+
+
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:rafaelfaustini.com.br
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} (www\.)?rafaelfaustini.com.br
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:rafaelfaustini.com.br
