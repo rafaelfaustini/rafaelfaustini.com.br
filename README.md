@@ -1,8 +1,8 @@
-# [https://rafaelfaustini.com.br]
+# [Rafael Faustini](https://rafaelfaustini.com.br)
 
 ## Styling
 
-For the styling, SASS was used and no external libraries were used such as bootstrap. The SASS code was also built in an architecture called [7-1](https://github.com/HugoGiraudel/sass-boilerplate).
+For the styling, SASS was used and no external libraries such as bootstrap were. The SASectuS code was also built in an architre called [7-1](https://github.com/HugoGiraudel/sass-boilerplate).
 
 ## Javascript
 
