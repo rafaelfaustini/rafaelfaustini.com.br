@@ -21,7 +21,7 @@
 
 ## Estilização
 
-Para a estilização, SASS foi usado e nenhuma biblioteca externa como bootstrap foi. For the styling, SASS was used and no external libraries such as bootstrap were. O código SASS foi feito seguindo uma arquitetura chamada [7-1](https://github.com/HugoGiraudel/sass-boilerplate).
+Para a estilização, SASS foi usado e nenhuma biblioteca externa como bootstrap foi. O código SASS foi feito seguindo uma arquitetura chamada [7-1](https://github.com/HugoGiraudel/sass-boilerplate).
 
 ## Javascript
 
