@@ -27,7 +27,7 @@ Para a estilização, SASS foi usado e nenhuma biblioteca externa como bootstrap
 
 A fim de ter vantagem da reatividade e reutilização de código, usei a biblioteca Vue, para que eu pudesse criar componentes como o de visualização dos projetos na minha seção de portifólio.
 
-![Imagem do website](img/website1.png)
+![Imagem do website](/img/website1.png)
 
 ## Contribuições
 
