@@ -30,4 +30,5 @@ In order to take some advantage of reactivity and code reuse, I used the Vue lib
 ![Webpage screenshot](img/website1.png)
 
 ## Contribute
-If you find any issues or have any suggestion, feel free to create issues and pull requests.
+
+If you find any issues, have any suggestion or want to help translating the documentation, feel free to create issues and pull requests.
