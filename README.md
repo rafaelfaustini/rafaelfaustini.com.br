@@ -1,6 +1,5 @@
-# [Rafael Faustini](https://rafaelfaustini.com.br)
 
- <h1 align="center">SwalCritical</h1>
+ <a href="https://rafaelfaustini.com.br"><h1 align="center">Rafael Faustini</h1></a>
   <p align="center">
   This repository showcases the source-code of my <a href="https://rafaelfaustini.com.br">website</a></p>
 
