@@ -1,59 +1,57 @@
 .sobre {
-	background-color: $background-color;
+    background-color: $background-color;
 }
 .sobre .conteudo {
-	max-width: 1242px;
-	margin: 0 auto;
-	padding: 60px 0;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
+    max-width: 1242px;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .sobre-info {
-	flex: 11 1 100px;
-	margin: 0px 10px;
+    flex: 11 1 100px;
+    margin: 0px 10px;
 
-	h1 {
-		font-size: 3em;
-		margin-bottom: 0.5em;
-	}
+    h1 {
+        font-size: 3em;
+        margin-bottom: 0.5em;
+    }
 
-	p {
-		font-size: 1.25em;
-		line-height: 1.4;
-		margin-bottom: 1em;
-		color: $text-light;
-	}
+    p {
+        font-size: 1.25em;
+        line-height: 1.4;
+        margin-bottom: 1em;
+        color: $text-light;
+    }
 
-	a {
-		color: inherit;
-		border-bottom: solid 1px darken(desaturate($primary-color, 9.92), 10.2);
-		transition: font-weight 0.4s ease-out, text-shadow 0.4s ease-out,
-			color 0.8s ease-out;
-		font-weight: 200;
+    a.destaque {
+        color: inherit;
+        border-bottom: solid 1px darken(desaturate($primary-color, 9.92), 10.2);
+        transition: font-weight 0.4s ease-out, text-shadow 0.4s ease-out, color 0.8s ease-out;
+        font-weight: 200;
 
-		&:hover {
-			font-weight: bolder;
-			color: darken(desaturate($primary-color, 9.92), 10.2);
-			text-shadow: 1px 1px 0px rgb(223, 223, 223),
-				2px 2px 0px rgb(223, 223, 223), 3px 3px 0px rgb(223, 223, 223);
-		}
-	}
+        &:hover {
+            font-weight: bolder;
+            color: darken(desaturate($primary-color, 9.92), 10.2);
+            text-shadow: 1px 1px 0px rgb(223, 223, 223), 2px 2px 0px rgb(223, 223, 223), 3px 3px 0px rgb(223, 223, 223);
+        }
+    }
 }
 
 .sobre-img {
-	flex: 1 1 329px;
-	margin: 0 10px;
-	img {
-		//max-width: 50%;
-		height: auto;
-	}
+    flex: 1 1 329px;
+    margin: 0 10px;
+    img {
+        //max-width: 50%;
+        height: auto;
+    }
 }
 
 @media (max-width: 1366px) {
-	.sobre-img {
-		display: none;
-	}
+    .sobre-img {
+        display: none;
+    }
 }

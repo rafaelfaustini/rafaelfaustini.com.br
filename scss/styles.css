@@ -904,7 +904,7 @@ body {
   justify-content: center;
 }
 
-.funcoes-atuais {
+.experiencia .conteudo .funcoes-atuais {
   max-width: 1242px;
   margin: 0 auto;
   padding: 60px 0;
@@ -914,13 +914,13 @@ body {
   justify-content: center;
 }
 
-.funcoes-atuais .card {
+.experiencia .conteudo .funcoes-atuais .card {
   flex: 1 1 100px;
   margin: 5px 10px;
   min-height: 369px;
 }
 
-.experiencia-anterior {
+.experiencia .conteudo .experiencia-anterior {
   max-width: 1042px;
   margin: 0 auto;
   display: flex;
@@ -929,10 +929,25 @@ body {
   justify-content: center;
 }
 
-.experiencia-anterior .card {
+.experiencia .conteudo .experiencia-anterior .card {
   flex: 1 1 300px;
   margin: 5px 10px;
   min-height: 469px;
+}
+
+.experiencia .conteudo .experiencia-botoes {
+  flex: 1 1 300px;
+  margin: 5px 10px;
+  max-width: 242px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.experiencia .conteudo .experiencia-botoes button {
+  flex: 1 1 300px;
+  margin: 20px 10px;
 }
 
 .inicio {
@@ -1067,14 +1082,14 @@ body {
   color: #7c7c7c;
 }
 
-.sobre-info a {
+.sobre-info a.destaque {
   color: inherit;
   border-bottom: solid 1px #d32f2f;
-  transition: font-weight 0.4s ease-out, text-shadow 0.4s ease-out, color 0.8s ease-out;
+  transition: font-weight 0.4s ease-out, text-shadow 0.4s ease-out, color 0.8s ease-out;
   font-weight: 200;
 }
 
-.sobre-info a:hover {
+.sobre-info a.destaque:hover {
   font-weight: bolder;
   color: #d32f2f;
   text-shadow: 1px 1px 0px #dfdfdf, 2px 2px 0px #dfdfdf, 3px 3px 0px #dfdfdf;
@@ -1285,7 +1300,7 @@ input:focus + label {
 
 .btn:after {
   display: none;
-  content: "";
+  content: '';
   position: absolute;
   margin: auto;
   top: 0;
@@ -1305,6 +1320,11 @@ input:focus + label {
 .btn:hover {
   box-shadow: 0 4px 65px rgba(0, 0, 0, 0.23);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-lg {
+  font-size: 21px;
+  padding: 1em 1.2rem;
 }
 
 .btn-round:hover {
