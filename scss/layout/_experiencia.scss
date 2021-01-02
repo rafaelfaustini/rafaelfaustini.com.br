@@ -20,7 +20,21 @@
             .card {
                 flex: 1 1 100px;
                 margin: 5px 10px;
-                min-height: 369px;
+                height: 369px;
+                p {
+                    line-height: normal;
+                    margin-bottom: 0.7em;
+                }
+            }
+
+            .card:last-child:not(:nth-child(odd)) {
+                min-height: 269px;
+            }
+            @media (max-width: 900px) {
+                .card {
+                    height: 369px;
+                    overflow-y: auto;
+                }
             }
         }
         .experiencia-anterior {
@@ -33,7 +47,25 @@
             .card {
                 flex: 1 1 300px;
                 margin: 5px 10px;
-                min-height: 469px;
+                height: 469px;
+                p {
+                    line-height: normal;
+                    margin-bottom: 0.7em;
+                }
+            }
+            .card:last-child:not(:nth-child(odd)) {
+                min-height: 169px;
+                height: auto;
+            }
+            @media (max-width: 900px) {
+                .card {
+                    height: 469px;
+                    overflow-y: auto;
+                    &:last-child:not(:nth-child(odd)) {
+                        height: 469px;
+                        overflow-y: auto;
+                    }
+                }
             }
         }
         .experiencia-botoes {
