@@ -141,6 +141,7 @@ new Vue({
                 height: '30',
             },
         ],
+        refreshcache: String.fromCharCode(Math.floor(Math.random() * 1000)),
     },
     mounted() {
         this.checkLang();
