@@ -917,7 +917,23 @@ body {
 .experiencia .conteudo .funcoes-atuais .card {
   flex: 1 1 100px;
   margin: 5px 10px;
-  min-height: 369px;
+  height: 369px;
+}
+
+.experiencia .conteudo .funcoes-atuais .card p {
+  line-height: normal;
+  margin-bottom: 0.7em;
+}
+
+.experiencia .conteudo .funcoes-atuais .card:last-child:not(:nth-child(odd)) {
+  min-height: 269px;
+}
+
+@media (max-width: 900px) {
+  .experiencia .conteudo .funcoes-atuais .card {
+    height: 369px;
+    overflow-y: auto;
+  }
 }
 
 .experiencia .conteudo .experiencia-anterior {
@@ -932,7 +948,28 @@ body {
 .experiencia .conteudo .experiencia-anterior .card {
   flex: 1 1 300px;
   margin: 5px 10px;
-  min-height: 469px;
+  height: 469px;
+}
+
+.experiencia .conteudo .experiencia-anterior .card p {
+  line-height: normal;
+  margin-bottom: 0.7em;
+}
+
+.experiencia .conteudo .experiencia-anterior .card:last-child:not(:nth-child(odd)) {
+  min-height: 169px;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .experiencia .conteudo .experiencia-anterior .card {
+    height: 469px;
+    overflow-y: auto;
+  }
+  .experiencia .conteudo .experiencia-anterior .card:last-child:not(:nth-child(odd)) {
+    height: 469px;
+    overflow-y: auto;
+  }
 }
 
 .experiencia .conteudo .experiencia-botoes {
