@@ -73,7 +73,7 @@ new Vue({
                 linguagem: 'Javascript',
                 destaque: false,
                 descricao: 'Um algoritmo genético que tenta solucionar o problema do <b>Caixeiro Viajante</b> por meio da predição do melhor caminho',
-                source: 'docs/caixeiroviajante.pdf',
+                source: '../docs/caixeiroviajante.pdf',
                 sourceName: 'Documento com código',
                 site: '/caixeiroviajante',
                 siteName: 'Visualizar',
