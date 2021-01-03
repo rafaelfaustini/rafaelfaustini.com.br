@@ -11,7 +11,13 @@
       <img alt="Issues" src="https://img.shields.io/github/issues-pr/rafaelfaustini/rafaelfaustini.com.br?color=f44336" />
     </a>
   </p>
-
+  <p align="center">
+   <a href="https://github.com/rafaelfaustini/rafaelfaustini.com.br/issues/new?assignees=rafaelfaustini&labels=Documentation%2C+Translation&template=new-language-request.md&title=%5Btranslation%5D">Request language</a>
+     ·
+    <a href="https://github.com/rafaelfaustini/rafaelfaustini.com.br/issues/new?assignees=&labels=Bug+Fix&template=bug_report.md&title=%5Bbugfix%5D">Report a bug</a>
+     ·
+    <a href="https://github.com/rafaelfaustini/rafaelfaustini.com.br/issues/new?assignees=&labels=feature&template=feature_request.md&title=%5Bfeature%5D">Have an idea ?</a>
+  </p>
   <p align="center">
     ·
     <a href="/docs/readme_pt-BR.md">Português Brasileiro</a>
