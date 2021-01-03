@@ -4,6 +4,14 @@
   Esse repositorio contém o código fonte do meu <a href="https://rafaelfaustini.com.br">website</a></p>
 
   <p align="center">
+   <a href="https://github.com/rafaelfaustini/rafaelfaustini.com.br/issues/new?assignees=rafaelfaustini&labels=Documentation%2C+Translation&template=new-language-request.md&title=%5Btranslation%5D">Sugira um idioma</a>
+     ·
+    <a href="https://github.com/rafaelfaustini/rafaelfaustini.com.br/issues/new?assignees=&labels=Bug+Fix&template=bug_report.md&title=%5Bbugfix%5D">Reporte um bug</a>
+     ·
+    <a href="https://github.com/rafaelfaustini/rafaelfaustini.com.br/issues/new?assignees=&labels=feature&template=feature_request.md&title=%5Bfeature%5D">Tem uma ideia ?</a>
+  </p>
+
+  <p align="center">
      <a href="https://github.com/rafaelfaustini/swalCritical/issues">
       <img alt="Issues" src="https://img.shields.io/github/issues/rafaelfaustini/rafaelfaustini.com.br?color=f44336" />
     </a>
