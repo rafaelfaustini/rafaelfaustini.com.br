@@ -1,5 +1,5 @@
+<a href="https://rafaelfaustini.com.br"><h1 align="center">Rafael Faustini</h1></a>
 
- <a href="https://rafaelfaustini.com.br"><h1 align="center">Rafael Faustini</h1></a>
   <p align="center">
   This repository showcases the source-code of my <a href="https://rafaelfaustini.com.br">website</a></p>
 
@@ -19,9 +19,9 @@
     <a href="https://github.com/rafaelfaustini/rafaelfaustini.com.br/issues/new?assignees=&labels=feature&template=feature_request.md&title=%5Bfeature%5D">Have an idea ?</a>
   </p>
   <p align="center">
+    <a href="/docs/readme_it.md">Italiano</a>
     ·
     <a href="/docs/readme_pt-BR.md">Português Brasileiro</a>
-    ·
   </p>
 
 ## Styling
