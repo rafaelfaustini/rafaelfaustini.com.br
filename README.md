@@ -4,10 +4,10 @@
   This repository showcases the source-code of my <a href="https://rafaelfaustini.com.br">website</a></p>
 
   <p align="center">
-     <a href="https://github.com/rafaelfaustini/swalCritical/issues">
+     <a href="https://github.com/rafaelfaustini/rafaelfaustini.com.br/issues">
       <img alt="Issues" src="https://img.shields.io/github/issues/rafaelfaustini/rafaelfaustini.com.br?color=f44336" />
     </a>
-     <a href="https://github.com/rafaelfaustini/swalCritical/pulls">
+     <a href="https://github.com/rafaelfaustini/rafaelfaustini.com.br/pulls">
       <img alt="Issues" src="https://img.shields.io/github/issues-pr/rafaelfaustini/rafaelfaustini.com.br?color=f44336" />
     </a>
   </p>
