@@ -1,0 +1,67 @@
+{
+    "website": {
+        "navbar": {
+            "brand": "Rafael Faustini",
+            "home": "Inicio",
+            "about": "Sobre",
+            "projects": "Portifólio",
+            "blog": "Blog",
+            "seletor": {
+                "href": "https://rafaelfaustini.com/",
+                "img": "img/english.svg"
+            }
+        },
+        "header": {
+            "title": "Rafael Faustini",
+            "subtitle": "Quero melhorar a vida das pessoas com a tecnologia"
+        },
+        "about": {
+            "title": "🧑🏻‍ Um pouco sobre mim",
+            "paragraphs": ["Meu nome é Rafael Faustini, tenho 21 anos, sou um desenvolvedor de software full-stack, brasileiro e italiano, bacharel em sistemas de informação pelo <a href=\"https://www.unilasalle.edu.br/rj\" class=\"destaque\">Centro Universitário La Salle do Rio de Janeiro</a>", "Comecei a programar quando eu tinha 11 anos de idade e nunca parei e desde então sempre procurando novas soluções para novos problemas"]
+        },
+        "experience": {
+            "title": "💼 Experiência Profissional",
+            "current": [
+                {
+                    "title": "Aluno Pesquisador - Centro Universitário La Salle do Rio de Janeiro, abr 2020 - agora",
+                    "topics": ["Análise de dados com Python", "Deep Learning com Keras", "Escrita de artigo científico aceito por conferência internacional", "Gerador de dados usando Javascript"],
+                    "button": {
+                        "text": "Pré-publicação",
+                        "href": "https://arxiv.org/abs/2012.12987"
+                    }
+                },
+                {
+                    "title": "Desenvolvedor de software - 2tech Sistemas, jan 2021 - Agora",
+                    "topics": ["ASP .NET WEB API", "Layout Bootstrap 4/3", "Biblioteca Vue", "ASP Clássico", "SQL Server", "SASS", "Cypress (Testes automatizados)"]
+                }
+            ],
+            "past": [
+                {
+                    "title": "Estagiário em desenvolvimento de software - 2tech Sistemas, jan 2020 - Dez 2020",
+                    "topics": ["ASP .NET WEB API", "Layout Bootstrap 4/3", "Biblioteca Vue", "ASP Clássico", "Breve projeto com Vue Framework", "SASS", "SQL Server"]
+                },
+                {
+                    "title": "Estagiário em desenvolvimento de software - CFM Energy Consultancy, set 2018 - dez 2018",
+                    "topics": ["Ajuda com experiência de usuário em aplicação web", "Layout Bootstrap 4", "JavaScript e um pouco de React", "PHP e MySQL"]
+                },
+                {
+                    "title": "Estudante Pesquisador - Centro Universitário La Salle do Rio de Janeiro, jun 2018 - set 2018",
+                    "topics": ["Pesquisa de ambientes imersivos", "Manipulação básica de arduínos", "Programação em C com arduínos"]
+                },
+                {
+                    "title": "Consultor de sistemas de informação - La Salle Júnior Consultoria Empresarial, mar 2017 - jul 2017",
+                    "topics": ["Estruturação de custos", "Análise e modelagem de negócios", "Bootstrap, Php e MySQL"]
+                }
+            ],
+            "resume": "📄 Currículo"
+        },
+        "projects": {
+            "title": "Portifólio",
+            "github": "Veja mais no meu Github",
+            "searchbarPlaceholder": "Busque por uma palavra chave, tecnologia ou ano"
+        },
+        "footer": {
+            "contact": "📬 contato@rafaelfaustini.com.br"
+        }
+    }
+}
