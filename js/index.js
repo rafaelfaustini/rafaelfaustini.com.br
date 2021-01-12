@@ -37,7 +37,7 @@ new Vue({
                     }
                 }
 
-                const response = await axios.get('projetos.json');
+                const response = await axios.get('projetos-en.json');
                 this.projetos = response.data;
                 const projetos = {
                     value: response.data,
