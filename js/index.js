@@ -8,12 +8,23 @@ new Vue({
         loaded: false,
         projetos: [],
         refreshcache: String.fromCharCode(Math.floor(Math.random() * 1000)),
+        textos: null,
     },
     mounted() {
+        this.getText();
         this.getProjetos();
         this.checkLang();
     },
     methods: {
+        async getText() {
+            try {
+                const response = await axios.get('website.json');
+                this.textos = response.data.website;
+            } catch (error) {
+                console.log(error);
+                return false;
+            }
+        },
         async getProjetos() {
             try {
                 let stored = localStorage.getItem('projetos');
