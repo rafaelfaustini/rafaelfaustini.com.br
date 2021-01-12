@@ -20,7 +20,6 @@ new Vue({
             try {
                 const response = await axios.get('website.json');
                 this.textos = response.data.website;
-                console.log(this.textos);
             } catch (error) {
                 console.log(error);
                 return false;
@@ -37,7 +36,7 @@ new Vue({
                     }
                 }
 
-                const response = await axios.get('projetos-en.json');
+                const response = await axios.get('projetos.json');
                 this.projetos = response.data;
                 const projetos = {
                     value: response.data,
