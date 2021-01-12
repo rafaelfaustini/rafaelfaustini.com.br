@@ -37,7 +37,7 @@
             ],
             "past": [
                 {
-                    "title": "Estagiário em desenvolvimento de software - 2tech Sistemas, jan 2020 - Dez 2020",
+                    "title": "Estagiário em desenvolvimento de software - 2tech Sistemas, jan 2020 - dez 2020",
                     "topics": ["ASP .NET WEB API", "Layout Bootstrap 4/3", "Biblioteca Vue", "ASP Clássico", "Breve projeto com Vue Framework", "SASS", "SQL Server"]
                 },
                 {
@@ -49,11 +49,14 @@
                     "topics": ["Pesquisa de ambientes imersivos", "Manipulação básica de arduínos", "Programação em C com arduínos"]
                 },
                 {
-                    "title": "Consultor de sistemas de informação - La Salle Júnior Consultoria Empresarial, mar 2017 - jul 2017",
+                    "title": "Consultor de sistemas de informação - La Salle Júnior Consultoria Empresarial (Empresa Júnior), mar 2017 - jul 2017",
                     "topics": ["Estruturação de custos", "Análise e modelagem de negócios", "Bootstrap, Php e MySQL"]
                 }
             ],
-            "resume": "📄 Currículo"
+            "resume": {
+                "text": "📄 Currículo",
+                "href": "curriculo.pdf"
+            }
         },
         "projects": {
             "title": "Portifólio",

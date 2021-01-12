@@ -1,0 +1,70 @@
+{
+    "website": {
+        "navbar": {
+            "brand": "Rafael Faustini",
+            "home": "Home",
+            "about": "About",
+            "projects": "Projects",
+            "blog": "Blog",
+            "seletor": {
+                "href": "https://rafaelfaustini.com/",
+                "img": "img/brasil.svg"
+            }
+        },
+        "header": {
+            "title": "Rafael Faustini",
+            "subtitle": "I wanna improve people's lives with technology"
+        },
+        "about": {
+            "title": "🧑🏻‍ A bit about me",
+            "paragraphs": ["My name is Rafael Faustini, I'm a 21 years old italian and brazilian full-stack software developer, bachelor in Information Systems by <a href=\"https://www.unilasalle.edu.br/rj\" class=\"destaque\">Centro Universitário La Salle do Rio de Janeiro</a>", "I started programming when I was 11 years old and never stopped, since then always searching new solutions to new problems"]
+        },
+        "experience": {
+            "title": "💼 Professional Experiences",
+            "current": [
+                {
+                    "title": "Student Researcher - Centro Universitário La Salle do Rio de Janeiro, apr 2020 - now",
+                    "topics": ["Data analysis with Python", "Deep Learning with Keras", "Paper writting accepted by an international conference", "Data generator using Javascript"],
+                    "button": {
+                        "text": "Preprint available",
+                        "href": "https://arxiv.org/abs/2012.12987"
+                    }
+                },
+                {
+                    "title": "Software Developer - 2tech Sistemas, jan 2021 - Now",
+                    "topics": ["ASP .NET WEB API", "Bootstrap 4/3 layouts", "Vue library", "Classic ASP", "SQL Server", "SASS", "Cypress (Automated Tests)"]
+                }
+            ],
+            "past": [
+                {
+                    "title": "Software developer intern - 2tech Sistemas, jan 2020 - dec 2020",
+                    "topics": ["ASP .NET WEB API", "Bootstrap 4/3 layouts", "Vue library", "Classic ASP", "Small project with Vue Framework", "SASS", "SQL Server"]
+                },
+                {
+                    "title": "Software developer intern - CFM Energy Consultancy, sep 2018 - dec 2018",
+                    "topics": ["Helping with web application User Experience", "Bootstrap 4 layouts", "JavaScript and a bit of React", "PHP and MySQL"]
+                },
+                {
+                    "title": "Student Researcher - Centro Universitário La Salle do Rio de Janeiro, jun 2018 - sep 2018",
+                    "topics": ["Pesquisa de ambientes imersivos", "Manipulação básica de arduínos", "Programação em C com arduínos"]
+                },
+                {
+                    "title": "Information Systems consultant - La Salle Júnior Consultoria Empresarial (Junior Enterprise), mar 2017 - jul 2017",
+                    "topics": ["Costs structuring", "Business analysis and modelling", "Bootstrap, Php and MySQL"]
+                }
+            ],
+            "resume": {
+                "text": "📄 Currículo",
+                "href": "resume.pdf"
+            }
+        },
+        "projects": {
+            "title": "Projects",
+            "github": "See more in my Github",
+            "searchbarPlaceholder": "Search by keyword, technology or year"
+        },
+        "footer": {
+            "contact": "📬 contato@rafaelfaustini.com.br"
+        }
+    }
+}

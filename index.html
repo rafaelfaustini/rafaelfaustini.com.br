@@ -34,8 +34,8 @@
             <section class="inicio" id="inicio">
                 <div class="conteudo">
                     <div class="textos">
-                        <h1><img src="img/brasil.svg" class="bandeira" />Rafael Faustini<img src="img/italia.svg" class="bandeira" /></h1>
-                        <p>Quero melhorar a vida das pessoas com a tecnologia</p>
+                        <h1><img src="img/brasil.svg" class="bandeira" />{{textos.header.title}}<img src="img/italia.svg" class="bandeira" /></h1>
+                        <p>{{textos.header.subtitle}}</p>
                     </div>
                 </div>
             </section>
@@ -75,7 +75,7 @@
                                 </div>
                             </div>
                             <div class="experiencia-botoes">
-                                <a :href="`../docs/curriculo.pdf?${refreshcache}`" class="btn btn-lg btn-secondary">{{textos.experience.resume}}</a>
+                                <a :href="`../docs/${textos.experience.resume.href}?${refreshcache}`" class="btn btn-lg btn-secondary">{{textos.experience.resume.text}}</a>
                             </div>
                         </div>
                     </div>
