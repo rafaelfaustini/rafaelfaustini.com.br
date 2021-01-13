@@ -54,8 +54,8 @@
                 }
             ],
             "resume": {
-                "text": "📄 Currículo",
-                "href": "resume.pdf"
+                "text": "📄 Resume",
+                "href": "docs/resume.pdf"
             }
         },
         "projects": {
