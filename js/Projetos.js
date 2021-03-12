@@ -77,7 +77,7 @@ Vue.component('projetos', {
                 <p class="projeto-titulo" style="margin-top: calc(15vh - 1em);">{{projeto.titulo}}</p>
             </div>
             <div class="col" v-else>
-                <img class="img-responsiva" :src="projeto.imagem" :alt="projeto.descricao">
+                <img loading="lazy" class="img-responsiva" :src="projeto.imagem" :alt="projeto.descricao">
                 </div>
             <div class="col">
                     <h3 class="h3">{{projeto.titulo}}
