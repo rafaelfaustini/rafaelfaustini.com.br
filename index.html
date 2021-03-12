@@ -25,7 +25,7 @@
                             <li><a href="#portifolio">{{textos.navbar.projects}}</a></li>
                             <li><a href="/blog">{{textos.navbar.blog}}</a></li>
                             <li>
-                                <a :href="textos.navbar.seletor.href" class="seletor"><img :src="textos.navbar.seletor.img" /></a>
+                                <a :href="textos.navbar.seletor.href" class="seletor"><img loading="lazy" :src="textos.navbar.seletor.img" /></a>
                             </li>
                         </ul>
                     </nav>
@@ -34,7 +34,7 @@
             <section class="inicio" id="inicio">
                 <div class="conteudo">
                     <div class="textos">
-                        <h1><img src="img/brasil.svg" class="bandeira" />{{textos.header.title}}<img src="img/italia.svg" class="bandeira" /></h1>
+                        <h1><img loading="lazy" src="img/brasil.svg" class="bandeira" />{{textos.header.title}}<img loading="lazy" src="img/italia.svg" class="bandeira" /></h1>
                         <p>{{textos.header.subtitle}}</p>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
                         <p v-for="paragraph in textos.about.paragraphs" v-html="paragraph"></p>
                     </div>
                     <div class="sobre-img">
-                        <img src="img/eu.png" alt="Imagem" />
+                        <img loading="lazy" src="img/eu.png" alt="Imagem" />
                     </div>
                 </div>
             </section>
