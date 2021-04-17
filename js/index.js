@@ -19,9 +19,9 @@ new Vue({
         async getText() {
             try {
                 const response = await axios.get('website.json');
-                this.textos = response.data.website;
+                const data = JSON.parse(this.injectVariables(response.request.response));
+                this.textos = data.website;
             } catch (error) {
-                console.log(error);
                 return false;
             }
         },
@@ -93,6 +93,16 @@ new Vue({
         choosePortuguese() {
             this.$refs.modalLang.close();
             localStorage.setItem('lang', 'pt');
+        },
+        injectVariables(text) {
+            // Replaces {variable} from json to a javascript variable
+            let variables = {
+                age: this.age, // {age} from the json is replaced with the dinamic variable
+            };
+            Object.keys(variables).forEach(function (key) {
+                text = text.replace(`{${key}}`, variables[key]);
+            });
+            return text;
         },
     },
     computed: {
