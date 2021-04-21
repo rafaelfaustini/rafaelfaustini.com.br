@@ -757,14 +757,15 @@
 }
 
 .slide-fade-enter-active {
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .slide-fade-leave-active {
   transition: all 0.4s cubic-bezier(1, 0.5, 0.8, 1);
 }
 
-.slide-fade-enter, .slide-fade-leave-to {
+.slide-fade-enter,
+.slide-fade-leave-to {
   transform: translateX(10px);
   opacity: 0;
 }
@@ -891,13 +892,12 @@ body {
 
 .experiencia {
   background-color: #e65050;
-  clip-path: polygon(50% 0%, 80% 10%, 100% 0, 100% 100%, 79% 100%, 53% 100%, 18% 100%, 0 100%, 0 0, 20% 10%);
 }
 
 .experiencia .conteudo {
   max-width: 1242px;
   margin: 0 auto;
-  padding: 150px 0 5px 0;
+  padding: 0px 0 5px 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -931,7 +931,7 @@ body {
 
 @media (max-width: 900px) {
   .experiencia .conteudo .funcoes-atuais .card {
-    height: 369px;
+    flex: 0 0 100%;
     overflow-y: auto;
   }
 }
@@ -988,9 +988,6 @@ body {
 }
 
 @media (max-width: 900px) {
-  .experiencia {
-    clip-path: none;
-  }
   .experiencia .conteudo h1 {
     text-align: center;
   }
@@ -1104,7 +1101,7 @@ body {
 .sobre .conteudo {
   max-width: 1242px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 60px 0 20px 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1162,6 +1159,20 @@ body {
   }
 }
 
+.wave-container {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.wave-container svg {
+  display: block;
+}
+
+.wave-container svg path {
+  fill: #e65050;
+}
+
 .portifolio {
   background-color: #fff;
 }
@@ -1202,16 +1213,21 @@ body {
 }
 
 .rodape .rodape-wrapper {
+  padding: 25px 0;
+}
+
+.rodape .rodape-wrapper ul {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 25px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-.rodape .rodape-wrapper li {
+.rodape .rodape-wrapper ul li {
+  flex: 0 0 100%;
+  text-align: center;
   font-size: 1.25em;
   color: #fff;
 }

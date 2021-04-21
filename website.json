@@ -26,8 +26,8 @@
                     "title": "Aluno Pesquisador - Centro Universitário La Salle do Rio de Janeiro, abr 2020 - agora",
                     "topics": ["Análise de dados com Python", "Deep Learning com Keras", "Escrita de artigo científico aceito por conferência internacional", "Gerador de dados usando Javascript"],
                     "button": {
-                        "text": "Pré-publicação",
-                        "href": "https://arxiv.org/abs/2012.12987"
+                        "text": "Artigo científico",
+                        "href": "https://www.scitepress.org/Link.aspx?doi=10.5220/0010379902530260"
                     }
                 },
                 {

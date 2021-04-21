@@ -4,16 +4,21 @@
     background-color: $primary-color;
     border-radius: 0px 0px 5px 5px;
     .rodape-wrapper {
-        max-width: 1400px;
-        margin: 0 auto;
         padding: 25px 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        li {
-            font-size: 1.25em;
-            color: #fff;
+        ul {
+            max-width: 1400px;
+            margin: 0 auto;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                flex: 0 0 100%;
+                text-align: center;
+                font-size: 1.25em;
+                color: #fff;
+            }
         }
     }
 }

@@ -4,7 +4,7 @@
 .sobre .conteudo {
     max-width: 1242px;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 60px 0 20px 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -60,6 +60,19 @@
     .sobre {
         .conteudo h1 {
             text-align: center;
+        }
+    }
+}
+
+.wave-container {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+
+    svg {
+        display: block;
+        path {
+            fill: $primary-color;
         }
     }
 }

@@ -1,10 +1,9 @@
 .experiencia {
     background-color: $primary-color;
-    clip-path: polygon(50% 0%, 80% 10%, 100% 0, 100% 100%, 79% 100%, 53% 100%, 18% 100%, 0 100%, 0 0, 20% 10%);
     .conteudo {
         max-width: 1242px;
         margin: 0 auto;
-        padding: 150px 0 5px 0;
+        padding: 0px 0 5px 0;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -32,7 +31,7 @@
             }
             @media (max-width: 900px) {
                 .card {
-                    height: 369px;
+                    flex: 0 0 100%;
                     overflow-y: auto;
                 }
             }
@@ -86,8 +85,6 @@
 
 @media (max-width: 900px) {
     .experiencia {
-        clip-path: none;
-
         .conteudo h1 {
             text-align: center;
         }
