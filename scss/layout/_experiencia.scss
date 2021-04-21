@@ -83,3 +83,13 @@
         }
     }
 }
+
+@media (max-width: 900px) {
+    .experiencia {
+        clip-path: none;
+
+        .conteudo h1 {
+            text-align: center;
+        }
+    }
+}

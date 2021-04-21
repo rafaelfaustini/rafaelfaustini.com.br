@@ -987,6 +987,15 @@ body {
   margin: 20px 10px;
 }
 
+@media (max-width: 900px) {
+  .experiencia {
+    clip-path: none;
+  }
+  .experiencia .conteudo h1 {
+    text-align: center;
+  }
+}
+
 .inicio {
   background-color: #e65050;
   height: 85vh;
@@ -1144,6 +1153,12 @@ body {
 @media (max-width: 1366px) {
   .sobre-img {
     display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .sobre .conteudo h1 {
+    text-align: center;
   }
 }
 
