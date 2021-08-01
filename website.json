@@ -17,7 +17,7 @@
         },
         "about": {
             "title": "🧑🏻‍ Um pouco sobre mim",
-            "paragraphs": ["Meu nome é Rafael Faustini, tenho {age} anos, sou um desenvolvedor de software full-stack, brasileiro e italiano, bacharel em sistemas de informação pelo <a href=\"https://www.unilasalle.edu.br/rj\" class=\"destaque\">Centro Universitário La Salle do Rio de Janeiro</a>", "Comecei a programar quando eu tinha 11 anos de idade e nunca parei e desde então sempre procurando novas soluções para novos problemas"]
+            "paragraphs": ["Meu nome é Rafael Faustini, tenho {age} anos, sou um desenvolvedor de software full-stack, brasileiro e italiano, bacharel em sistemas de informação pelo <a href=\"https://www.unilasalle.edu.br/rj\" class=\"destaque\">Centro Universitário La Salle do Rio de Janeiro</a>, morando em Lisboa.", "Comecei a programar quando eu tinha 11 anos de idade e nunca parei e desde então sempre procurando novas soluções para novos problemas"]
         },
         "experience": {
             "title": "💼 Experiência Profissional",
@@ -31,11 +31,15 @@
                     }
                 },
                 {
-                    "title": "Desenvolvedor de software - 2tech Sistemas, jan 2021 - Agora",
-                    "topics": ["ASP .NET WEB API", "Layout Bootstrap 4/3", "Biblioteca Vue", "ASP Clássico", "SQL Server", "SASS", "Cypress (Testes automatizados)"]
+                    "title": "Desenvolvedor de software - Kwan, ago 2021 - agora",
+                    "topics": [".NET", "SQL", "Angular", "Investigação, análise e desenvolvimento de Software"]
                 }
             ],
             "past": [
+                {
+                    "title": "Desenvolvedor de software - 2tech Sistemas, jan 2021 - jun 2021",
+                    "topics": ["ASP .NET WEB API", "Layout Bootstrap 4/3", "Biblioteca Vue", "ASP Clássico", "SQL Server", "SASS", "Cypress (Testes automatizados)"]
+                },
                 {
                     "title": "Estagiário em desenvolvimento de software - 2tech Sistemas, jan 2020 - dez 2020",
                     "topics": ["ASP .NET WEB API", "Layout Bootstrap 4/3", "Biblioteca Vue", "ASP Clássico", "Breve projeto com Vue Framework", "SASS", "SQL Server"]

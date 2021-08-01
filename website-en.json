@@ -17,7 +17,7 @@
         },
         "about": {
             "title": "🧑🏻‍ A bit about me",
-            "paragraphs": ["My name is Rafael Faustini, I'm a {age} years old italian and brazilian full-stack software developer, bachelor in Information Systems by <a href=\"https://www.unilasalle.edu.br/rj\" class=\"destaque\">Centro Universitário La Salle do Rio de Janeiro</a>", "I started programming when I was 11 years old and never stopped, since then always searching new solutions to new problems"]
+            "paragraphs": ["My name is Rafael Faustini, I'm a {age} years old italian and brazilian full-stack software developer, bachelor in Information Systems by <a href=\"https://www.unilasalle.edu.br/rj\" class=\"destaque\">Centro Universitário La Salle do Rio de Janeiro</a>, living in Lisbon.", "I started programming when I was 11 years old and never stopped, since then always searching new solutions to new problems"]
         },
         "experience": {
             "title": "💼 Professional Experiences",
@@ -31,11 +31,15 @@
                     }
                 },
                 {
-                    "title": "Software Developer - 2tech Sistemas, jan 2021 - Now",
-                    "topics": ["ASP .NET WEB API", "Bootstrap 4/3 layouts", "Vue library", "Classic ASP", "SQL Server", "SASS", "Cypress (Automated Tests)"]
+                    "title": "Software Developer - Kwan, ago 2021 - now",
+                    "topics": [".NET", "SQL", "Angular", "Research, analysis and software development"]
                 }
             ],
             "past": [
+                {
+                    "title": "Software Developer - 2tech Sistemas, jan 2021 - jun 2021",
+                    "topics": ["ASP .NET WEB API", "Bootstrap 4/3 layouts", "Vue library", "Classic ASP", "SQL Server", "SASS", "Cypress (Automated Tests)"]
+                },
                 {
                     "title": "Software developer intern - 2tech Sistemas, jan 2020 - dec 2020",
                     "topics": ["ASP .NET WEB API", "Bootstrap 4/3 layouts", "Vue library", "Classic ASP", "Small project with Vue Framework", "SASS", "SQL Server"]
