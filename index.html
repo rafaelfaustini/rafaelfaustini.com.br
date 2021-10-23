@@ -5,20 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
         <title>Rafael Faustini</title>
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" type="text/css" href="scss/styles.min.css?1619042640" media="screen" />
+        <link rel="stylesheet" type="text/css" href="scss/styles.min.css?1619042644" media="screen" />
     </head>
     <body>
         <div id="app" class="content" v-if="textos" v-cloak>
+            <language-check v-if="!Config.isEnglish()"></language-check>
             <alert-error ref="alertError"></alert-error>
-            <modal ref="modalLang">
-                <h2 class="f2">Please select an option</h2>
-                <p class="f7 my-7">We've detected that you are accessing from a non portuguese speaker location, choose the language that you feel more comfortable</p>
-                <button class="btn btn-primary f9" @click="choosePortuguese()">Português</button>
-                <button class="btn btn-secondary f9" @click="chooseEnglish();">English</button>
-            </modal>
             <header class="menu-bg">
                 <div class="menu">
-                    <div class="menu-logo"><a>{{textos.navbar.brand}} <span v-if="!config?.isProd()" :class="envBadge">{{config?.environment.toUpperCase()}}</span></a></div>
+                    <div class="menu-logo"><a>{{textos.navbar.brand}} <span v-if="!Config.isProd()" :class="envBadge">{{Config?.environment.toUpperCase()}}</span></a></div>
                     <nav>
                         <ul>
                             <li><a href="#inicio">{{textos.navbar.home}}</a></li>
@@ -90,7 +85,7 @@
             <section class="portifolio" id="portifolio">
                 <div class="conteudo">
                     <h1>{{textos.projects.title}}</h1>
-                    <projetos :placeholder="textos.projects.searchbarPlaceholder" :dados="projetos"></projetos>
+                    <projetos :placeholder="textos.projects.searchbarPlaceholder"></projetos>
                     <div class="vejamais">
                         <a href="https://github.com/rafaelfaustini" class="btn btn-secondary">{{textos.projects.github}}</a>
                     </div>
@@ -104,15 +99,17 @@
                 </div>
             </footer>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"></script>
+        <script src="libs/vue/vue.min.js"></script>
+        <script src="libs/moment/moment.min.js"></script>
+        <script src="libs/axios/axios.min.js"></script>
         <script src="../geo.js"></script>
-        <script src="js/ExceptionHandler.js?1619037079"></script>
-        <script src="js/Config.js?1619037079"></script>
-        <script src="js/Projetos.js?1619037079"></script>
-        <script src="js/AlertError.js?1619037079"></script>
-        <script src="js/Modal.js?1619037079"></script>
+        <script src="js/utils/Config.js"></script>
+        <script src="js/utils/ExceptionHandler.js"></script>
+        <script src="js/utils/ContentTextManager.js"></script>
+        <script src="js/components/Projetos.js"></script>
+        <script src="js/components/LanguageCheck.js"></script>
+        <script src="js/components/AlertError.js"></script>
+        <script src="js/components/Modal.js"></script>
         <script src="js/index.js?1619037079"></script>
     </body>
 </html>
