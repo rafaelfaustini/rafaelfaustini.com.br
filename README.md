@@ -34,6 +34,15 @@ In order to take some advantage of reactivity and code reuse, I used the Vue lib
 
 ![Webpage screenshot](img/website1.png)
 
+## Beta
+New features and changes are tested in the beta environment, soon as those features are joined and stable, they move on to the stable version of the website. 
+
+You can check the live beta website below:
+
+[English](beta.rafaelfaustini.com)
+
+[Português brasileiro](beta.rafaelfaustini.com.br)
+
 ## Contribute
 
 If you find any issues, have any suggestion or want to help translating the documentation, feel free to create issues and pull requests.

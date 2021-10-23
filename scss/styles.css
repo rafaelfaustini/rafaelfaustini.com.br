@@ -723,6 +723,16 @@
   padding-right: 4rem;
 }
 
+.dev {
+  background-color: #707070 !important;
+  color: white !important;
+}
+
+.beta {
+  background-color: #6002ee !important;
+  color: white !important;
+}
+
 .rotate-me {
   animation: rotating 1s linear infinite;
 }
@@ -1239,17 +1249,63 @@ body {
   }
 }
 
+.alert {
+  display: flex;
+  position: fixed;
+  padding: 1em;
+  overflow: hidden;
+}
+
+.alert.error {
+  color: #fff;
+  background-color: rgba(217, 43, 43, 0.85);
+}
+
+.alert.top {
+  top: 10px;
+}
+
+.alert.bottom {
+  bottom: 10px;
+}
+
+.alert.left {
+  left: 10px;
+}
+
+.alert.right {
+  right: 10px;
+}
+
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter, .slide-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
 .badge {
+  padding: 0.03em 0.1em;
   color: #000;
   background-color: #e65050;
   display: inline-block;
+  border-radius: 0.25rem;
+  vertical-align: middle;
+}
+
+.container-projetos .badge {
   padding: 0.3em 0.4em;
   font-size: 75%;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 0.25rem;
 }
 
 .card {

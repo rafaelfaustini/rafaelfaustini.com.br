@@ -13,3 +13,8 @@ $i: 1;
 	@include padding-size($i, $space);
 	$i: $i + 1;
 }
+
+
+@each $name, $bg in $envs {
+    @include create-env-background($name, $bg);
+}
