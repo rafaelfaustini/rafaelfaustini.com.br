@@ -36,7 +36,9 @@ In order to take some advantage of reactivity and code reuse, I used the Vue lib
 
 ## Beta
 New features and changes are tested in the beta environment, soon as those features are joined and stable, they move on to the stable version of the website. You can check the beta below:
+
 [English](beta.rafaelfaustini.com)
+
 [Brazilian Portuguese](beta.rafaelfaustini.com.br)
 
 ## Contribute
