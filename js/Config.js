@@ -14,6 +14,14 @@ class Config {
         return this.environment == "dev"
     }
 
+    isProd() {
+        return this.environment == "prod"
+    }
+
+    isBeta() {
+        return this.environment == "beta"
+    }
+
     load() {
            return axios.get(`${this.base_path}/${this.name}`)
             .then(function (response) {
@@ -27,7 +35,6 @@ class Config {
             }.bind(this))
             .catch(function (error) {
               // handle error
-              console.log(error)
               console.log("Could not load website config");
             })  .then(function () {
                 // always executed

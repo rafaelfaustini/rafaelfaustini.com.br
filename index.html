@@ -17,7 +17,7 @@
             </modal>
             <header class="menu-bg">
                 <div class="menu">
-                    <div class="menu-logo"><a>{{textos.navbar.brand}}</a></div>
+                    <div class="menu-logo"><a>{{textos.navbar.brand}} <span v-if="!config?.isProd()" :class="envBadge">{{config?.environment.toUpperCase()}}</span></a></div>
                     <nav>
                         <ul>
                             <li><a href="#inicio">{{textos.navbar.home}}</a></li>

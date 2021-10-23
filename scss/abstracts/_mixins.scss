@@ -9,6 +9,14 @@
 	text-align: $align;
 }
 
+@mixin create-env-background($name, $bg) {
+	.#{$name} {
+		background-color: $bg !important;
+		color: white !important;
+	}
+}
+
+
 @mixin create-button($name, $bg, $txt: color-contrast($bg)) {
 	.btn-#{$name} {
 		color: $txt;
