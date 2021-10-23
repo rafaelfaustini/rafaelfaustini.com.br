@@ -11,32 +11,22 @@ var app = new Vue({
     async beforeMount() {
         this.config = new Config();
         await this.config.load()
-        this.exception = new ExceptionHandler(this.config, app.$refs);
-        this.getText();
+        this.exception = new ExceptionHandler(this.config, this.$refs);
+        ContentTextManager.loadText(`../${this.config?.generalTextsPath}`, this.textVariables, this.onTextLoaded)
     },
     mounted() {
     },
     methods: {
-        getText() {
-                axios.get(this.config.generalTextsPath).then(function (response) {
-                    const data = JSON.parse(this.injectVariables(response.request.response));
-                    this.textos = data.website;  
-                }.bind(this)).catch(function (error) {
-                    this.exception.handle(error)
-                }.bind(this)) ;
-        },
-        injectVariables(text) {
-            // Replaces {variable} from json to a javascript variable
-            let variables = {
-                age: this.age, // {age} from the json is replaced with the dinamic variable
-            };
-            Object.keys(variables).forEach(function (key) {
-                text = text.replace(`{${key}}`, variables[key]);
-            });
-            return text;
-        },
+        onTextLoaded(text){
+            this.textos = text;
+        }
     },
     computed: {
+        textVariables() {
+            return {
+                age: this.age, // {age} from the json is replaced with the dinamic variable
+            };
+        },
         age() {
             return moment().diff('1999-04-17', 'years');
         },
