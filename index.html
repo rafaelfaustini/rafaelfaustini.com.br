@@ -10,6 +10,7 @@
     <body>
         <div id="app" class="content" v-if="textos" v-cloak>
             <language-check v-if="!config.isEnglish()"></language-check>
+            <alert-error ref="alertError"></alert-error>
             <header class="menu-bg">
                 <div class="menu">
                     <div class="menu-logo"><a>{{textos.navbar.brand}} <span v-if="!config?.isProd()" :class="envBadge">{{config?.environment.toUpperCase()}}</span></a></div>
@@ -107,6 +108,7 @@
         <script src="js/models/Config.js"></script>
         <script src="js/components/Projetos.js"></script>
         <script src="js/components/LanguageCheck.js"></script>
+        <script src="js/components/AlertError.js"></script>
         <script src="js/components/Modal.js"></script>
         <script src="js/index.js?1619037079"></script>
     </body>
