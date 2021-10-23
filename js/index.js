@@ -2,7 +2,9 @@
 new Vue({
     el: '#app',
     data: {
+        config: null,
         created: null,
+        exception: null,
         reps: 0,
         listaExperiencias: [],
         loaded: false,
@@ -10,7 +12,10 @@ new Vue({
         refreshcache: String.fromCharCode(Math.floor(Math.random() * 1000)),
         textos: null,
     },
-    mounted() {
+    async mounted() {
+        this.config = new Config();
+        await this.config.load()
+        this.exception = new ExceptionHandler(this.config);
         this.getText();
         this.getProjetos();
         this.checkLang();
@@ -18,11 +23,11 @@ new Vue({
     methods: {
         async getText() {
             try {
-                const response = await axios.get('website.json');
+                const response = await axios.get(this.config.generalTextsPath);
                 const data = JSON.parse(this.injectVariables(response.request.response));
                 this.textos = data.website;
             } catch (error) {
-                return false;
+                this.exception.handle(error)
             }
         },
         async getProjetos() {
@@ -36,7 +41,7 @@ new Vue({
                     }
                 }
 
-                const response = await axios.get('projetos.json');
+                const response = await axios.get(this.config.projectTextsPath);
                 this.projetos = response.data;
                 const projetos = {
                     value: response.data,
@@ -44,8 +49,7 @@ new Vue({
                 };
                 localStorage.setItem('projetos', JSON.stringify(projetos));
             } catch (error) {
-                console.log(error);
-                return false;
+                this.exception.handle(error)
             }
         },
         async checkLang() {
@@ -82,8 +86,7 @@ new Vue({
                 }
                 return loc === 'true';
             } catch (error) {
-                console.log(error);
-                return false;
+                this.exception.handle(error)
             }
         },
         chooseEnglish() {
