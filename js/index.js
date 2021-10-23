@@ -5,9 +5,6 @@ var app = new Vue({
         config: null,
         created: null,
         exception: null,
-        reps: 0,
-        listaExperiencias: [],
-        loaded: false,
         refreshcache: String.fromCharCode(Math.floor(Math.random() * 1000)),
         textos: null
         },
