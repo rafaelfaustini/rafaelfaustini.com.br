@@ -36,6 +36,15 @@ A fim de ter vantagem da reatividade e reutilização de código, usei a bibliot
 
 ![Imagem do website](/img/website1.png)
 
+## Beta
+Novas features e mudanças são testadas no ambiente beta, assim que essas features são juntadas e estáveis, elas são movidas para a versão estável do website.
+
+Você pode checar a versão beta abaixo:
+
+[English](beta.rafaelfaustini.com)
+
+[Português brasileiro](beta.rafaelfaustini.com.br)
+
 ## Contribuições
 
 Se você achar algum problema, tiver alguma sugestão ou quiser ajudar a traduzir esta documentação, sinta-se livre para criar issues e pull requests.
