@@ -16,7 +16,7 @@ var app = new Vue({
             this.textos = text;
         },
         onConfigLoaded() {
-            ContentTextManager.loadText(`../${Config.generalTextsPath}`, this.textVariables, this.onTextLoaded)
+            ContentTextManager.loadText(`${Config.generalTextsPath}`, this.textVariables, this.onTextLoaded)
         }
     },
     computed: {
