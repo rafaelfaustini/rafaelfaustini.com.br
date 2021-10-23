@@ -2,23 +2,21 @@
 var app = new Vue({
     el: '#app',
     data: {
-        config: null,
         created: null,
-        exception: null,
         refreshcache: String.fromCharCode(Math.floor(Math.random() * 1000)),
         textos: null
         },
     async beforeMount() {
-        this.config = new Config();
-        await this.config.load()
-        this.exception = new ExceptionHandler(this.config, this.$refs);
-        ContentTextManager.loadText(`../${this.config?.generalTextsPath}`, this.textVariables, this.onTextLoaded)
+        Config.load(this.onConfigLoaded);
     },
     mounted() {
     },
     methods: {
         onTextLoaded(text){
             this.textos = text;
+        },
+        onConfigLoaded() {
+            ContentTextManager.loadText(`../${Config.generalTextsPath}`, this.textVariables, this.onTextLoaded)
         }
     },
     computed: {

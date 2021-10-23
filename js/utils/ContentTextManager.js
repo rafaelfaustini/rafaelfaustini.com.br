@@ -13,7 +13,7 @@ class ContentTextManager {
             const data = JSON.parse(ContentTextManager.injectVariables(response.request.response, variables));
             onComplete(data.website);  
         }.bind(this)).catch(function (error) {
-            app.exception.handle(error)
+            ExceptionHandler.handle(error)
         }.bind(this)) ;
     }
   }

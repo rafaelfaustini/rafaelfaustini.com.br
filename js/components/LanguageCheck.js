@@ -54,7 +54,7 @@ Vue.component("language-check", {
                 }
                 return loc === 'true';
             } catch (error) {
-                app.exception.handle(error)
+                ExceptionHandler.handle(error)
             }
         },
     },

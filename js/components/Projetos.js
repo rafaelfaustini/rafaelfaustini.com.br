@@ -1,7 +1,6 @@
 'use strict';
 Vue.component('projetos', {
     props: {
-        config: {type: Object, required: true},
         tamanho: { type: Number, default: 50 },
         placeholder: { type: String, default: 'Busque por uma palavra chave, tecnologia ou ano' },
     },
@@ -26,7 +25,7 @@ Vue.component('projetos', {
                     }
                 }
 
-                axios.get(this.config.projectTextsPath).then(function (response) {
+                axios.get(Config.projectTextsPath).then(function (response) {
                     this.dados = response.data;
                     const projetos = {
                         value: response.data,
@@ -34,11 +33,11 @@ Vue.component('projetos', {
                     };
                     localStorage.setItem('projetos', JSON.stringify(projetos));
                 }.bind(this)).catch(function (error) {
-                    this.exception.handle(error)
+                    ExceptionHandler.handle(error)
                 }.bind(this));
 
             } catch (error) {
-                this.exception.handle(error)
+                ExceptionHandler.handle(error)
             }
         },
     },
