@@ -1,0 +1,21 @@
+::-webkit-scrollbar {
+    width: .75em;
+    height: .5em;
+}
+
+::-webkit-scrollbar-track {
+    background: $outer-background-color;
+    border-radius: 100vw;
+    margin-block: 0.75em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darken($outer-background-color, 60%);
+    border: .15em solid $outer-background-color;
+    border-radius: 100vw;
+
+
+    &:hover {
+        background: darken($outer-background-color, 40%);
+    }
+}
