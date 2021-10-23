@@ -8,7 +8,6 @@ var app = new Vue({
         reps: 0,
         listaExperiencias: [],
         loaded: false,
-        projetos: [],
         refreshcache: String.fromCharCode(Math.floor(Math.random() * 1000)),
         textos: null
         },
@@ -19,7 +18,6 @@ var app = new Vue({
         this.getText();
     },
     mounted() {
-        this.getProjetos();
     },
     methods: {
         getText() {
@@ -30,34 +28,6 @@ var app = new Vue({
                     this.exception.handle(error)
                 }.bind(this)) ;
         },
-        getProjetos() {
-            try {
-                let stored = localStorage.getItem('projetos');
-                if (stored) {
-                    var projetosStored = JSON.parse(stored);
-                    if (projetosStored.expiry > Date.now()) {
-                        this.projetos = projetosStored.value;
-                        return;
-                    }
-                }
-
-                axios.get(this.config.projectTextsPath).then(function (response) {
-                    this.projetos = response.data;
-                    const projetos = {
-                        value: response.data,
-                        expiry: Date.now() + 6.048e8, // 1 Week
-                    };
-                    localStorage.setItem('projetos', JSON.stringify(projetos));
-                }.bind(this)).catch(function (error) {
-                    this.exception.handle(error)
-                }.bind(this));
-
-            } catch (error) {
-                this.exception.handle(error)
-            }
-        },
-
-
         injectVariables(text) {
             // Replaces {variable} from json to a javascript variable
             let variables = {

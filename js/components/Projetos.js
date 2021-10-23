@@ -1,14 +1,46 @@
 'use strict';
 Vue.component('projetos', {
     props: {
-        dados: { type: Array, default: null, required: true },
+        config: {type: Object, required: true},
         tamanho: { type: Number, default: 50 },
         placeholder: { type: String, default: 'Busque por uma palavra chave, tecnologia ou ano' },
     },
     data: function () {
         return {
+            dados: [],
             filtro: '',
         };
+    },
+    beforeMount(){
+        this.getProjetos();
+    },
+    methods: {
+        getProjetos() {
+            try {
+                let stored = localStorage.getItem('projetos');
+                if (stored) {
+                    var projetosStored = JSON.parse(stored);
+                    if (projetosStored.expiry > Date.now()) {
+                        this.dados = projetosStored.value;
+                        return;
+                    }
+                }
+
+                axios.get(this.config.projectTextsPath).then(function (response) {
+                    this.dados = response.data;
+                    const projetos = {
+                        value: response.data,
+                        expiry: Date.now() + 6.048e8, // 1 Week
+                    };
+                    localStorage.setItem('projetos', JSON.stringify(projetos));
+                }.bind(this)).catch(function (error) {
+                    this.exception.handle(error)
+                }.bind(this));
+
+            } catch (error) {
+                this.exception.handle(error)
+            }
+        },
     },
     computed: {
         filtrada: function () {
