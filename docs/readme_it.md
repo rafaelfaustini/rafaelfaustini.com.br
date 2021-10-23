@@ -1,4 +1,4 @@
-<a href="https://rafaelfaustini.com.br"><h1 align="center">Rafael Faustini</h1></a>
+<a href="https://rafaelfaustini.com"><h1 align="center">Rafael Faustini</h1></a>
 
   <p align="center">
   Questo repository contiene il codice sorgente del mio <a href="https://rafaelfaustini.com.br">website</a></p>
@@ -35,6 +35,15 @@ Per lo stile, è stato utilizzato SASS e non è stata utilizzata alcuna libreria
 Al fine di sfruttare la reattività e il riutilizzo del codice, ho utilizzato la libreria Vue, in modo da poter creare componenti come la visualizzazione dei progetti nella sezione del mio portfolio.
 
 ![Immagine del website](/img/website1.png)
+
+## Beta
+Nuove funzionalità e modifiche vengono testate nell'ambiente beta, non appena tali funzionalità sono unite e stabili, passano alla versione stabile del sito web.
+
+Puoi controllare il sito web della beta live di seguito:
+
+[English](beta.rafaelfaustini.com)
+
+[Português brasileiro](beta.rafaelfaustini.com.br)
 
 ## Contributi
 

@@ -41,7 +41,7 @@ You can check the live beta website below:
 
 [English](beta.rafaelfaustini.com)
 
-[Brazilian Portuguese](beta.rafaelfaustini.com.br)
+[Português brasileiro](beta.rafaelfaustini.com.br)
 
 ## Contribute
 
