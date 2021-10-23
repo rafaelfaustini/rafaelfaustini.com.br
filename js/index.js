@@ -31,7 +31,7 @@ var app = new Vue({
         envBadge() {
             let style = {}
             style['badge secondary_text badge-sm f7'] = true;
-            style[this.config?.environment || "null"] = true;
+            style[Config.environment || "null"] = true;
             return style
         }
     },
