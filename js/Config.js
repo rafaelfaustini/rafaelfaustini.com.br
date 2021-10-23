@@ -22,6 +22,10 @@ class Config {
         return this.environment == "beta"
     }
 
+    isEnglish() {
+        return this.language == "en";
+    }
+
     load() {
            return axios.get(`${this.base_path}/${this.name}`)
             .then(function (response) {

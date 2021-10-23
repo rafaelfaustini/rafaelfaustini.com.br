@@ -9,12 +9,7 @@
     </head>
     <body>
         <div id="app" class="content" v-if="textos" v-cloak>
-            <modal ref="modalLang">
-                <h2 class="f2">Please select an option</h2>
-                <p class="f7 my-7">We've detected that you are accessing from a non portuguese speaker location, choose the language that you feel more comfortable</p>
-                <button class="btn btn-primary f9" @click="choosePortuguese()">Português</button>
-                <button class="btn btn-secondary f9" @click="chooseEnglish();">English</button>
-            </modal>
+            <language-check v-if="!config.isEnglish()"></language-check>
             <header class="menu-bg">
                 <div class="menu">
                     <div class="menu-logo"><a>{{textos.navbar.brand}} <span v-if="!config?.isProd()" :class="envBadge">{{config?.environment.toUpperCase()}}</span></a></div>
@@ -110,6 +105,7 @@
         <script src="js/ExceptionHandler.js?1619037079"></script>
         <script src="js/Config.js?1619037079"></script>
         <script src="js/Projetos.js?1619037079"></script>
+        <script src="js/LanguageCheck.js"></script>
         <script src="js/Modal.js?1619037079"></script>
         <script src="js/index.js?1619037079"></script>
     </body>
