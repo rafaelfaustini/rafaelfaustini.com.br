@@ -1,4 +1,6 @@
-name: screenshot-beta
+name: Screenshot Beta
+
+on:
   pull_request:
     branches:
     - beta
@@ -15,7 +17,7 @@ jobs:
         uses: flameddd/screenshots-ci-action@v1.1.1
         with:
           url: https://rafaelfaustini.com.br/beta
-          devices: 'iPhone X', 'Pixel 2 XL'
+          devices: iPhone X, Pixel 2 XL
       - uses: actions/upload-artifact@v2
         with:
           path: img
