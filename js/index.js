@@ -22,7 +22,7 @@ new Vue({
     },
     methods: {
         async getText() {
-            try {
+            try { 
                 const response = await axios.get(this.config.generalTextsPath);
                 const data = JSON.parse(this.injectVariables(response.request.response));
                 this.textos = data.website;
