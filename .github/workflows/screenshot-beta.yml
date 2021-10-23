@@ -1,9 +1,6 @@
 name: Screenshot Beta
 
-on:
-  pull_request:
-    branches:
-    - beta
+on: pull_request
 jobs:
   build:
     runs-on: ubuntu-latest
