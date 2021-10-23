@@ -1,5 +1,5 @@
 'use strict';
-new Vue({
+var app = new Vue({
     el: '#app',
     data: {
         config: null,
@@ -10,27 +10,28 @@ new Vue({
         loaded: false,
         projetos: [],
         refreshcache: String.fromCharCode(Math.floor(Math.random() * 1000)),
-        textos: null,
-    },
-    async mounted() {
+        textos: null
+        },
+    async beforeMount() {
         this.config = new Config();
         await this.config.load()
-        this.exception = new ExceptionHandler(this.config);
+        this.exception = new ExceptionHandler(this.config, app.$refs);
         this.getText();
+    },
+    mounted() {
         this.getProjetos();
         this.checkLang();
     },
     methods: {
-        async getText() {
-            try { 
-                const response = await axios.get(this.config.generalTextsPath);
-                const data = JSON.parse(this.injectVariables(response.request.response));
-                this.textos = data.website;
-            } catch (error) {
-                this.exception.handle(error)
-            }
+        getText() {
+                axios.get(this.config.generalTextsPath).then(function (response) {
+                    const data = JSON.parse(this.injectVariables(response.request.response));
+                    this.textos = data.website;  
+                }.bind(this)).catch(function (error) {
+                    this.exception.handle(error)
+                }.bind(this)) ;
         },
-        async getProjetos() {
+        getProjetos() {
             try {
                 let stored = localStorage.getItem('projetos');
                 if (stored) {
@@ -41,13 +42,17 @@ new Vue({
                     }
                 }
 
-                const response = await axios.get(this.config.projectTextsPath);
-                this.projetos = response.data;
-                const projetos = {
-                    value: response.data,
-                    expiry: Date.now() + 6.048e8, // 1 Week
-                };
-                localStorage.setItem('projetos', JSON.stringify(projetos));
+                axios.get(this.config.projectTextsPath).then(function (response) {
+                    this.projetos = response.data;
+                    const projetos = {
+                        value: response.data,
+                        expiry: Date.now() + 6.048e8, // 1 Week
+                    };
+                    localStorage.setItem('projetos', JSON.stringify(projetos));
+                }.bind(this)).catch(function (error) {
+                    this.exception.handle(error)
+                }.bind(this));
+
             } catch (error) {
                 this.exception.handle(error)
             }

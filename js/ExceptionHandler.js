@@ -1,13 +1,14 @@
 class ExceptionHandler {
-    constructor(config) {
-      this.config = config
+    constructor(config, refs) {
+      this.config = config;
+      this.refs = refs;
     }
 
     handle(msg){
         if(this.config.isDev()){
             console.log(msg)
-            return
         }
+        this.refs.alertError?.alert(this.config.exceptionMessage)
         console.log(this.config.exceptionMessage)
     }
   }
