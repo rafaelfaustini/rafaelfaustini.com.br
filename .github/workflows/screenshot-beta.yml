@@ -1,0 +1,28 @@
+name: screenshot-beta
+  pull_request:
+    branches:
+    - beta
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: install puppeteer-headful
+        uses: mujo-code/puppeteer-headful@master
+        env:
+          CI: 'true'
+      - name: screenshots-ci-action
+        uses: flameddd/screenshots-ci-action@v1.1.1
+        with:
+          url: https://rafaelfaustini.com.br/beta
+          devices: 'iPhone X', 'Pixel 2 XL'
+      - uses: actions/upload-artifact@v2
+        with:
+          path: img
+          name: website-screenshots
+      - name: Upload images
+        uses: edunad/action-image@v1.0.0
+        with:
+            path: 'img/website-screenshots/*'
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            title: 'Website pics'
