@@ -10,7 +10,7 @@ $header-color: #222;
 $text-light: #7c7c7c;
 $text-dark: #222;
 
-// Theme SCSS Color Variables
-$theme-text: var(--theme-text);
-$theme-background: var(--theme-background);
-$theme-error: var(--theme-error);
+$envs: (
+    'dev': #707070,
+    'beta': $secondary-color,
+);

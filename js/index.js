@@ -112,5 +112,11 @@ new Vue({
         age() {
             return moment().diff('1999-04-17', 'years');
         },
+        envBadge() {
+            let style = {}
+            style['badge secondary_text badge-sm f7'] = true;
+            style[this.config?.environment || "null"] = true;
+            return style
+        }
     },
 });
