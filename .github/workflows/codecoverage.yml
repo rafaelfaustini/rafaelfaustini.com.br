@@ -1,4 +1,4 @@
-name: Sonar Cloud
+name: SonarCloud
 on:
 
   push:
@@ -6,7 +6,6 @@ on:
       - main
   pull_request:
       types: [opened, synchronize, reopened]
-name: Main Workflow
 jobs:
   sonarcloud:
     runs-on: ubuntu-latest
