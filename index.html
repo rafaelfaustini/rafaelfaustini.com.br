@@ -13,7 +13,9 @@
             <alert-error ref="alertError"></alert-error>
             <header class="menu-bg">
                 <div class="menu">
-                    <div class="menu-logo"><a>{{textos.navbar.brand}} <span v-if="!Config.isProd()" :class="envBadge">{{Config?.environment.toUpperCase()}}</span></a></div>
+                    <div class="menu-logo">
+                        <a>{{textos.navbar.brand}} <span v-if="!Config.isProd()" :class="envBadge">{{Config?.environment.toUpperCase()}}</span></a>
+                    </div>
                     <nav>
                         <ul>
                             <li><a href="#inicio">{{textos.navbar.home}}</a></li>
@@ -21,7 +23,7 @@
                             <li><a href="#portifolio">{{textos.navbar.projects}}</a></li>
                             <li><a href="/blog">{{textos.navbar.blog}}</a></li>
                             <li>
-                                <a :href="textos.navbar.seletor.href" class="seletor"><img loading="lazy" :src="textos.navbar.seletor.img" /></a>
+                                <a :href="textos.navbar.seletor.href" class="seletor"><img loading="lazy" :src="textos.navbar.seletor.img.src" /></a>
                             </li>
                         </ul>
                     </nav>
@@ -30,7 +32,7 @@
             <section class="inicio" id="inicio">
                 <div class="conteudo">
                     <div class="textos">
-                        <h1><img loading="lazy" src="img/brasil.svg" class="bandeira" />{{textos.header.title}}<img loading="lazy" src="img/italia.svg" class="bandeira" /></h1>
+                        <h1><img loading="lazy" :alt="textos.header.flags.brazil_alt" src="img/brasil.svg" class="bandeira" />{{textos.header.title}}<img loading="lazy" :alt="textos.header.flags.italy_alt" src="img/italia.svg" class="bandeira" /></h1>
                         <p>{{textos.header.subtitle}}</p>
                     </div>
                 </div>
@@ -42,11 +44,11 @@
                         <p v-for="paragraph in textos.about.paragraphs" v-html="paragraph"></p>
                     </div>
                     <div class="sobre-img">
-                        <img loading="lazy" src="img/eu.png" alt="Imagem" />
+                        <img loading="lazy" src="img/eu.png" :alt="textos.about.me.alt" />
                     </div>
                 </div>
                 <div class="wave-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" alt="wave">
                         <path fill="#ff5500" fill-opacity="1" d="M0,128L60,133.3C120,139,240,149,360,144C480,139,600,117,720,133.3C840,149,960,203,1080,202.7C1200,203,1320,149,1380,122.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
                     </svg>
                 </div>

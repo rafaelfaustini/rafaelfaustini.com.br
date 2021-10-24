@@ -1,7 +1,10 @@
 [
     {
         "titulo": "SmartCare - Machine Learning",
-        "imagem": "img/projetos/SmartCare.jpg",
+        "imagem": {
+            "src": "img/projetos/SmartCare.jpg",
+            "alt": "SmartCare Logo"
+        },
         "ano": "2020",
         "destaque": true,
         "linguagem": "Python",
@@ -85,7 +88,10 @@
     },
     {
         "titulo": "Anima !?",
-        "imagem": "img/projetos/anima.svg",
+        "imagem": {
+            "src": "img/projetos/anima.svg",
+            "alt": "Anima Logo"
+        },
         "ano": "2018",
         "linguagem": "PHP",
         "destaque": false,
@@ -99,7 +105,10 @@
     },
     {
         "titulo": "Text-gene",
-        "imagem": "img/projetos/SnizerGene.webp",
+        "imagem": {
+            "src": "img/projetos/SnizerGene.webp",
+            "alt": "Snizer Gene Logo"
+        },
         "ano": "2018",
         "destaque": false,
         "linguagem": "Javascript",
@@ -113,7 +122,10 @@
     },
     {
         "titulo": "Snizer Hiit",
-        "imagem": "img/projetos/SnizerHiit.webp",
+        "imagem": {
+            "src": "img/projetos/SnizerHiit.webp",
+            "alt": "Snizer Hiit Logo"
+        },
         "ano": "2017",
         "destaque": false,
         "linguagem": "Delphi",
