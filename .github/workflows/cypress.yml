@@ -15,10 +15,10 @@ jobs:
               run: npm i -D cypress
 
             - name: Install live server
-              run: npm i -D http-server
+              run: npm i -g http-server
 
             - name: Run live server
-              run: http-server -a localhost -p 8000
+              run: ./node_modules/.bin/http-server -a localhost -p 8000 -c-1
 
             - name: Cypress run
               uses: cypress-io/github-action@v2
