@@ -2,7 +2,7 @@
 
 describe('website built', () => {
     beforeEach(() => {
-        cy.visit('./index.html');
+        cy.visit('index.html');
     });
 
     it('navbar built', () => {
