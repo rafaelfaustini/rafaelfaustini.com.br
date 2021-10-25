@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/rafaelfaustini/rafaelfaustini.com.br/issues"
   },
-  "homepage": "https://github.com/rafaelfaustini/rafaelfaustini.com.br#readme"
+  "homepage": "https://github.com/rafaelfaustini/rafaelfaustini.com.br#readme",
+  "dependencies": {
+    "cypress": "^8.6.0"
+  }
 }

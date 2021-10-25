@@ -8,18 +8,6 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v2
 
-            - name: Setup npm package
-              run: npm init -y && npm install
-
-            - name: Install cypress
-              run: npm i -D cypress
-
-            - name: Install live server
-              run: npm i -D http-server
-
-            - name: Run live server
-              run: ./node_modules/.bin/http-server -a localhost -p 8000 -c-1
-
             - name: Cypress run
               uses: cypress-io/github-action@v2
               with:
