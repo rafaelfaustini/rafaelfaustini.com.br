@@ -10,7 +10,7 @@ Vue.component('projetos', {
             filtro: '',
         };
     },
-    beforeMount(){
+    beforeMount() {
         this.getProjetos();
     },
     methods: {
@@ -25,19 +25,25 @@ Vue.component('projetos', {
                     }
                 }
 
-                axios.get(Config.projectTextsPath).then(function (response) {
-                    this.dados = response.data;
-                    const projetos = {
-                        value: response.data,
-                        expiry: Date.now() + 6.048e8, // 1 Week
-                    };
-                    localStorage.setItem('projetos', JSON.stringify(projetos));
-                }.bind(this)).catch(function (error) {
-                    ExceptionHandler.handle(error)
-                }.bind(this));
-
+                axios
+                    .get(Config.projectTextsPath)
+                    .then(
+                        function (response) {
+                            this.dados = response.data;
+                            const projetos = {
+                                value: response.data,
+                                expiry: Date.now() + 6.048e8, // 1 Week
+                            };
+                            localStorage.setItem('projetos', JSON.stringify(projetos));
+                        }.bind(this)
+                    )
+                    .catch(
+                        function (error) {
+                            ExceptionHandler.handle(error);
+                        }.bind(this)
+                    );
             } catch (error) {
-                ExceptionHandler.handle(error)
+                ExceptionHandler.handle(error);
             }
         },
     },
@@ -108,7 +114,7 @@ Vue.component('projetos', {
                 <p class="projeto-titulo" style="margin-top: calc(15vh - 1em);">{{projeto.titulo}}</p>
             </div>
             <div class="col" v-else>
-                <img loading="lazy" class="img-responsiva" :src="projeto.imagem" :alt="projeto.descricao">
+                <img loading="lazy" class="img-responsiva" :src="projeto.imagem.src" :alt="projeto.imagem.alt">
                 </div>
             <div class="col">
                     <h3 class="h3">{{projeto.titulo}}
