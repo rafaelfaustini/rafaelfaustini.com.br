@@ -12,6 +12,21 @@
     </a>
   </p>
   <p align="center">
+    <a href="https://sonarcloud.io/summary/new_code?id=rafaelfaustini_rafaelfaustini.com.br">
+      <img alt="Quality Gate" src="https://sonarcloud.io/api/project_badges/measure?project=rafaelfaustini_rafaelfaustini.com.br&metric=alert_status" />
+    </a>
+    <a href="https://sonarcloud.io/summary/new_code?id=rafaelfaustini_rafaelfaustini.com.br">
+      <img alt="Maintanability" src="https://sonarcloud.io/api/project_badges/measure?project=rafaelfaustini_rafaelfaustini.com.br&metric=sqale_rating" />
+      </a>
+      <a href="https://sonarcloud.io/summary/new_code?id=rafaelfaustini_rafaelfaustini.com.br">
+      <img alt="Security" src="https://sonarcloud.io/api/project_badges/measure?project=rafaelfaustini_rafaelfaustini.com.br&metric=security_rating" />
+      </a>
+      <a href="https://sonarcloud.io/summary/new_code?id=rafaelfaustini_rafaelfaustini.com.br">
+      <img alt="Reliability" src="https://sonarcloud.io/api/project_badges/measure?project=rafaelfaustini_rafaelfaustini.com.br&metric=reliability_rating" />
+      </a>
+
+  </p>
+  <p align="center">
    <a href="https://github.com/rafaelfaustini/rafaelfaustini.com.br/issues/new?assignees=rafaelfaustini&labels=Documentation%2C+Translation&template=new-language-request.md&title=%5Btranslation%5D">Request language</a>
      ·
     <a href="https://github.com/rafaelfaustini/rafaelfaustini.com.br/issues/new?assignees=&labels=Bug+Fix&template=bug_report.md&title=%5Bbugfix%5D">Report a bug</a>
@@ -35,7 +50,8 @@ In order to take some advantage of reactivity and code reuse, I used the Vue lib
 ![Webpage screenshot](img/website1.png)
 
 ## Beta
-New features and changes are tested in the beta environment, soon as those features are joined and stable, they move on to the stable version of the website. 
+
+New features and changes are tested in the beta environment, soon as those features are joined and stable, they move on to the stable version of the website.
 
 You can check the live beta website below:
 
