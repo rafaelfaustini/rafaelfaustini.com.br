@@ -9,6 +9,11 @@ describe('should have a list of projects', () => {
         let projects = cy.get('[id^=projetos_] .pj');
         projects.its('length').should('be.gte', 0);
     });
+
+    it('images are working properly', () => {
+        let projects = cy.get('[id^=projetos_] .pj img');
+        projects.should('have.attr', 'src');
+    });
 });
 describe('should be able to search for projects', () => {
     beforeEach(() => {
