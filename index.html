@@ -11,7 +11,7 @@
         <div id="app" class="content" v-if="textos" v-cloak>
             <language-check v-if="!Config.isEnglish()"></language-check>
             <alert-error ref="alertError"></alert-error>
-            <header class="menu-bg">
+            <header class="menu-bg" v-if="textos.navbar">
                 <div class="menu">
                     <div class="menu-logo">
                         <a>{{textos.navbar.brand}} <span v-if="!Config.isProd()" :class="envBadge">{{Config?.environment.toUpperCase()}}</span></a>
@@ -29,7 +29,7 @@
                     </nav>
                 </div>
             </header>
-            <section class="inicio" id="inicio">
+            <section class="inicio" id="inicio" v-if="textos.header">
                 <div class="conteudo">
                     <div class="textos">
                         <h1><img loading="lazy" :alt="textos.header.flags.brazil_alt" src="img/brasil.svg" class="bandeira" />{{textos.header.title}}<img loading="lazy" :alt="textos.header.flags.italy_alt" src="img/italia.svg" class="bandeira" /></h1>
@@ -37,7 +37,7 @@
                     </div>
                 </div>
             </section>
-            <section class="sobre" id="sobre">
+            <section class="sobre" id="sobre" v-if="textos.about">
                 <div class="conteudo">
                     <div class="sobre-info">
                         <h1>{{textos.about.title}}</h1>
@@ -53,7 +53,7 @@
                     </svg>
                 </div>
             </section>
-            <section class="experiencia">
+            <section class="experiencia" v-if="textos.experience">
                 <div class="conteudo">
                     <div class="sobre-info">
                         <div class="conteudo">
@@ -84,7 +84,7 @@
                     </div>
                 </div>
             </section>
-            <section class="portifolio" id="portifolio">
+            <section class="portifolio" id="portifolio" v-if="textos.projects">
                 <div class="conteudo">
                     <h1>{{textos.projects.title}}</h1>
                     <projetos :placeholder="textos.projects.searchbarPlaceholder"></projetos>
@@ -93,7 +93,7 @@
                     </div>
                 </div>
             </section>
-            <footer class="rodape">
+            <footer class="rodape" v-if="textos.footer">
                 <div class="rodape-wrapper">
                     <ul>
                         <li>{{textos.footer.contact}}</li>
