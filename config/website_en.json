@@ -8,15 +8,25 @@
             "blog": "Blog",
             "seletor": {
                 "href": "https://rafaelfaustini.com.br/",
-                "img": "img/brasil.svg"
+                "img": {
+                    "src": "img/brasil.svg",
+                    "alt": "Change language to brazilian portuguese"
+                }
             }
         },
         "header": {
             "title": "Rafael Faustini",
+            "flags": {
+                "brazil_alt": "Brazil flag",
+                "italy_alt": "Italy flag"
+            },
             "subtitle": "I wanna improve people's lives with technology"
         },
         "about": {
             "title": "🧑🏻‍ A bit about me",
+            "me": {
+                "alt": "Rafael photo"
+            },
             "paragraphs": ["My name is Rafael Faustini, I'm a {age} years old italian and brazilian full-stack software developer, bachelor in Information Systems by <a href=\"https://www.unilasalle.edu.br/rj\" class=\"destaque\">Centro Universitário La Salle do Rio de Janeiro</a>, living in Lisbon.", "I started programming when I was 11 years old and never stopped, since then always searching new solutions to new problems."]
         },
         "experience": {

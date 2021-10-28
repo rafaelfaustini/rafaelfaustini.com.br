@@ -5,15 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
         <title>Rafael Faustini</title>
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" type="text/css" href="scss/styles.min.css?1619042644" media="screen" />
+        <link rel="stylesheet" type="text/css" href="scss/styles.min.css?3.8" media="screen" />
     </head>
     <body>
         <div id="app" class="content" v-if="textos" v-cloak>
             <language-check v-if="!Config.isEnglish()"></language-check>
             <alert-error ref="alertError"></alert-error>
-            <header class="menu-bg">
+            <header class="menu-bg" v-if="textos.navbar">
                 <div class="menu">
-                    <div class="menu-logo"><a>{{textos.navbar.brand}} <span v-if="!Config.isProd()" :class="envBadge">{{Config?.environment.toUpperCase()}}</span></a></div>
+                    <div class="menu-logo">
+                        <a>{{textos.navbar.brand}} <span v-if="!Config.isProd()" :class="envBadge">{{Config?.environment.toUpperCase()}}</span></a>
+                    </div>
                     <nav>
                         <ul>
                             <li><a href="#inicio">{{textos.navbar.home}}</a></li>
@@ -21,37 +23,37 @@
                             <li><a href="#portifolio">{{textos.navbar.projects}}</a></li>
                             <li><a href="/blog">{{textos.navbar.blog}}</a></li>
                             <li>
-                                <a :href="textos.navbar.seletor.href" class="seletor"><img loading="lazy" :src="textos.navbar.seletor.img" /></a>
+                                <a :href="textos.navbar.seletor.href" class="seletor"><img loading="lazy" :src="textos.navbar.seletor.img.src" :alt="textos.navbar.seletor.img.alt" /></a>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </header>
-            <section class="inicio" id="inicio">
+            <section class="inicio" id="inicio" v-if="textos.header">
                 <div class="conteudo">
                     <div class="textos">
-                        <h1><img loading="lazy" src="img/brasil.svg" class="bandeira" />{{textos.header.title}}<img loading="lazy" src="img/italia.svg" class="bandeira" /></h1>
+                        <h1><img loading="lazy" :alt="textos.header.flags.brazil_alt" src="img/brasil.svg" class="bandeira" />{{textos.header.title}}<img loading="lazy" :alt="textos.header.flags.italy_alt" src="img/italia.svg" class="bandeira" /></h1>
                         <p>{{textos.header.subtitle}}</p>
                     </div>
                 </div>
             </section>
-            <section class="sobre" id="sobre">
+            <section class="sobre" id="sobre" v-if="textos.about">
                 <div class="conteudo">
                     <div class="sobre-info">
                         <h1>{{textos.about.title}}</h1>
                         <p v-for="paragraph in textos.about.paragraphs" v-html="paragraph"></p>
                     </div>
                     <div class="sobre-img">
-                        <img loading="lazy" src="img/eu.png" alt="Imagem" />
+                        <img loading="lazy" src="img/eu.png" :alt="textos.about.me.alt" />
                     </div>
                 </div>
                 <div class="wave-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" alt="wave">
                         <path fill="#ff5500" fill-opacity="1" d="M0,128L60,133.3C120,139,240,149,360,144C480,139,600,117,720,133.3C840,149,960,203,1080,202.7C1200,203,1320,149,1380,122.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
                     </svg>
                 </div>
             </section>
-            <section class="experiencia">
+            <section class="experiencia" v-if="textos.experience">
                 <div class="conteudo">
                     <div class="sobre-info">
                         <div class="conteudo">
@@ -82,7 +84,7 @@
                     </div>
                 </div>
             </section>
-            <section class="portifolio" id="portifolio">
+            <section class="portifolio" id="portifolio" v-if="textos.projects">
                 <div class="conteudo">
                     <h1>{{textos.projects.title}}</h1>
                     <projetos :placeholder="textos.projects.searchbarPlaceholder"></projetos>
@@ -91,7 +93,7 @@
                     </div>
                 </div>
             </section>
-            <footer class="rodape">
+            <footer class="rodape" v-if="textos.footer">
                 <div class="rodape-wrapper">
                     <ul>
                         <li>{{textos.footer.contact}}</li>
@@ -103,13 +105,13 @@
         <script src="libs/moment/moment.min.js"></script>
         <script src="libs/axios/axios.min.js"></script>
         <script src="../geo.js"></script>
-        <script src="js/utils/Config.js?"></script>
-        <script src="js/utils/ExceptionHandler.js"></script>
-        <script src="js/utils/ContentTextManager.js"></script>
-        <script src="js/components/Projetos.js"></script>
-        <script src="js/components/LanguageCheck.js"></script>
-        <script src="js/components/AlertError.js"></script>
-        <script src="js/components/Modal.js"></script>
-        <script src="js/index.js"></script>
+        <script src="js/utils/Config.js?3.8"></script>
+        <script src="js/utils/ExceptionHandler.js?3.8"></script>
+        <script src="js/utils/ContentTextManager.js?3.8"></script>
+        <script src="js/components/Projetos.js?3.8"></script>
+        <script src="js/components/LanguageCheck.js?3.8"></script>
+        <script src="js/components/AlertError.js?3.8"></script>
+        <script src="js/components/Modal.js?3.8"></script>
+        <script src="js/index.js?3.8"></script>
     </body>
 </html>

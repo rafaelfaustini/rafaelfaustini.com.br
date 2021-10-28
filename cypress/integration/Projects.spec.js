@@ -2,38 +2,33 @@
 
 describe('should have a list of projects', () => {
     beforeEach(() => {
+        cy.intercept('GET', '**/projetos_en.json', { fixture: 'mock-projects.json' });
+        cy.intercept('GET', '**/projetos_pt-br.json', { fixture: 'mock-projects.json' });
         cy.visit('index.html');
     });
 
-    it('list exists and not empty', () => {
+    it('list must have correct length', () => {
         let projects = cy.get('[id^=projetos_] .pj');
-        projects.its('length').should('be.gte', 0);
-    });
-});
-describe('should be able to search for projects', () => {
-    beforeEach(() => {
-        cy.visit('index.html');
+        projects.its('length').should('eq', 3);
     });
 
-    it('search by title', () => {
-        cy.get('input').type('Smartcare');
+    it('search by year', () => {
+        cy.get('input').type('2019');
+        let projects = cy.get('[id^=projetos_] .pj');
+        projects.its('length').should('eq', 2);
+        cy.get('.container-projetos .h3').contains('2019');
+    });
+    it('search by exact title', () => {
+        cy.get('input').type('Project 2');
         let projects = cy.get('[id^=projetos_] .pj');
         projects.its('length').should('eq', 1);
-        cy.get('.container-projetos .h3').contains('SmartCare');
-    });
-    it('search by programming language', () => {
-        cy.get('input').type('Smartcare');
-        let projects = cy.get('[id^=projetos_] .pj');
-        projects.its('length').should('be.gte', 1);
-        cy.get('.container-projetos .h3').contains('Python');
-    });
-});
-describe('should be able to see other projects', () => {
-    beforeEach(() => {
-        cy.visit('index.html');
+        cy.get('.container-projetos .h3').contains('Project 2');
     });
 
-    it('button to redirect to github', () => {
-        cy.get('#portifolio .vejamais > .btn').should('have.attr', 'href', 'https://github.com/rafaelfaustini');
+    it('search by title and check image', () => {
+        cy.get('input').type('Project 1');
+        let projects = cy.get('[id^=projetos_] .pj');
+        projects.its('length').should('eq', 1);
+        cy.get('.container-projetos img').should('have.attr', 'src', 'https://picsum.photos/500');
     });
 });

@@ -41,7 +41,7 @@
 
 ## Styling
 
-For the styling, SASS was used and no external libraries such as bootstrap were. The SASS code was also built in an architecture called [7-1](https://github.com/HugoGiraudel/sass-boilerplate).
+For the styling, SASS was used and no external libraries such as bootstrap were. The SASS code was also built in an architecture called [7-1](https://github.com/HugoGiraudel/sass-boilerplate). 
 
 ## Javascript
 
