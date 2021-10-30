@@ -1,6 +1,11 @@
 /// <reference types="cypress" />
 
 describe('should be in correct environment', () => {
+    beforeEach(() => {
+        cy.intercept('GET', '**/website_en.json', { fixture: 'mock-navbar.json' });
+        cy.intercept('GET', '**/website_pt-br.json', { fixture: 'mock-navbar.json' });
+    });
+
     it('should be in beta', () => {
         cy.intercept('GET', '**/config.json', { fixture: 'beta-config.json' });
         cy.visit('index.html');
