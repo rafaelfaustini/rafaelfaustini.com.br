@@ -1,7 +1,7 @@
-<a href="https://rafaelfaustini.com.br"><h1 align="center">Rafael Faustini</h1></a>
+<a href="https://rafaelfaustini.com"><h1 align="center">Rafael Faustini</h1></a>
 
   <p align="center">
-  This repository showcases the source-code of my <a href="https://rafaelfaustini.com.br">website</a></p>
+  This repository showcases the source-code of my <a href="https://rafaelfaustini.com">website</a></p>
 
   <p align="center">
      <a href="https://github.com/rafaelfaustini/rafaelfaustini.com.br/issues">
@@ -9,6 +9,9 @@
     </a>
      <a href="https://github.com/rafaelfaustini/rafaelfaustini.com.br/pulls">
       <img alt="Issues" src="https://img.shields.io/github/issues-pr/rafaelfaustini/rafaelfaustini.com.br?color=f44336" />
+    </a>
+    <a href="https://dashboard.cypress.io/projects/iem8xz/runs">
+      <img alt="Cypress test status" src="https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/iem8xz&style=for-the-badge&logo=cypress" />
     </a>
   </p>
   <p align="center">
