@@ -22,3 +22,18 @@ jobs:
                   update_odoo_module_version: false
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Gets semantic release info
+                if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
+                id: semantic_release_info
+                uses: jossef/action-semantic-release-info@v1
+                env:
+                    GITHUB_TOKEN: ${{ github.token }}
+
+            - name: Update version in build.json
+                if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
+                uses: jossef/action-set-json-field@v1
+                with:
+                    file: build.json
+                    field: version
+                    value: {{steps.semantic_release_info.outputs.git_tag}}
