@@ -6,6 +6,7 @@ class Config {
     static generalTextsPath = 'config/website_en.json';
     static projectTextsPath = 'config/projetos_en.json';
     static exceptionMessage = 'Unexpected Error, try again later.';
+    static build = null;
 
     static isDev() {
         return this.environment == 'dev';
@@ -23,6 +24,17 @@ class Config {
         return this.language == 'en';
     }
 
+    static async _loadBuild() {
+        try {
+            let build = (await axios.get('build.json')) || null;
+            if (build) {
+                this.build = build.data;
+            }
+        } catch (error) {
+            console.log('Could not load the build file');
+        }
+    }
+
     static _load(response = null) {
         Config.environment = response?.environment || 'dev';
         let lang = response?.language || 'en';
@@ -38,12 +50,14 @@ class Config {
             .then(
                 function (response) {
                     response = response.data;
+                    this._loadBuild();
                     this._load(response);
                     onLoad();
                 }.bind(this)
             )
             .catch(
                 function (error) {
+                    this._loadBuild();
                     this._load();
                     onLoad();
                     // handle error

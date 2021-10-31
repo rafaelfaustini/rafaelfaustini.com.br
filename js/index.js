@@ -4,20 +4,19 @@ var app = new Vue({
     data: {
         created: null,
         refreshcache: String.fromCharCode(Math.floor(Math.random() * 1000)),
-        textos: null
-        },
+        textos: null,
+    },
     async beforeMount() {
         Config.load(this.onConfigLoaded);
     },
-    mounted() {
-    },
+    mounted() {},
     methods: {
-        onTextLoaded(text){
+        onTextLoaded(text) {
             this.textos = text;
         },
         onConfigLoaded() {
-            ContentTextManager.loadText(`${Config.generalTextsPath}`, this.textVariables, this.onTextLoaded)
-        }
+            ContentTextManager.loadText(`${Config.generalTextsPath}`, this.textVariables, this.onTextLoaded);
+        },
     },
     computed: {
         textVariables() {
@@ -29,10 +28,13 @@ var app = new Vue({
             return moment().diff('1999-04-17', 'years');
         },
         envBadge() {
-            let style = {}
+            let style = {};
             style['badge secondary_text badge-sm f7'] = true;
-            style[Config.environment || "null"] = true;
-            return style
-        }
+            style[Config.environment || 'null'] = true;
+            return style;
+        },
+        buildVersion() {
+            return `https://github.com/rafaelfaustini/rafaelfaustini.com.br/releases/tag/${Config.build?.version}`;
+        },
     },
 });
