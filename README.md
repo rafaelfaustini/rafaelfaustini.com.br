@@ -1,7 +1,7 @@
-<a href="https://rafaelfaustini.com.br"><h1 align="center">Rafael Faustini</h1></a>
+<a href="https://rafaelfaustini.com"><h1 align="center">Rafael Faustini</h1></a>
 
   <p align="center">
-  This repository showcases the source-code of my <a href="https://rafaelfaustini.com.br">website</a></p>
+  This repository showcases the source-code of my <a href="https://rafaelfaustini.com">website</a></p>
 
   <p align="center">
      <a href="https://github.com/rafaelfaustini/rafaelfaustini.com.br/issues">
