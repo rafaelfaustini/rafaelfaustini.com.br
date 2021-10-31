@@ -9,7 +9,7 @@
     </head>
     <body>
         <div id="app" class="content" v-if="textos" v-cloak>
-            <language-check v-if="!Config.isEnglish()"></language-check>
+            <language-check v-if="!Config.isEnglish()"> </language-check>
             <alert-error ref="alertError"></alert-error>
             <header class="menu-bg" v-if="textos.navbar">
                 <div class="menu">
