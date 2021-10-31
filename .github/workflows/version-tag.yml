@@ -11,6 +11,8 @@ jobs:
 
         steps:
             - uses: actions/checkout@v2
+            with:
+                  fetch-depth: 0
 
             - name: Create an incremental release
               if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
@@ -23,15 +25,13 @@ jobs:
               env:
                   GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-            - name: Gets semantic release info
-              id: semantic_release_info
-              uses: jossef/action-semantic-release-info@v1
-              env:
-                  GITHUB_TOKEN: ${{github.token}}
+            - name: 'Get Previous tag'
+              id: previoustag
+              uses: "WyriHaximus/github-action-get-previous-tag@v1"
 
             - name: Update version in build.json
               uses: jossef/action-set-json-field@v1
               with:
                   file: build.json
                   field: version
-                  value: ${{steps.semantic_release_info.outputs.git_tag}}
+                  value: ${{steps.previoustag.outputs.tag}}
