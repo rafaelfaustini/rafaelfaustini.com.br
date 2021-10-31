@@ -39,10 +39,11 @@ jobs:
               run: |
                   git config --local user.email "action@github.com"
                   git config --local user.name "GitHub Action"
-                  git add -A
+                  git add build.json
                   git commit -m "Updating build.json"
 
             - name: Push changes
               uses: ad-m/github-push-action@v0.6.0
               with:
                   github_token: ${{ github.token }}
+                  branch: main
