@@ -11,9 +11,8 @@ jobs:
 
         steps:
             - uses: actions/checkout@v2
-            with:
+              with:
                   fetch-depth: 0
-
             - name: Create an incremental release
               if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
               uses: aurestic/incrementarl-create-release@master
@@ -27,7 +26,7 @@ jobs:
 
             - name: 'Get Previous tag'
               id: previoustag
-              uses: "WyriHaximus/github-action-get-previous-tag@v1"
+              uses: 'WyriHaximus/github-action-get-previous-tag@v1'
 
             - name: Update version in build.json
               uses: jossef/action-set-json-field@v1
