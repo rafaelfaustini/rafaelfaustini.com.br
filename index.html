@@ -97,6 +97,7 @@
                 <div class="rodape-wrapper">
                     <ul>
                         <li>{{textos.footer.contact}}</li>
+                        <li v-if="Config.build?.version && !Config.isDev()"><a :href="buildVersion">{{Config.build.version}}</a></li>
                     </ul>
                 </div>
             </footer>
