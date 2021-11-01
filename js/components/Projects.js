@@ -77,14 +77,14 @@ Vue.component('projects', {
             let result;
             if (this.filter) {
                 result = this.projects.filter(item => {
-                    let result = false;
+                    let filterResult = false;
                     for (var [, value] of Object.entries(item)) {
                         // To be reworked
                         if (typeof value === 'string') {
-                            result = result || value.toLowerCase().trim().includes(this.filter.toLowerCase().trim());
+                            filterResult = filterResult || value.toLowerCase().trim().includes(this.filter.toLowerCase().trim());
                         }
                     }
-                    return result;
+                    return filterResult;
                 });
             } else {
                 result = this.projects;
