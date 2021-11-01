@@ -37,5 +37,11 @@ var app = new Vue({
         buildVersion() {
             return `https://github.com/rafaelfaustini/rafaelfaustini.com.br/releases/tag/${Config.build?.version}`;
         },
+        antiCaching() {
+            if (!Config.build?.version) {
+                return this.refreshcache;
+            }
+            return `${Config.build?.version}`;
+        },
     },
 });

@@ -78,7 +78,7 @@
                                 </div>
                             </div>
                             <div class="experience-buttons">
-                                <a v-if="Config.build?.version" :href="`${content.text.experience.resume.href}?${Config.build?.version}`" class="btn btn-lg btn-secondary" data-cy="resume-button">{{content.text.experience.resume.text}}</a>
+                                <a :href="`${content.text.experience.resume.href}?${antiCaching}`" class="btn btn-lg btn-secondary" data-cy="resume-button">{{content.text.experience.resume.text}}</a>
                             </div>
                         </div>
                     </div>
