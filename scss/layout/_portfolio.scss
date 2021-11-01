@@ -1,20 +1,20 @@
-.portifolio{
+.portfolio {
     background-color: #fff;
 }
 
-.portifolio .conteudo {
+.portfolio .conteudo {
     max-width: 1242px;
     margin: 0 auto;
     padding: 40px 10px 5px 10px;
-    h1{
+    h1 {
         text-align: center;
     }
-    .vejamais{
+    .vejamais {
         margin-top: 5px;
     }
 }
 
-.portifolio .conteudo .projetos{
+.portfolio .conteudo .projetos {
     margin: 0 auto;
     max-width: 1300px;
     display: flex;
@@ -22,7 +22,7 @@
     align-items: center;
     justify-content: center;
 
-    .card-img{
+    .card-img {
         flex: 1 1 300px;
         margin: 5px 10px;
     }

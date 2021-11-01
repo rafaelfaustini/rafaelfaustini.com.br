@@ -19,8 +19,8 @@
                     <nav>
                         <ul>
                             <li><a href="#header">{{textos.navbar.home}}</a></li>
-                            <li><a href="#sobre">{{textos.navbar.about}}</a></li>
-                            <li><a href="#portifolio">{{textos.navbar.projects}}</a></li>
+                            <li><a href="#about">{{textos.navbar.about}}</a></li>
+                            <li><a href="#portfolio">{{textos.navbar.projects}}</a></li>
                             <li><a href="/blog">{{textos.navbar.blog}}</a></li>
                             <li>
                                 <a :href="textos.navbar.seletor.href" class="seletor"><img loading="lazy" :src="textos.navbar.seletor.img.src" :alt="textos.navbar.seletor.img.alt" /></a>
@@ -37,13 +37,13 @@
                     </div>
                 </div>
             </section>
-            <section class="sobre" id="sobre" v-if="textos.about">
+            <section class="about" id="about" v-if="textos.about">
                 <div class="conteudo">
-                    <div class="sobre-info">
+                    <div class="about-info">
                         <h1>{{textos.about.title}}</h1>
                         <p v-for="paragraph in textos.about.paragraphs" v-html="paragraph"></p>
                     </div>
-                    <div class="sobre-img">
+                    <div class="about-img">
                         <img loading="lazy" src="img/eu.png" :alt="textos.about.me.alt" />
                     </div>
                 </div>
@@ -53,9 +53,9 @@
                     </svg>
                 </div>
             </section>
-            <section class="experiencia" v-if="textos.experience">
+            <section class="experience" v-if="textos.experience">
                 <div class="conteudo">
-                    <div class="sobre-info">
+                    <div class="about-info">
                         <div class="conteudo">
                             <h1>{{textos.experience.title}}</h1>
                             <div class="funcoes-atuais">
@@ -69,7 +69,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="experiencia-anterior">
+                            <div class="experience-anterior">
                                 <div v-for="exp in textos.experience.past" class="card">
                                     <div class="card-title"><h2>{{exp.title}}</h2></div>
                                     <div class="card-body">
@@ -77,14 +77,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="experiencia-botoes">
+                            <div class="experience-botoes">
                                 <a :href="`${textos.experience.resume.href}?1619037077${refreshcache}`" class="btn btn-lg btn-secondary">{{textos.experience.resume.text}}</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="portifolio" id="portifolio" v-if="textos.projects">
+            <section class="portfolio" id="portfolio" v-if="textos.projects">
                 <div class="conteudo">
                     <h1>{{textos.projects.title}}</h1>
                     <projects :placeholder="textos.projects.searchbarPlaceholder"></projects>

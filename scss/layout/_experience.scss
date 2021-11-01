@@ -1,4 +1,4 @@
-.experiencia {
+.experience {
     background-color: $primary-color;
     .conteudo {
         max-width: 1242px;
@@ -36,7 +36,7 @@
                 }
             }
         }
-        .experiencia-anterior {
+        .experience-anterior {
             max-width: 1042px;
             margin: 0 auto;
             display: flex;
@@ -67,7 +67,7 @@
                 }
             }
         }
-        .experiencia-botoes {
+        .experience-botoes {
             flex: 1 1 300px;
             margin: 5px 10px;
             max-width: 242px;
@@ -84,7 +84,7 @@
 }
 
 @media (max-width: 900px) {
-    .experiencia {
+    .experience {
         .conteudo h1 {
             text-align: center;
         }
