@@ -74,8 +74,7 @@
         },
         "projects": {
             "title": "Portfólio",
-            "github": "Veja mais no meu Github",
-            "searchbarPlaceholder": "Busque por uma palavra chave, tecnologia ou ano"
+            "github": "Veja mais no meu Github"
         },
         "footer": {
             "contact": "📬 contato@rafaelfaustini.com.br"
