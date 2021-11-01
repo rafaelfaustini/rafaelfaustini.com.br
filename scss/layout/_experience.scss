@@ -1,6 +1,6 @@
 .experience {
     background-color: $primary-color;
-    .conteudo {
+    .content {
         max-width: 1242px;
         margin: 0 auto;
         padding: 0px 0 5px 0;
@@ -85,7 +85,7 @@
 
 @media (max-width: 900px) {
     .experience {
-        .conteudo h1 {
+        .content h1 {
             text-align: center;
         }
     }

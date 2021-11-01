@@ -1,7 +1,7 @@
 .about {
     background-color: $background-color;
 }
-.about .conteudo {
+.about .content {
     max-width: 1242px;
     margin: 0 auto;
     padding: 60px 0 20px 0;
@@ -58,7 +58,7 @@
 
 @media (max-width: 900px) {
     .about {
-        .conteudo h1 {
+        .content h1 {
             text-align: center;
         }
     }

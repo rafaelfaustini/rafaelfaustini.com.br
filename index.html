@@ -30,7 +30,7 @@
                 </div>
             </header>
             <section class="header" id="header" v-if="textos.header">
-                <div class="conteudo">
+                <div class="content">
                     <div class="textos">
                         <h1><img loading="lazy" :alt="textos.header.flags.brazil_alt" src="img/brasil.svg" class="bandeira" />{{textos.header.title}}<img loading="lazy" :alt="textos.header.flags.italy_alt" src="img/italia.svg" class="bandeira" /></h1>
                         <p>{{textos.header.subtitle}}</p>
@@ -38,7 +38,7 @@
                 </div>
             </section>
             <section class="about" id="about" v-if="textos.about">
-                <div class="conteudo">
+                <div class="content">
                     <div class="about-info">
                         <h1>{{textos.about.title}}</h1>
                         <p v-for="paragraph in textos.about.paragraphs" v-html="paragraph"></p>
@@ -54,9 +54,9 @@
                 </div>
             </section>
             <section class="experience" v-if="textos.experience">
-                <div class="conteudo">
+                <div class="content">
                     <div class="about-info">
-                        <div class="conteudo">
+                        <div class="content">
                             <h1>{{textos.experience.title}}</h1>
                             <div class="funcoes-atuais">
                                 <div v-for="exp in textos.experience.current" class="card">
@@ -85,7 +85,7 @@
                 </div>
             </section>
             <section class="portfolio" id="portfolio" v-if="textos.projects">
-                <div class="conteudo">
+                <div class="content">
                     <h1>{{textos.projects.title}}</h1>
                     <projects :placeholder="textos.projects.searchbarPlaceholder"></projects>
                     <div class="vejamais">
