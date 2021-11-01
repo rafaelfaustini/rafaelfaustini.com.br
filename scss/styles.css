@@ -785,14 +785,14 @@ body {
   background: #f2f2f2;
 }
 
-.content {
+.page-content {
   margin: 10px;
   background: #fff;
   border-radius: 16px;
 }
 
 @media (max-width: 600px) {
-  .content {
+  .page-content {
     border-radius: 0;
     margin: 0;
   }
@@ -803,7 +803,7 @@ body {
 }
 
 [v-cloak]::before {
-  content: "";
+  content: '';
 }
 
 html,

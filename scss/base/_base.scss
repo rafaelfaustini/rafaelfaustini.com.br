@@ -3,22 +3,22 @@
 // Root elements
 html,
 body {
-	background: $outer-background-color;
+    background: $outer-background-color;
 }
-.content {
-	margin: 10px;
-	background: $background-color;
-	border-radius: 16px;
+.page-content {
+    margin: 10px;
+    background: $background-color;
+    border-radius: 16px;
 }
 @media (max-width: 600px) {
-	.content {
-		border-radius: 0;
-		margin: 0;
-	}
+    .page-content {
+        border-radius: 0;
+        margin: 0;
+    }
 }
 [v-cloak] > * {
-	display: none;
+    display: none;
 }
 [v-cloak]::before {
-	content: "";
+    content: '';
 }
