@@ -2,11 +2,11 @@ class LocalStorageJSONHandler {
     static expiryTime = 6.048e8;
 
     static isVersionExpired(obj) {
-        return obj.expiry < Date.now();
+        return obj?.expiry < Date.now();
     }
 
     static isVersionPassed(obj) {
-        return obj.version != Config.build.version;
+        return obj?.version != Config.build?.version;
     }
 
     static get(key, callback) {
