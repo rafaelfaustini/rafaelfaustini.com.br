@@ -40,26 +40,8 @@ Vue.component('projects', {
                     }.bind(this)
                 );
         },
-    },
-    computed: {
-        filteredProjects: function () {
-            if (!this.projects) {
-                return [];
-            }
-            let result;
-            if (this.filter) {
-                result = this.projects.filter(item => {
-                    let result = false;
-                    for (var [, value] of Object.entries(item)) {
-                        if (typeof value === 'string') {
-                            result = result || value.toLowerCase().trim().includes(this.filter.toLowerCase().trim());
-                        }
-                    }
-                    return result;
-                });
-            } else {
-                result = this.projects;
-            }
+
+        sortProjects(projects) {
             let sortBy = [
                 {
                     prop: 'year',
@@ -74,15 +56,40 @@ Vue.component('projects', {
                     direction: 1,
                 },
             ];
-            return result.sort(function (a, b) {
-                let i = 0,
-                    result = 0;
+
+            return projects.sort(function (a, b) {
+                let i = 0;
+                let result = 0;
                 while (i < sortBy.length && result === 0) {
+                    // To be reworked
                     result = sortBy[i].direction * (a[sortBy[i].prop].toString() < b[sortBy[i].prop].toString() ? -1 : a[sortBy[i].prop].toString() > b[sortBy[i].prop].toString() ? 1 : 0);
                     i++;
                 }
                 return result;
             });
+        },
+    },
+    computed: {
+        filteredProjects: function () {
+            if (!this.projects) {
+                return [];
+            }
+            let result;
+            if (this.filter) {
+                result = this.projects.filter(item => {
+                    let result = false;
+                    for (var [, value] of Object.entries(item)) {
+                        // To be reworked
+                        if (typeof value === 'string') {
+                            result = result || value.toLowerCase().trim().includes(this.filter.toLowerCase().trim());
+                        }
+                    }
+                    return result;
+                });
+            } else {
+                result = this.projects;
+            }
+            return this.sortProjects(result);
         },
     },
     template: `
