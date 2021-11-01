@@ -1147,7 +1147,7 @@ body {
   font-size: 1.5em;
 }
 
-.header .content .texts .bandeira {
+.header .content .texts .flag {
   display: inline;
   vertical-align: center;
   margin: 10px;
@@ -1156,7 +1156,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  .header .content .texts .bandeira {
+  .header .content .texts .flag {
     display: none;
   }
 }
