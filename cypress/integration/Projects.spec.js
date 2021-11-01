@@ -10,23 +10,23 @@ describe('should have a list of projects', () => {
     });
 
     it('list must have correct length', () => {
-        cy.get('[id^=projetos_] .pj').should('have.length', 3);
+        cy.get('[data-cy=project]').should('have.length', 3);
     });
 
     it('search by year', () => {
-        cy.get('input').type('2019');
-        cy.get('[id^=projetos_] .pj').its('length').should('eq', 2);
-        cy.get('.container-projetos .h3').contains('2019');
+        cy.get('[data-cy=projects-search]').type('2019');
+        cy.get('[data-cy=project]').its('length').should('eq', 2);
+        cy.get('[data-cy=project-year]').contains('2019');
     });
     it('search by exact title', () => {
-        cy.get('input').type('Project 2');
-        cy.get('[id^=projetos_] .pj').its('length').should('eq', 1);
-        cy.get('.container-projetos .h3').contains('Project 2');
+        cy.get('[data-cy=projects-search]').type('Project 2');
+        cy.get('[data-cy=project]').its('length').should('eq', 1);
+        cy.get('[data-cy=project-title]').contains('Project 2');
     });
 
     it('search by title and check image', () => {
-        cy.get('input').type('Project 1');
-        cy.get('[id^=projetos_] .pj').its('length').should('eq', 1);
-        cy.get('.container-projetos img').should('have.attr', 'src', 'https://picsum.photos/500');
+        cy.get('[data-cy=projects-search]').type('Project 1');
+        cy.get('[data-cy=project]').its('length').should('eq', 1);
+        cy.get('[data-cy=project-img]').should('have.attr', 'src', 'https://picsum.photos/500');
     });
 });
