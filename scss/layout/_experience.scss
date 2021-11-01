@@ -8,7 +8,7 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        .funcoes-atuais {
+        .current-work {
             max-width: 1242px;
             margin: 0 auto;
             padding: 60px 0;
@@ -36,7 +36,7 @@
                 }
             }
         }
-        .experience-anterior {
+        .past-works {
             max-width: 1042px;
             margin: 0 auto;
             display: flex;
@@ -67,7 +67,7 @@
                 }
             }
         }
-        .experience-botoes {
+        .experience-buttons {
             flex: 1 1 300px;
             margin: 5px 10px;
             max-width: 242px;

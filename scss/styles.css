@@ -993,7 +993,7 @@ body {
   justify-content: center;
 }
 
-.experience .content .funcoes-atuais {
+.experience .content .current-work {
   max-width: 1242px;
   margin: 0 auto;
   padding: 60px 0;
@@ -1003,29 +1003,29 @@ body {
   justify-content: center;
 }
 
-.experience .content .funcoes-atuais .card {
+.experience .content .current-work .card {
   flex: 1 1 100px;
   margin: 5px 10px;
   height: 369px;
 }
 
-.experience .content .funcoes-atuais .card p {
+.experience .content .current-work .card p {
   line-height: normal;
   margin-bottom: 0.7em;
 }
 
-.experience .content .funcoes-atuais .card:last-child:not(:nth-child(odd)) {
+.experience .content .current-work .card:last-child:not(:nth-child(odd)) {
   min-height: 269px;
 }
 
 @media (max-width: 900px) {
-  .experience .content .funcoes-atuais .card {
+  .experience .content .current-work .card {
     flex: 0 0 100%;
     overflow-y: auto;
   }
 }
 
-.experience .content .experience-anterior {
+.experience .content .past-works {
   max-width: 1042px;
   margin: 0 auto;
   display: flex;
@@ -1034,34 +1034,34 @@ body {
   justify-content: center;
 }
 
-.experience .content .experience-anterior .card {
+.experience .content .past-works .card {
   flex: 1 1 300px;
   margin: 5px 10px;
   height: 469px;
 }
 
-.experience .content .experience-anterior .card p {
+.experience .content .past-works .card p {
   line-height: normal;
   margin-bottom: 0.7em;
 }
 
-.experience .content .experience-anterior .card:last-child:not(:nth-child(odd)) {
+.experience .content .past-works .card:last-child:not(:nth-child(odd)) {
   min-height: 169px;
   height: auto;
 }
 
 @media (max-width: 900px) {
-  .experience .content .experience-anterior .card {
+  .experience .content .past-works .card {
     height: 469px;
     overflow-y: auto;
   }
-  .experience .content .experience-anterior .card:last-child:not(:nth-child(odd)) {
+  .experience .content .past-works .card:last-child:not(:nth-child(odd)) {
     height: 469px;
     overflow-y: auto;
   }
 }
 
-.experience .content .experience-botoes {
+.experience .content .experience-buttons {
   flex: 1 1 300px;
   margin: 5px 10px;
   max-width: 242px;
@@ -1071,7 +1071,7 @@ body {
   justify-content: center;
 }
 
-.experience .content .experience-botoes button {
+.experience .content .experience-buttons button {
   flex: 1 1 300px;
   margin: 20px 10px;
 }

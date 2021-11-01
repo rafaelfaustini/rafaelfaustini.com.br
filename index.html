@@ -58,27 +58,27 @@
                     <div class="about-info">
                         <div class="content">
                             <h1>{{textos.experience.title}}</h1>
-                            <div class="funcoes-atuais">
-                                <div v-for="exp in textos.experience.current" class="card">
+                            <div class="current-work" data-cy="current-works">
+                                <div v-for="exp in textos.experience.current" class="card" data-cy="current-work">
                                     <div class="card-title">
-                                        <h2>{{exp.title}}</h2>
+                                        <h2 data-cy="current-work-title">{{exp.title}}</h2>
                                     </div>
                                     <div class="card-body">
-                                        <p v-for="topic in exp.topics">- {{topic}}</p>
-                                        <a v-if="exp.button" :href="exp.button.href" class="btn btn-secondary">{{exp.button.text}}</a>
+                                        <p v-for="topic in exp.topics" data-cy="current-work-topic">- {{topic}}</p>
+                                        <a v-if="exp.button" :href="exp.button.href" class="btn btn-secondary" data-cy="current-work-btn">{{exp.button.text}}</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="experience-anterior">
-                                <div v-for="exp in textos.experience.past" class="card">
-                                    <div class="card-title"><h2>{{exp.title}}</h2></div>
+                            <div class="past-works" data-cy="past-works">
+                                <div v-for="exp in textos.experience.past" class="card" data-cy="past-work">
+                                    <div class="card-title"><h2 data-cy="past-work-title">{{exp.title}}</h2></div>
                                     <div class="card-body">
-                                        <p v-for="topic in exp.topics">- {{topic}}</p>
+                                        <p v-for="topic in exp.topics" data-cy="past-work-topic">- {{topic}}</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="experience-botoes">
-                                <a :href="`${textos.experience.resume.href}?1619037077${refreshcache}`" class="btn btn-lg btn-secondary">{{textos.experience.resume.text}}</a>
+                            <div class="experience-buttons">
+                                <a :href="`${textos.experience.resume.href}?1619037077${refreshcache}`" class="btn btn-lg btn-secondary" data-cy="resume-button">{{textos.experience.resume.text}}</a>
                             </div>
                         </div>
                     </div>
