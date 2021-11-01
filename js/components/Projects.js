@@ -1,14 +1,12 @@
 'use strict';
 Vue.component('projects', {
     props: {
-        tamanho: { type: Number, default: 50 },
         placeholder: { type: String },
     },
     data: function () {
         return {
             projects: [],
             filter: '',
-            placeholder: '',
         };
     },
     beforeMount() {
@@ -44,13 +42,13 @@ Vue.component('projects', {
         },
     },
     computed: {
-        filtrada: function () {
+        filteredProjects: function () {
             if (!this.projects) {
                 return [];
             }
-            let resultado;
+            let result;
             if (this.filter) {
-                resultado = this.projects.filter(item => {
+                result = this.projects.filter(item => {
                     let result = false;
                     for (var [, value] of Object.entries(item)) {
                         if (typeof value === 'string') {
@@ -60,7 +58,7 @@ Vue.component('projects', {
                     return result;
                 });
             } else {
-                resultado = this.projects;
+                result = this.projects;
             }
             let sortBy = [
                 {
@@ -76,7 +74,7 @@ Vue.component('projects', {
                     direction: 1,
                 },
             ];
-            return resultado.sort(function (a, b) {
+            return result.sort(function (a, b) {
                 let i = 0,
                     result = 0;
                 while (i < sortBy.length && result === 0) {
@@ -98,8 +96,8 @@ Vue.component('projects', {
 				</div>
 			</div>
 		</div>
-		<div id="projetos_" class="project-inner" data-cy="projects-inner" >
-			<div class="pj" v-for="project in filtrada">
+		<div class="project-inner" data-cy="projects-inner" >
+			<div class="pj" v-for="project in filteredProjects">
 				<project :data="project"></project>
 				<hr class="text-white">
 			</div>
