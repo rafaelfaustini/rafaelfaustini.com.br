@@ -1,2 +1,37 @@
-// Header
-
+.header {
+    background-color: $primary-color;
+    height: 85vh;
+    animation: circle-out 0.65s;
+}
+.header .conteudo {
+    //max-width: 1242px;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    .textos {
+        flex: 11 1 100px;
+    }
+    .textos h1 {
+        text-align: center;
+        font-size: 3.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .textos p {
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .textos .bandeira {
+        display: inline;
+        vertical-align: center;
+        margin: 10px;
+        width: 1em;
+        height: 1em;
+        @media (max-width: 600px) {
+            display: none;
+        }
+    }
+}

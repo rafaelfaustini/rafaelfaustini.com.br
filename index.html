@@ -18,7 +18,7 @@
                     </div>
                     <nav>
                         <ul>
-                            <li><a href="#inicio">{{textos.navbar.home}}</a></li>
+                            <li><a href="#header">{{textos.navbar.home}}</a></li>
                             <li><a href="#sobre">{{textos.navbar.about}}</a></li>
                             <li><a href="#portifolio">{{textos.navbar.projects}}</a></li>
                             <li><a href="/blog">{{textos.navbar.blog}}</a></li>
@@ -29,7 +29,7 @@
                     </nav>
                 </div>
             </header>
-            <section class="inicio" id="inicio" v-if="textos.header">
+            <section class="header" id="header" v-if="textos.header">
                 <div class="conteudo">
                     <div class="textos">
                         <h1><img loading="lazy" :alt="textos.header.flags.brazil_alt" src="img/brasil.svg" class="bandeira" />{{textos.header.title}}<img loading="lazy" :alt="textos.header.flags.italy_alt" src="img/italia.svg" class="bandeira" /></h1>
