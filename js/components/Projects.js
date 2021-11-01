@@ -1,5 +1,5 @@
 'use strict';
-Vue.component('projetos', {
+Vue.component('projects', {
     props: {
         tamanho: { type: Number, default: 50 },
         placeholder: { type: String },
