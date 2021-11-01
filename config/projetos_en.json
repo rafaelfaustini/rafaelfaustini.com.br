@@ -9,54 +9,66 @@
             },
             "year": "2020",
             "highlight": true,
-            "linguagem": "Python",
+            "language": "Python",
             "description": "The objective is the creation of an inteligent system to detect and mitigate agitation behavior of alzheimer's patients. My role in the project is machine learning and data analytics. Based on the movimentation data, it's possible to infer through pattern detection abnormal behaviour.",
             "source": {
                 "name": "Source-Code",
                 "src": "https://github.com/Unilasalle-SmartCare/smartcare-machinelearning"
             },
-            "site": "https://arxiv.org/abs/2012.12987",
-            "siteName": "Paper preprint",
-            "fundo": "#673AB7",
-            "height": "30"
+            "site": {
+                "name": "Paper preprint",
+                "url": "https://arxiv.org/abs/2012.12987"
+            },
+            "style": {
+                "backgroundColor": "#673AB7",
+                "height": "30"
+            }
         },
         {
             "title": "Cat or dog ?",
-            "imagem": null,
+            "image": null,
             "year": "2020",
             "highlight": false,
-            "linguagem": "Python",
+            "language": "Python",
             "description": "Deep Learning to classify pictures of dogs and cats",
             "source": {
                 "name": "Source-Code",
                 "src": "https://github.com/rafaelfaustini/machinelearning-python/tree/master/cnn/CatorDog"
             },
-            "site": "/catdog",
-            "siteName": "Preview",
-            "fundo": "#673AB7",
-            "height": "30"
+            "site": {
+                "name": "Preview",
+                "url": "/catdog"
+            },
+            "style": {
+                "backgroundColor": "#673AB7",
+                "height": "30"
+            }
         },
         {
             "title": "Minify Your CSS",
-            "imagem": null,
+            "image": null,
             "year": "2020",
-            "linguagem": "Vue",
+            "language": "Vue",
             "highlight": false,
             "description": "Tool made with javascript to minify css in real-time",
             "source": {
                 "name": "Source-Code",
                 "src": "https://github.com/rafaelfaustini/css-minify"
             },
-            "site": "/minify",
-            "siteName": "Preview",
-            "fundo": "#03A9F4",
-            "height": "30"
+            "site": {
+                "name": "Preview",
+                "url": "/minify"
+            },
+            "style": {
+                "backgroundColor": "#03A9F4",
+                "height": "30"
+            }
         },
         {
             "title": "Gas Gun",
-            "imagem": null,
+            "image": null,
             "year": "2020",
-            "linguagem": "C#",
+            "language": "C#",
             "highlight": false,
             "description": "Script for Grand Theft Auto V Game that when activated replaces granades from the granade launcher to teargas or bzgas",
             "source": {
@@ -64,98 +76,115 @@
                 "src": "https://github.com/rafaelfaustini/gasgun"
             },
             "site": null,
-            "siteName": "Preview",
-            "fundo": "#FF5722",
-            "height": "30"
+            "style": {
+                "backgroundColor": "#FF5722",
+                "height": "30"
+            }
         },
         {
             "title": "Traveler Salesman",
-            "imagem": null,
+            "image": null,
             "year": "2019",
-            "linguagem": "Javascript",
+            "language": "Javascript",
             "highlight": false,
             "description": "A genetic algorithm that tries to solve the <b>Traveler Salesman</b> problem by predicting the best path",
             "source": {
                 "name": "Documentation with code",
                 "src": "../docs/caixeiroviajante.pdf"
             },
-            "site": "/caixeiroviajante",
-            "siteName": "Preview",
-            "fundo": "#009688",
-            "height": "30"
+            "site": {
+                "name": "Preview",
+                "url": "/caixeiroviajante"
+            },
+            "style": {
+                "backgroundColor": "#009688",
+                "height": "30"
+            }
         },
         {
             "title": "TheSortingHat",
-            "imagem": null,
+            "image": null,
             "year": "2018",
-            "linguagem": "Java",
+            "language": "Java",
             "highlight": false,
             "description": "CratBukkit is a software modification for Minecraft Servers. TheSortingHat is a plugin bukkit that makes possible random pick between configurated command. The name is inspired in Harry Potter since the functionality is very similar to the<a href=\"https://harrypotter.fandom.com/wiki/Sorting_Hat\">sorting hat</a>",
             "source": {
                 "name": "Source-Code",
                 "src": "https://github.com/rafaelfaustini/TheSortingHat"
             },
-            "site": "https://dev.bukkit.org/projects/TheSortingHat",
-            "siteName": "Official Builds",
-            "fundo": "#3F51B5",
-            "height": "30"
+            "site": {
+                "name": "Official Builds",
+                "url": "https://dev.bukkit.org/projects/TheSortingHat"
+            },
+            "style": {
+                "backgroundColor": "#3F51B5",
+                "height": "30"
+            }
         },
         {
             "title": "Anima !?",
-            "imagem": {
+            "image": {
                 "src": "img/projetos/anima.svg",
                 "alt": "Anima Logo"
             },
             "year": "2018",
-            "linguagem": "PHP",
+            "language": "PHP",
             "highlight": false,
             "description": "Transport pooling web app made for La Salle Rj's university. Presented in 2018's science and technology week of La Salle RJ. I was a fullstack developer",
             "source": {
                 "name": "Source-Code",
                 "src": "https://github.com/rafaelfaustini/anima"
             },
-            "site": "/anima",
-            "siteName": "Preview",
-            "fundo": "#27ae60",
-            "height": "30"
+            "site": {
+                "name": "Preview",
+                "url": "/anima"
+            },
+            "style": {
+                "backgroundColor": "#27ae60",
+                "height": "30"
+            }
         },
         {
             "title": "Text-gene",
-            "imagem": {
+            "image": {
                 "src": "img/projetos/SnizerGene.webp",
                 "alt": "Snizer Gene Logo"
             },
             "year": "2018",
             "highlight": false,
-            "linguagem": "Javascript",
+            "language": "Javascript",
             "description": "<p class=\"showcase__description mb-4 color-gray\">Genetic algorithm based on <a href=\"https://en.wikipedia.org/wiki/Infinite_monkey_theorem\">Infinite monkey theorem</a>.</p><p> It discovers the typed text in a better way than bruteforcing</p>",
             "source": {
                 "name": "Source-Code",
                 "src": "https://github.com/rafaelfaustini/text-gene"
             },
-            "site": "https://snizer.com.br/gene",
-            "siteName": "Preview",
-            "fundo": "#ee6002",
-            "height": "30"
+            "site": {
+                "name": "Preview",
+                "url": "https://snizer.com.br/gene"
+            },
+            "style": {
+                "backgroundColor": "#ee6002",
+                "height": "30"
+            }
         },
         {
             "title": "Snizer Hiit",
-            "imagem": {
+            "image": {
                 "src": "img/projetos/SnizerHiit.webp",
                 "alt": "Snizer Hiit Logo"
             },
             "year": "2017",
             "highlight": false,
-            "linguagem": "Delphi",
+            "language": "Delphi",
             "description": "Snizer Hiit is an android application that brings a timer to make easier your time control during interval training, with TextToSpeech warnings to help you alternate the trains",
-            "source": "https://github.com/rafaelfaustini/snizerhiit",
-            "sourceName": "Source-Code",
             "source": {
                 "name": "Source-Code",
                 "src": "https://github.com/rafaelfaustini/snizerhiit"
             },
-            "fundo": "#ee6002",
-            "height": "30"
+            "style": {
+                "backgroundColor": "#ee6002",
+                "height": "30"
+            }
         }
     ]
 }

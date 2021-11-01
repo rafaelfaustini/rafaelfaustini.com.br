@@ -88,23 +88,23 @@ Vue.component('projetos', {
         },
     },
     template: `
-    <div data-cy="projects">
-        <div class="container section">
-        <div class="row">
-          <div class="col-md-12 py-2">
-            <div class="md-input">
-                <input v-model="filter" required></input>
-                <label>{{placeholder}}</label>
-            </div>
-          </div>
-        </div>   
-        <div id="projetos_" class="project-inner" data-cy="projects_inner" >
-            <div class="pj" v-for="project in filtrada">
-                <project :data="project"></project>    
-                <hr class="text-white">
-            </div>
-        </div>
-    </div>
-    </div>
+<div data-cy="projects">
+	<div class="container section">
+		<div class="row">
+			<div class="col-md-12 py-2">
+				<div class="md-input">
+					<input v-model="filter" data-cy="projects-search" required></input>
+					<label data-cy="projects_placeholder">{{placeholder}}</label>
+				</div>
+			</div>
+		</div>
+		<div id="projetos_" class="project-inner" data-cy="projects-inner" >
+			<div class="pj" v-for="project in filtrada">
+				<project :data="project"></project>
+				<hr class="text-white">
+			</div>
+		</div>
+	</div>
+</div>
     `,
 });
