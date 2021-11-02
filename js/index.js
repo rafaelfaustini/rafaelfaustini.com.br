@@ -11,6 +11,11 @@ var app = new Vue({
     },
     mounted() {},
     methods: {
+        isLoaded() {
+            let isBuildVersion = Config.build?.version != null;
+            let isContentText = this.content?.text != null;
+            return isBuildVersion && isContentText;
+        },
         onTextLoaded(text) {
             this.content = {};
             this.content.text = text;

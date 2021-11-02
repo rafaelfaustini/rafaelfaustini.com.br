@@ -8,7 +8,8 @@
         <link rel="stylesheet" type="text/css" href="scss/styles.min.css?3.8" media="screen" />
     </head>
     <body>
-        <div id="app" class="page-content" v-if="content?.text" v-cloak>
+        <div id="app" class="page-content" v-cloak>
+            <loader v-if="isLoaded()"></loader>
             <language-check v-if="!Config.isEnglish()"> </language-check>
             <alert-error ref="alertError"></alert-error>
             <header class="menu-bg" v-if="content.text?.navbar">
@@ -111,6 +112,7 @@
         <script src="js/utils/Logger.js"></script>
         <script src="js/utils/ExceptionHandler.js?3.8"></script>
         <script src="js/utils/ContentTextManager.js?3.8"></script>
+        <script src="js/components/Loader.js"></script>
         <script src="js/components/Project.js?3.8"></script>
         <script src="js/components/Projects.js?3.8"></script>
         <script src="js/components/LanguageCheck.js?3.8"></script>

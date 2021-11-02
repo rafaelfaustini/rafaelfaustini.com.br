@@ -1436,6 +1436,93 @@ input:focus + label {
   color: #1375e4;
 }
 
+.page-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #292828;
+  z-index: 999;
+}
+
+.cube {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.cube:nth-child(1) {
+  background-color: #e65050;
+}
+
+.cube:nth-child(2) {
+  background-color: #50e650;
+}
+
+.cube:nth-child(3) {
+  background-color: #5050e6;
+}
+
+.cube:nth-child(4) {
+  background-color: #e69b50;
+}
+
+.cube:first-child {
+  animation: up 1s infinite 0.15s;
+}
+
+.cube:nth-child(2) {
+  animation: up 1s infinite 0.5s;
+}
+
+.cube:nth-child(3) {
+  animation: up 1s infinite 0.15s;
+}
+
+.cube:last-child {
+  animation: up 1s infinite 0.5s;
+}
+
+@keyframes up {
+  40% {
+    transform: translateY(-60px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes down {
+  40% {
+    transform: translateY(60px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes left {
+  40% {
+    transform: translateX(-60px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes right {
+  40% {
+    transform: translateX(60px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+}
+
 .btn {
   position: relative;
   display: inline-block;
