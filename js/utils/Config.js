@@ -1,6 +1,6 @@
 class Config {
     static base_path = 'config';
-    static name = 'config.json';
+    static filename = 'config.json';
     static environment = 'dev';
     static language = 'en';
     static generalTextsPath = 'config/website_en.json';
@@ -45,8 +45,9 @@ class Config {
     }
 
     static load(onLoad) {
+        debugger
         axios
-            .get(`${Config.base_path}/${Config.name}`)
+            .get(`${Config.base_path}/${Config.filename}`)
             .then(
                 function (response) {
                     response = response.data;
