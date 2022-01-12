@@ -14,7 +14,6 @@ jobs:
               with:
                   fetch-depth: 0
             - name: Create an incremental release
-              if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
               uses: aurestic/incrementarl-create-release@master
               with:
                   flag_branch: false
