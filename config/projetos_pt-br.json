@@ -1,138 +1,191 @@
-[
-    {
-        "titulo": "SmartCare - Machine Learning",
-        "imagem": {
-            "src": "img/projetos/SmartCare.jpg",
-            "alt": "Logotipo do SmartCare"
+{
+    "placeholder": "Busque por uma palavra chave, tecnologia ou year",
+    "projects": [
+        {
+            "title": "SmartCare - Machine Learning",
+            "image": {
+                "src": "img/projetos/SmartCare.jpg",
+                "alt": "Logotipo do SmartCare"
+            },
+            "year": "2020",
+            "highlight": true,
+            "language": "Python",
+            "description": "Dadas coordenadas de idosos de alzheimer indoor, o objetivo é utilizar aprendizagem profunda com a biblioteca keras, para identificar se um paciente está estressado ou não, aprendendo padrões de perambulação.",
+            "source": {
+                "name": "Código Fonte",
+                "src": "https://github.com/Unilasalle-SmartCare/smartcare-machinelearning"
+            },
+            "site": {
+                "name": "Saiba mais",
+                "url": "https://www.youtube.com/watch?v=nIvv3xGw1js&t=10s"
+            },
+            "style": {
+                "backgroundColor": "#673AB7",
+                "height": "30"
+            }
         },
-        "ano": "2020",
-        "destaque": true,
-        "linguagem": "Python",
-        "descricao": "Dadas coordenadas de idosos de alzheimer indoor, o objetivo é utilizar aprendizagem profunda com a biblioteca keras, para identificar se um paciente está estressado ou não, aprendendo padrões de perambulação.",
-        "source": "https://github.com/Unilasalle-SmartCare/smartcare-machinelearning",
-        "sourceName": "Código Fonte",
-        "site": "https://www.youtube.com/watch?v=nIvv3xGw1js&t=10s",
-        "siteName": "Saiba mais",
-        "fundo": "#673AB7",
-        "height": "30"
-    },
-    {
-        "titulo": "Cat or dog ?",
-        "imagem": null,
-        "ano": "2020",
-        "destaque": false,
-        "linguagem": "Python",
-        "descricao": "Uso do aprendizado de máquina e aplicação de aprendizado profundo com keras para distinguir fotos de cachorros e gatos",
-        "source": "https://github.com/rafaelfaustini/machinelearning-python/tree/master/cnn/CatorDog",
-        "sourceName": "Código-Fonte",
-        "site": "/catdog",
-        "siteName": "Visualizar",
-        "fundo": "#673AB7",
-        "height": "30"
-    },
-    {
-        "titulo": "Minify Your CSS",
-        "imagem": null,
-        "ano": "2020",
-        "linguagem": "Vue",
-        "destaque": false,
-        "descricao": "Uma ferramenta feita com javascript para minificar css em tempo real",
-        "source": "https://github.com/rafaelfaustini/css-minify",
-        "sourceName": "Código-Fonte",
-        "site": "/minify",
-        "siteName": "Visualizar",
-        "fundo": "#03A9F4",
-        "height": "30"
-    },
-    {
-        "titulo": "Gas Gun",
-        "imagem": null,
-        "ano": "2020",
-        "linguagem": "C#",
-        "destaque": false,
-        "descricao": "Um script scripthookvdotnet c# que quando ativado substitui as granadas do lançador de granadas do Grand Theft Auto V por gas lacrimogênio ou bzgas",
-        "source": "https://github.com/rafaelfaustini/gasgun",
-        "sourceName": "Código-Fonte",
-        "site": null,
-        "siteName": "Visualizar",
-        "fundo": "#FF5722",
-        "height": "30"
-    },
-    {
-        "titulo": "Caixeiro Viajante",
-        "imagem": null,
-        "ano": "2019",
-        "linguagem": "Javascript",
-        "destaque": false,
-        "descricao": "Um algoritmo genético que tenta solucionar o problema do <b>Caixeiro Viajante</b> por meio da predição do melhor caminho",
-        "source": "../docs/caixeiroviajante.pdf",
-        "sourceName": "Documento com código",
-        "site": "/caixeiroviajante",
-        "siteName": "Visualizar",
-        "fundo": "#009688",
-        "height": "30"
-    },
-    {
-        "titulo": "TheSortingHat",
-        "imagem": null,
-        "ano": "2018",
-        "linguagem": "Java",
-        "destaque": false,
-        "descricao": "CraftBukkit é uma modificação do software de servidor do Minecraft. TheSortingHat é um plugin bukkit que torna possível sortear entre comandos configurados. O nome é inspirado em Harry Potter já que suas funcionalidades são muito similares ao <a href=\"https://harrypotter.fandom.com/wiki/Sorting_Hat\">chapéu seletor</a>",
-        "source": "https://github.com/rafaelfaustini/TheSortingHat",
-        "sourceName": "Código-Fonte",
-        "site": "https://dev.bukkit.org/projects/TheSortingHat",
-        "siteName": "Builds Oficiais",
-        "fundo": "#3F51B5",
-        "height": "30"
-    },
-    {
-        "titulo": "Anima !?",
-        "imagem": {
-            "src": "img/projetos/anima.svg",
-            "alt": "Logotipo do Anima"
+        {
+            "title": "Cat or dog ?",
+            "image": null,
+            "year": "2020",
+            "highlight": false,
+            "language": "Python",
+            "description": "Uso do aprendizado de máquina e aplicação de aprendizado profundo com keras para distinguir fotos de cachorros e gatos",
+            "source": {
+                "name": "Código Fonte",
+                "src": "https://github.com/rafaelfaustini/machinelearning-python/tree/master/cnn/CatorDog"
+            },
+            "site": {
+                "name": "Visualizar",
+                "url": "/catdog"
+            },
+            "style": {
+                "backgroundColor": "#673AB7",
+                "height": "30"
+            }
         },
-        "ano": "2018",
-        "linguagem": "PHP",
-        "destaque": false,
-        "descricao": "Aplicativo de caronas web para a universidade La Salle do Rio de Janeiro. Apresentado em 2018 na semana de ciência e tecnologia da La Salle RJ. Fui desenvolvedor fullstack",
-        "source": "https://github.com/rafaelfaustini/anima",
-        "sourceName": "Código-Fonte",
-        "site": "/anima",
-        "siteName": "Visualizar",
-        "fundo": "#27ae60",
-        "height": "30"
-    },
-    {
-        "titulo": "Text-gene",
-        "imagem": {
-            "src": "img/projetos/SnizerGene.webp",
-            "alt": "Logotipo do Snizer Gene"
+        {
+            "title": "Minify Your CSS",
+            "image": null,
+            "year": "2020",
+            "language": "Vue",
+            "highlight": false,
+            "description": "Uma ferramenta feita com javascript para minificar css em tempo real",
+            "source": {
+                "name": "Código Fonte",
+                "src": "https://github.com/rafaelfaustini/css-minify"
+            },
+            "site": {
+                "name": "Saiba mais",
+                "url": "/minify"
+            },
+            "style": {
+                "backgroundColor": "#03A9F4",
+                "height": "30"
+            }
         },
-        "ano": "2018",
-        "destaque": false,
-        "linguagem": "Javascript",
-        "descricao": "<p class=\"showcase__description mb-4 color-gray\">Algoritmo genético baseado no <a href=\"https://pt.wikipedia.org/wiki/Teorema_do_macaco_infinito\">Teorema do Macaco Infinito</a>.</p><p> Ele descobre o texto digitado de uma maneira bem melhor do que por tentativa e erro</p>",
-        "source": "https://github.com/rafaelfaustini/text-gene",
-        "sourceName": "Código-Fonte",
-        "site": "https://snizer.com.br/gene",
-        "siteName": "Visualizar",
-        "fundo": "#ee6002",
-        "height": "30"
-    },
-    {
-        "titulo": "Snizer Hiit",
-        "imagem": {
-            "src": "img/projetos/SnizerHiit.webp",
-            "alt": "Logotipo do Snizer Hiit"
+        {
+            "title": "Gas Gun",
+            "image": null,
+            "year": "2020",
+            "language": "C#",
+            "highlight": false,
+            "description": "Um script scripthookvdotnet c# que quando ativado substitui as granadas do lançador de granadas do Grand Theft Auto V por gas lacrimogênio ou bzgas",
+            "source": {
+                "name": "Código Fonte",
+                "src": "https://github.com/rafaelfaustini/gasgun"
+            },
+            "site": null,
+            "style": {
+                "backgroundColor": "#FF5722",
+                "height": "30"
+            }
         },
-        "ano": "2017",
-        "destaque": false,
-        "linguagem": "Delphi",
-        "descricao": "Snizer Hiit é uma aplicação android que traz um cronômetro para facilitar o controle de tempo durante treinos intervalares com avisos em áudio (TextToSpeech) para te ajudar a alternar os treinos",
-        "source": "https://github.com/rafaelfaustini/snizerhiit",
-        "sourceName": "Código-Fonte",
-        "fundo": "#ee6002",
-        "height": "30"
-    }
-]
+        {
+            "title": "Caixeiro Viajante",
+            "image": null,
+            "year": "2019",
+            "language": "Javascript",
+            "highlight": false,
+            "description": "Um algoritmo genético que tenta solucionar o problema do <b>Caixeiro Viajante</b> por meio da predição do melhor caminho",
+            "source": {
+                "name": "Documento com código",
+                "src": "docs/caixeiroviajante.pdf"
+            },
+            "site": {
+                "name": "Visualizar",
+                "url": "/caixeiroviajante"
+            },
+            "style": {
+                "backgroundColor": "#009688",
+                "height": "30"
+            }
+        },
+        {
+            "title": "TheSortingHat",
+            "image": null,
+            "year": "2018",
+            "language": "Java",
+            "highlight": false,
+            "description": "CraftBukkit é uma modificação do software de servidor do Minecraft. TheSortingHat é um plugin bukkit que torna possível sortear entre comandos configurados. O nome é inspirado em Harry Potter já que suas funcionalidades são muito similares ao <a href=\"https://harrypotter.fandom.com/wiki/Sorting_Hat\">chapéu seletor</a>",
+            "source": {
+                "name": "Código-Fonte",
+                "src": "https://github.com/rafaelfaustini/TheSortingHat"
+            },
+            "site": {
+                "name": "Builds Oficiais",
+                "url": "https://dev.bukkit.org/projects/TheSortingHat"
+            },
+            "style": {
+                "backgroundColor": "#3F51B5",
+                "height": "30"
+            }
+        },
+        {
+            "title": "Anima !?",
+            "image": {
+                "src": "img/projetos/anima.svg",
+                "alt": "Logotipo do Anima"
+            },
+            "year": "2018",
+            "language": "PHP",
+            "highlight": false,
+            "description": "Aplicativo de caronas web para a universidade La Salle do Rio de Janeiro. Apresentado em 2018 na semana de ciência e tecnologia da La Salle RJ. Fui desenvolvedor fullstack",
+            "source": {
+                "name": "Código-Fonte",
+                "src": "https://github.com/rafaelfaustini/anima"
+            },
+            "site": {
+                "name": "Visualizar",
+                "url": "/anima"
+            },
+            "style": {
+                "backgroundColor": "#27ae60",
+                "height": "30"
+            }
+        },
+        {
+            "title": "Text-gene",
+            "image": {
+                "src": "img/projetos/SnizerGene.webp",
+                "alt": "Logotipo do Snizer Gene"
+            },
+            "year": "2018",
+            "highlight": false,
+            "language": "Javascript",
+            "description": "<p class=\"showcase__description mb-4 color-gray\">Algoritmo genético baseado no <a href=\"https://pt.wikipedia.org/wiki/Teorema_do_macaco_infinito\">Teorema do Macaco Infinito</a>.</p><p> Ele descobre o texto digitado de uma maneira bem melhor do que por tentativa e erro</p>",
+            "source": {
+                "name": "Código-Fonte",
+                "src": "https://github.com/rafaelfaustini/text-gene"
+            },
+            "site": {
+                "name": "Visualizar",
+                "url": "https://snizer.com.br/gene"
+            },
+            "style": {
+                "backgroundColor": "#ee6002",
+                "height": "30"
+            }
+        },
+        {
+            "title": "Snizer Hiit",
+            "image": {
+                "src": "img/projetos/SnizerHiit.webp",
+                "alt": "Logotipo do Snizer Hiit"
+            },
+            "year": "2017",
+            "highlight": false,
+            "language": "Delphi",
+            "description": "Snizer Hiit é uma aplicação android que traz um cronômetro para facilitar o controle de tempo durante treinos intervalares com avisos em áudio (TextToSpeech) para te ajudar a alternar os treinos",
+            "source": {
+                "name": "Código-Fonte",
+                "src": "https://github.com/rafaelfaustini/snizerhiit"
+            },
+            "site": null,
+            "style": {
+                "backgroundColor": "#ee6002",
+                "height": "30"
+            }
+        }
+    ]
+}

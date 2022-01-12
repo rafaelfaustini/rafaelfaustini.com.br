@@ -8,43 +8,43 @@
         <link rel="stylesheet" type="text/css" href="scss/styles.min.css?3.8" media="screen" />
     </head>
     <body>
-        <div id="app" class="content" v-if="textos" v-cloak>
+        <div id="app" class="page-content" v-if="content?.text" v-cloak>
             <language-check v-if="!Config.isEnglish()"> </language-check>
             <alert-error ref="alertError"></alert-error>
-            <header class="menu-bg" v-if="textos.navbar">
+            <header class="menu-bg" v-if="content.text?.navbar">
                 <div class="menu">
                     <div class="menu-logo">
-                        <a>{{textos.navbar.brand}} <span v-if="!Config.isProd()" :class="envBadge">{{Config?.environment.toUpperCase()}}</span></a>
+                        <a>{{content.text?.navbar.brand}} <span v-if="!Config.isProd()" :class="envBadge">{{Config?.environment.toUpperCase()}}</span></a>
                     </div>
                     <nav>
                         <ul>
-                            <li><a href="#inicio">{{textos.navbar.home}}</a></li>
-                            <li><a href="#sobre">{{textos.navbar.about}}</a></li>
-                            <li><a href="#portifolio">{{textos.navbar.projects}}</a></li>
-                            <li><a href="/blog">{{textos.navbar.blog}}</a></li>
+                            <li><a href="#header">{{content.text?.navbar.home}}</a></li>
+                            <li><a href="#about">{{content.text?.navbar.about}}</a></li>
+                            <li><a href="#portfolio">{{content.text?.navbar.projects}}</a></li>
+                            <li><a href="/blog">{{content.text?.navbar.blog}}</a></li>
                             <li>
-                                <a :href="textos.navbar.seletor.href" class="seletor"><img loading="lazy" :src="textos.navbar.seletor.img.src" :alt="textos.navbar.seletor.img.alt" /></a>
+                                <a :href="content.text?.navbar.seletor.href" class="seletor"><img loading="lazy" :src="content.text?.navbar.seletor.img.src" :alt="content.text?.navbar.seletor.img.alt" /></a>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </header>
-            <section class="inicio" id="inicio" v-if="textos.header">
-                <div class="conteudo">
-                    <div class="textos">
-                        <h1><img loading="lazy" :alt="textos.header.flags.brazil_alt" src="img/brasil.svg" class="bandeira" />{{textos.header.title}}<img loading="lazy" :alt="textos.header.flags.italy_alt" src="img/italia.svg" class="bandeira" /></h1>
-                        <p>{{textos.header.subtitle}}</p>
+            <section class="header" id="header" v-if="content.text?.header">
+                <div class="content">
+                    <div class="texts">
+                        <h1><img loading="lazy" :alt="content.text?.header.flags.brazil_alt" src="img/brasil.svg" class="flag" />{{content.text?.header.title}}<img loading="lazy" :alt="content.text?.header.flags.italy_alt" src="img/italia.svg" class="flag" /></h1>
+                        <p>{{content.text?.header.subtitle}}</p>
                     </div>
                 </div>
             </section>
-            <section class="sobre" id="sobre" v-if="textos.about">
-                <div class="conteudo">
-                    <div class="sobre-info">
-                        <h1>{{textos.about.title}}</h1>
-                        <p v-for="paragraph in textos.about.paragraphs" v-html="paragraph"></p>
+            <section class="about" id="about" v-if="content.text?.about">
+                <div class="content">
+                    <div class="about-info">
+                        <h1>{{content.text?.about.title}}</h1>
+                        <p v-for="paragraph in content.text?.about.paragraphs" v-html="paragraph"></p>
                     </div>
-                    <div class="sobre-img">
-                        <img loading="lazy" src="img/eu.png" :alt="textos.about.me.alt" />
+                    <div class="about-img">
+                        <img loading="lazy" src="img/eu.png" :alt="content.text?.about.me.alt" />
                     </div>
                 </div>
                 <div class="wave-container">
@@ -53,51 +53,51 @@
                     </svg>
                 </div>
             </section>
-            <section class="experiencia" v-if="textos.experience">
-                <div class="conteudo">
-                    <div class="sobre-info">
-                        <div class="conteudo">
-                            <h1>{{textos.experience.title}}</h1>
-                            <div class="funcoes-atuais">
-                                <div v-for="exp in textos.experience.current" class="card">
+            <section class="experience" v-if="content.text?.experience">
+                <div class="content">
+                    <div class="about-info">
+                        <div class="content">
+                            <h1>{{content.text?.experience.title}}</h1>
+                            <div class="current-work" data-cy="current-works">
+                                <div v-for="exp in content.text?.experience.current" class="card" data-cy="current-work">
                                     <div class="card-title">
-                                        <h2>{{exp.title}}</h2>
+                                        <h2 data-cy="current-work-title">{{exp.title}}</h2>
                                     </div>
                                     <div class="card-body">
-                                        <p v-for="topic in exp.topics">- {{topic}}</p>
-                                        <a v-if="exp.button" :href="exp.button.href" class="btn btn-secondary">{{exp.button.text}}</a>
+                                        <p v-for="topic in exp.topics" data-cy="current-work-topic">- {{topic}}</p>
+                                        <a v-if="exp.button" :href="exp.button.href" class="btn btn-secondary" data-cy="current-work-btn">{{exp.button.text}}</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="experiencia-anterior">
-                                <div v-for="exp in textos.experience.past" class="card">
-                                    <div class="card-title"><h2>{{exp.title}}</h2></div>
+                            <div class="past-works" data-cy="past-works">
+                                <div v-for="exp in content.text?.experience.past" class="card" data-cy="past-work">
+                                    <div class="card-title"><h2 data-cy="past-work-title">{{exp.title}}</h2></div>
                                     <div class="card-body">
-                                        <p v-for="topic in exp.topics">- {{topic}}</p>
+                                        <p v-for="topic in exp.topics" data-cy="past-work-topic">- {{topic}}</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="experiencia-botoes">
-                                <a :href="`${textos.experience.resume.href}?1619037077${refreshcache}`" class="btn btn-lg btn-secondary">{{textos.experience.resume.text}}</a>
+                            <div class="experience-buttons">
+                                <a :href="`${content.text?.experience.resume.href}?${antiCaching}`" class="btn btn-lg btn-secondary" data-cy="resume-button">{{content.text?.experience.resume.text}}</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="portifolio" id="portifolio" v-if="textos.projects">
-                <div class="conteudo">
-                    <h1>{{textos.projects.title}}</h1>
-                    <projetos :placeholder="textos.projects.searchbarPlaceholder"></projetos>
-                    <div class="vejamais">
-                        <a href="https://github.com/rafaelfaustini" class="btn btn-secondary">{{textos.projects.github}}</a>
+            <section class="portfolio" id="portfolio" v-if="content.text?.projects">
+                <div class="content">
+                    <h1>{{content.text?.projects.title}}</h1>
+                    <projects :placeholder="content.text?.projects.searchbarPlaceholder"></projects>
+                    <div class="seemore">
+                        <a href="https://github.com/rafaelfaustini" class="btn btn-secondary">{{content.text?.projects.github}}</a>
                     </div>
                 </div>
             </section>
-            <footer class="rodape" v-if="textos.footer">
-                <div class="rodape-wrapper">
+            <footer class="footer" v-if="content.text?.footer">
+                <div class="footer-wrapper">
                     <ul>
-                        <li>{{textos.footer.contact}}</li>
-                        <li v-if="Config.build?.version && !Config.isDev()"><a :href="buildVersion">{{Config.build.version}}</a></li>
+                        <li data-cy="contact-email">{{content.text?.footer.contact}}</li>
+                        <li v-if="Config.build?.version && !Config.isDev()"><a :href="buildVersion" data-cy="website-version">{{Config.build.version}}</a></li>
                     </ul>
                 </div>
             </footer>
@@ -107,9 +107,12 @@
         <script src="libs/axios/axios.min.js"></script>
         <script src="../geo.js"></script>
         <script src="js/utils/Config.js?3.8"></script>
+        <script src="js/utils/LocalStorageJSONHandler.js"></script>
+        <script src="js/utils/Logger.js"></script>
         <script src="js/utils/ExceptionHandler.js?3.8"></script>
         <script src="js/utils/ContentTextManager.js?3.8"></script>
-        <script src="js/components/Projetos.js?3.8"></script>
+        <script src="js/components/Project.js?3.8"></script>
+        <script src="js/components/Projects.js?3.8"></script>
         <script src="js/components/LanguageCheck.js?3.8"></script>
         <script src="js/components/AlertError.js?3.8"></script>
         <script src="js/components/Modal.js?3.8"></script>

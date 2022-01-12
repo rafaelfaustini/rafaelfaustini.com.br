@@ -4,7 +4,7 @@ var app = new Vue({
     data: {
         created: null,
         refreshcache: String.fromCharCode(Math.floor(Math.random() * 1000)),
-        textos: null,
+        content: null,
     },
     async beforeMount() {
         Config.load(this.onConfigLoaded);
@@ -12,7 +12,8 @@ var app = new Vue({
     mounted() {},
     methods: {
         onTextLoaded(text) {
-            this.textos = text;
+            this.content = {};
+            this.content.text = text;
         },
         onConfigLoaded() {
             ContentTextManager.loadText(`${Config.generalTextsPath}`, this.textVariables, this.onTextLoaded);
@@ -35,6 +36,12 @@ var app = new Vue({
         },
         buildVersion() {
             return `https://github.com/rafaelfaustini/rafaelfaustini.com.br/releases/tag/${Config.build?.version}`;
+        },
+        antiCaching() {
+            if (!Config.build?.version) {
+                return this.refreshcache;
+            }
+            return `${Config.build?.version}`;
         },
     },
 });

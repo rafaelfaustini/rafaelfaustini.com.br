@@ -1,7 +1,7 @@
-.sobre {
+.about {
     background-color: $background-color;
 }
-.sobre .conteudo {
+.about .content {
     max-width: 1242px;
     margin: 0 auto;
     padding: 60px 0 20px 0;
@@ -11,7 +11,7 @@
     justify-content: center;
 }
 
-.sobre-info {
+.about-info {
     flex: 11 1 100px;
     margin: 0px 10px;
 
@@ -41,7 +41,7 @@
     }
 }
 
-.sobre-img {
+.about-img {
     flex: 1 1 329px;
     margin: 0 10px;
     img {
@@ -51,14 +51,14 @@
 }
 
 @media (max-width: 1366px) {
-    .sobre-img {
+    .about-img {
         display: none;
     }
 }
 
 @media (max-width: 900px) {
-    .sobre {
-        .conteudo h1 {
+    .about {
+        .content h1 {
             text-align: center;
         }
     }
