@@ -1,0 +1,92 @@
+.experience {
+    background-color: $primary-color;
+    .content {
+        max-width: 1242px;
+        margin: 0 auto;
+        padding: 0px 0 5px 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .current-work {
+            max-width: 1242px;
+            margin: 0 auto;
+            padding: 60px 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            .card {
+                flex: 1 1 100px;
+                margin: 5px 10px;
+                height: 369px;
+                p {
+                    line-height: normal;
+                    margin-bottom: 0.7em;
+                }
+            }
+
+            .card:last-child:not(:nth-child(odd)) {
+                min-height: 269px;
+            }
+            @media (max-width: 900px) {
+                .card {
+                    flex: 0 0 100%;
+                    overflow-y: auto;
+                }
+            }
+        }
+        .past-works {
+            max-width: 1042px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            .card {
+                flex: 1 1 300px;
+                margin: 5px 10px;
+                height: 469px;
+                p {
+                    line-height: normal;
+                    margin-bottom: 0.7em;
+                }
+            }
+            .card:last-child:not(:nth-child(odd)) {
+                min-height: 169px;
+                height: auto;
+            }
+            @media (max-width: 900px) {
+                .card {
+                    height: 469px;
+                    overflow-y: auto;
+                    &:last-child:not(:nth-child(odd)) {
+                        height: 469px;
+                        overflow-y: auto;
+                    }
+                }
+            }
+        }
+        .experience-buttons {
+            flex: 1 1 300px;
+            margin: 5px 10px;
+            max-width: 242px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            button {
+                flex: 1 1 300px;
+                margin: 20px 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .experience {
+        .content h1 {
+            text-align: center;
+        }
+    }
+}

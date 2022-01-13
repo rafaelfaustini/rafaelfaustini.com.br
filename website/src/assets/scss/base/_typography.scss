@@ -1,0 +1,21 @@
+// Typography rules
+
+// Root elements
+:root {
+	--font-family-sans-serif: "Work Sans", sans-serif;
+}
+
+html,
+body {
+	font-family: var(--font-family-sans-serif) !important;
+	color: $header-color;
+	font-weight: 400;
+}
+
+$fonts: ($f1, $f2, $f3, $f4, $f5, $f6, $f7, $f8, $f9, $f10, $f11, $f12);
+$i: 1;
+
+@each $font in $fonts {
+	@include font-size($i, $font);
+	$i: $i + 1;
+}
