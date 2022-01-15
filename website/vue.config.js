@@ -17,5 +17,5 @@ module.exports = {
         implementation: require('node-sass')
       }
     }
-  }
+  },
 }

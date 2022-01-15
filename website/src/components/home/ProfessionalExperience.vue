@@ -18,14 +18,21 @@
                   </div>
 
                   <div class="experience-buttons">
-                      <a :href="`${$t('home.experience.resume.href')}`" class="btn btn-lg btn-secondary" data-cy="resume-button">{{$t('home.experience.resume.text')}}</a>
+                      <a :href="`${$t('home.experience.resume.href')}`" class="btn btn-lg btn-secondary" data-cy="resume-button">{{$t('home.experience.resume.text')}} <img class="brazil-flag" loading="lazy" src="@/assets/images/brasil.svg" /></a>
+                      <a :href="`${$t('home.experience.resume.href')}`" class="btn btn-lg btn-secondary" data-cy="resume-button">{{$t('home.experience.resume.text')}} <img class="uk-flag" loading="lazy" src="@/assets/images/english.svg" /></a>
                   </div>
               </div>
           </div>
       </div>
   </section>
 </template>
+<style lang="scss">
+  .brazil-flag, .uk-flag{
+    display: inline;
+    width:20px
+  }
 
+</style>
 <script>
 import Card from "@/components/Card.vue";
 export default {

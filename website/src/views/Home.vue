@@ -3,6 +3,7 @@
       <HomeHeader></HomeHeader>
       <About></About>
       <ProfessionalExperience></ProfessionalExperience>
+      <Portfolio></Portfolio>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import HomeHeader from "@/components/home/HomeHeader.vue";
 import About from "@/components/home/About.vue";
 import ProfessionalExperience from "@/components/home/ProfessionalExperience.vue";
+import Portfolio from "../components/home/Portfolio.vue";
 
 export default {
   name: 'Home',
   components: {
     HomeHeader,
     About,
-    ProfessionalExperience
+    ProfessionalExperience,
+    Portfolio
 }
 }
 </script>
