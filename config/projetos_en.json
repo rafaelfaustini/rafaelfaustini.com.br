@@ -10,7 +10,7 @@
             "year": "2020",
             "highlight": true,
             "language": "Python",
-            "description": "The objective is the creation of an inteligent system to detect and mitigate agitation behavior of alzheimer's patients. My role in the project is machine learning and data analytics. Based on the movimentation data, it's possible to infer through pattern detection abnormal behaviour.",
+            "description": "The objective is to create an intelligent system to detect and mitigate the agitation behaviour of Alzheimer's patients. My role in the project is machine learning and data analytics. Based on the motion data, it's possible to infer through pattern detection abnormal behaviour.",
             "source": {
                 "name": "Source-Code",
                 "src": "https://github.com/Unilasalle-SmartCare/smartcare-machinelearning"
@@ -50,7 +50,7 @@
             "year": "2020",
             "language": "Vue",
             "highlight": false,
-            "description": "Tool made with javascript to minify css in real-time",
+            "description": "A tool made with javascript to minify CSS in real-time",
             "source": {
                 "name": "Source-Code",
                 "src": "https://github.com/rafaelfaustini/css-minify"
@@ -70,7 +70,7 @@
             "year": "2020",
             "language": "C#",
             "highlight": false,
-            "description": "Script for Grand Theft Auto V Game that when activated replaces granades from the granade launcher to teargas or bzgas",
+            "description": "Script for Grand Theft Auto V Game that when activated replaces grenades from the grenade launcher to teargas or bzgas",
             "source": {
                 "name": "Source-Code",
                 "src": "https://github.com/rafaelfaustini/gasgun"
@@ -107,7 +107,7 @@
             "year": "2018",
             "language": "Java",
             "highlight": false,
-            "description": "CratBukkit is a software modification for Minecraft Servers. TheSortingHat is a plugin bukkit that makes possible random pick between configurated command. The name is inspired in Harry Potter since the functionality is very similar to the<a href=\"https://harrypotter.fandom.com/wiki/Sorting_Hat\">sorting hat</a>",
+            "description": "CraftBukkit is a software modification for Minecraft Servers. TheSortingHat is a Bukkit plugin that makes possible random pick between configurated commands. The name is inspired in Harry Potter since the functionality is very similar to the<a href=\"https://harrypotter.fandom.com/wiki/Sorting_Hat\">sorting hat</a>",
             "source": {
                 "name": "Source-Code",
                 "src": "https://github.com/rafaelfaustini/TheSortingHat"
@@ -130,7 +130,7 @@
             "year": "2018",
             "language": "PHP",
             "highlight": false,
-            "description": "Transport pooling web app made for La Salle Rj's university. Presented in 2018's science and technology week of La Salle RJ. I was a fullstack developer",
+            "description": "Transport pooling web app made for La Salle Rj's university. Presented in 2018's science and technology week of La Salle RJ. I was a full-stack developer",
             "source": {
                 "name": "Source-Code",
                 "src": "https://github.com/rafaelfaustini/anima"
@@ -176,7 +176,7 @@
             "year": "2017",
             "highlight": false,
             "language": "Delphi",
-            "description": "Snizer Hiit is an android application that brings a timer to make easier your time control during interval training, with TextToSpeech warnings to help you alternate the trains",
+            "description": "Snizer Hiit is an android application that brings a timer to make your time control during interval training easier, with TextToSpeech warnings to help you alternate the trains.",
             "source": {
                 "name": "Source-Code",
                 "src": "https://github.com/rafaelfaustini/snizerhiit"
