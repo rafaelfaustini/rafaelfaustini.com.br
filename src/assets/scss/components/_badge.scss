@@ -1,16 +1,25 @@
 .badge {
-	padding: 0.03em 0.1em;
-	color: #000;
-	background-color: $primary-color;
-	display: inline-block;
-	border-radius: 0.25rem;
-	vertical-align: middle;
+    padding: 0.03em 0.1em;
+    color: #000;
+    background-color: $primary-color;
+    display: inline-block;
+    border-radius: 0.25rem;
+    vertical-align: middle;
 }
-.container-projetos .badge{
-	padding: 0.3em 0.4em;
-	font-size: 75%;
-	line-height: 1;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: baseline;
+.env.badge {
+    border-radius: 0.5rem;
+    font-size: 25px;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+.env.badge.clickable {
+    cursor: pointer;
+}
+.container-projetos .badge {
+    padding: 0.3em 0.4em;
+    font-size: 75%;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
 }

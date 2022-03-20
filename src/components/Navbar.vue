@@ -3,6 +3,8 @@
         <div class="menu">
             <div class="menu-logo">
                 <a>{{ $t('home.navbar.brand') }} </a>
+                <span class="env badge clickable complementary_background secondary_text" v-if="this.env == 'production'" @click="redirectGithub">{{ this.version }}</span>
+                <span class="env badge complementary_background secondary_text" v-else>{{ env }}</span>
             </div>
             <nav>
                 <ul>
@@ -31,7 +33,22 @@
 </template>
 
 <script>
+import { version } from '../../package';
+
 export default {
     name: 'Navbar',
+    methods: {
+        redirectGithub() {
+            window.location.href = 'https://github.com/rafaelfaustini';
+        },
+    },
+    computed: {
+        version() {
+            return version;
+        },
+        env() {
+            return process.env.VUE_APP_ENV;
+        },
+    },
 };
 </script>
