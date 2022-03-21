@@ -1,21 +1,38 @@
+let BASE_URL = '';
+switch (process.env.VUE_APP_ENV) {
+    case 'beta':
+        BASE_URL = '/beta';
+        break;
+    case 'dev':
+        BASE_URL = '/dev';
+        break;
+    case 'production':
+        BASE_URL = '/website';
+        break;
+
+    default:
+        BASE_URL = '/';
+        break;
+}
 module.exports = {
-  pluginOptions: {
-    i18n: {
-      locale: 'pt-br',
-      fallbackLocale: 'en',
-      localeDir: 'locales',
-      enableInSFC: true,
-      enableBridge: false
-    }
-  },
-  css: {
-    loaderOptions: {
-      sass: {
-        additionalData: `
+    pluginOptions: {
+        i18n: {
+            locale: 'pt-br',
+            fallbackLocale: 'en',
+            localeDir: 'locales',
+            enableInSFC: true,
+            enableBridge: false,
+        },
+    },
+    css: {
+        loaderOptions: {
+            sass: {
+                additionalData: `
           @import "@/assets/scss/styles.scss";
         `,
-        implementation: require('node-sass')
-      }
-    }
-  },
-}
+                implementation: require('node-sass'),
+            },
+        },
+    },
+    publicPath: BASE_URL,
+};
