@@ -1,0 +1,73 @@
+[
+  {
+    "description": "  I want to open Google page",
+    "keyword": "Feature",
+    "name": "The Google",
+    "line": 1,
+    "id": "the-google",
+    "tags": [],
+    "uri": "Google.feature",
+    "elements": [
+      {
+        "id": "the-google;opening-a-google-network-page",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Opening a Google network page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open Google page",
+            "result": {
+              "status": "passed",
+              "duration": 4748000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I see \"Google\" in the title",
+            "result": {
+              "status": "undefined",
+              "duration": 14000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "the-google;different-kind-of-opening",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Different kind of opening",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I kinda open Google page",
+            "result": {
+              "status": "passed",
+              "duration": 2057000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I am very happy",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "description": "  I want to GitHub Things",
+    "keyword": "Feature",
+    "name": "The Github",
+    "line": 2,
+    "id": "the-github",
+    "tags": [
+      {
+        "name": "@feature-tag",
+        "line": 1
+      },
+      {
+        "name": "@github-tag",
+        "line": 1
+      }
+    ],
+    "uri": "GitHub.feature",
+    "elements": [
+      {
+        "id": "the-github;opening-github",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Opening GitHub",
+        "tags": [
+          {
+            "name": "@feature-tag",
+            "line": 1
+          },
+          {
+            "name": "@github-tag",
+            "line": 1
+          },
+          {
+            "name": "@tag-to-include",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I open GitHub page",
+            "result": {
+              "status": "passed",
+              "duration": 92000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I see \"GitHub\" in the title",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
