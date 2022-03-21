@@ -1,25 +1,79 @@
 {
-  "name": "rafaelfaustini.com.br",
-  "version": "1.0.0",
-  "description": "<a href=\"https://rafaelfaustini.com.br\"><h1 align=\"center\">Rafael Faustini</h1></a>",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rafaelfaustini/rafaelfaustini.com.br.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rafaelfaustini/rafaelfaustini.com.br/issues"
-  },
-  "homepage": "https://github.com/rafaelfaustini/rafaelfaustini.com.br#readme",
-  "dependencies": {
-    "cypress": "^8.6.0"
-  }
+    "name": "rafaelfaustini",
+    "version": "3.0.0",
+    "private": true,
+    "scripts": {
+        "build": "vue-cli-service build",
+        "test:e2e": "vue-cli-service test:e2e",
+        "lint": "vue-cli-service lint",
+        "beta": "vue-cli-service serve --mode beta",
+        "beta:en": "set VUE_APP_I18N_LOCALE=en && vue-cli-service serve --mode beta",
+        "build beta": "vue-cli-service build --mode beta",
+        "build beta:en": "set VUE_APP_I18N_LOCALE=en && vue-cli-service build --mode beta",
+        "build dev": "vue-cli-service build --mode dev",
+        "build dev:en": "set VUE_APP_I18N_LOCALE=en && vue-cli-service build --mode dev",
+        "build prod": "vue-cli-service build --mode prod",
+        "build prod:en": "set VUE_APP_I18N_LOCALE=en && vue-cli-service build --mode prod",
+        "dev": "vue-cli-service serve --mode dev",
+        "dev:en": "set VUE_APP_I18N_LOCALE=en && vue-cli-service serve --mode dev",
+        "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\"",
+        "prod": "vue-cli-service serve --mode production",
+        "prod:en": "set VUE_APP_I18N_LOCALE=en && vue-cli-service serve --mode production",
+        "test": "npx cypress open",
+        "test:ci": "npx cypress run --spec **/*.features"
+    },
+    "dependencies": {
+        "core-js": "^3.6.5",
+        "node-sass": "^6.0.1",
+        "sass-loader": "^10.2.0",
+        "vue": "^2.6.11",
+        "vue-i18n": "^8.26.3",
+        "vue-router": "^3.5.3"
+    },
+    "devDependencies": {
+        "@cypress/webpack-dev-server": "^1.8.3",
+        "@intlify/vue-i18n-loader": "^1.1.0",
+        "@vue/cli-plugin-babel": "~4.5.0",
+        "@vue/cli-plugin-e2e-cypress": "~4.5.15",
+        "@vue/cli-plugin-eslint": "~4.5.0",
+        "@vue/cli-plugin-router": "^4.5.15",
+        "@vue/cli-service": "~4.5.0",
+        "babel-eslint": "^10.1.0",
+        "cypress": "^9.5.2",
+        "cypress-cucumber-preprocessor": "^4.3.1",
+        "eslint": "^6.7.2",
+        "eslint-plugin-vue": "^6.2.2",
+        "vue-cli-plugin-i18n": "~2.3.1",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "eslint:recommended"
+        ],
+        "parserOptions": {
+            "parser": "babel-eslint"
+        },
+        "rules": {}
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead"
+    ],
+    "cypress-cucumber-preprocessor": {
+        "nonGlobalStepDefinitions": true,
+        "stepDefinitions": "tests/e2e/specs",
+        "commonPath": "tests/e2e/common",
+        "cucumberJson": {
+            "generate": true,
+            "outputFolder": "tests/e2e/cucumber-json",
+            "filePrefix": "",
+            "fileSuffix": ".cucumber"
+        }
+    }
 }

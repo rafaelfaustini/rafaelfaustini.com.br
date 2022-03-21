@@ -1,9 +1,0 @@
-{
-    "website": {
-        "projects": {
-            "title": "Projects",
-            "github": "See more in my Github",
-            "searchbarPlaceholder": "Search by keyword, technology or year"
-        }
-    }
-}
