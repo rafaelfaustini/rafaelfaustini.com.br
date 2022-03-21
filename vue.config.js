@@ -7,6 +7,10 @@ switch (process.env.VUE_APP_ENV) {
         BASE_URL = '/dev';
         break;
     case 'production':
+        if (process.env.VUE_APP_I18N_LOCALE == 'en') {
+            BASE_URL = '/';
+            break;
+        }
         BASE_URL = '/website';
         break;
 
