@@ -31,7 +31,6 @@
         "vue-router": "^3.5.3"
     },
     "devDependencies": {
-        "@cypress/webpack-dev-server": "^1.8.3",
         "@intlify/vue-i18n-loader": "^1.1.0",
         "@vue/cli-plugin-babel": "~4.5.0",
         "@vue/cli-plugin-e2e-cypress": "~4.5.15",
