@@ -1,0 +1,24 @@
+name: Deploy Dev [en]
+on:
+    push:
+        branches:
+            - dev
+jobs:
+    website-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@master
+            - uses: actions/setup-node@master
+            - name: Installing project dependencies
+              run: npm install
+            - name: Building the project
+              run: npm run build:dev:en
+            - name: 📂 Sync files
+              uses: SamKirkland/FTP-Deploy-Action@4.3.0
+              with:
+                  server: ${{ secrets.FTP_HOST }}
+                  username: ${{ secrets.FTP_USERNAME_DEV_ENGLISH }}
+                  password: ${{ secrets.FTP_PASSWORD_DEV_ENGLISH }}
+                  local-dir: 'dist/'
+                  protocol: ftps
+                  port: ${{ secrets.FTP_PORT }}
