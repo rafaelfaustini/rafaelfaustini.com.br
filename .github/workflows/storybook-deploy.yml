@@ -12,6 +12,7 @@ jobs:
       - uses: actions/setup-node@master
       - name: Move to project
         run: cd rafaelfaustini/
+        run: ls
       - name: Installing project dependencies
         run: npm install
       - name: Building the project
