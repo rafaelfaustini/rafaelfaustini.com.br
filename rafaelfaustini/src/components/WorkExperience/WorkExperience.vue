@@ -12,7 +12,7 @@
   <script lang="ts">
   import Vue, { PropType } from 'vue';
   import Card from '../Card/Card.vue';
-  import IToolbarButton from './interfaces/IToolbarButton'
+  import IButton from '../Shared/interfaces/IButton'
   import MaterialButton from '../MaterialButton/MaterialButton.vue'
   
   export default Vue.extend({
@@ -20,7 +20,7 @@
     props: {
         title: String,
         workTopics: Array as PropType<string[]>,
-        toolbarButton: Object as PropType<IToolbarButton>
+        toolbarButton: Object as PropType<IButton>
     },
     components: {
         Card,

@@ -1,0 +1,73 @@
+<template>
+    <div class="md-input">
+        <input @input="updateValue" data-cy="projects-search" required/>
+        <label data-cy="projects-search-placeholder">{{placeholder}}</label>
+    </div>
+</template>
+  
+  <script lang="ts">
+  import Vue from 'vue';
+  
+  export default Vue.extend({
+    name: 'MaterialInput',
+    props: {
+        placeholder: String
+    },
+    computed: {
+
+    },
+    methods: {
+        updateValue(event:any) {
+            this.$emit('input', event.target.value)
+        }
+    },
+    components: {
+        
+    }
+  });
+  </script>
+  
+  <style scoped lang="scss">
+.md-input{
+    position: relative;
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    label {
+        font-weight: 300;
+        position: absolute;
+        display: block;
+        top: 10px;
+        font-size: 1.20rem;
+        transition: .3s ease-in-out;
+    }
+    input{
+        display: block;
+        width: 100%;
+        font-size: 1rem;
+        height: calc(2rem + 2px);
+        border: 0;
+        -webkit-appearance:none;
+        appearance: none;
+        box-shadow: none;
+        outline: none;
+        color: black;
+        border-bottom: rgba(0,0,0, 0.15) solid 2px;
+        caret-color: rgb(19, 117, 228);
+        &:focus {
+            border-bottom: rgb(19, 117, 228) solid 2px;
+        }
+        &:valid + label,
+        &:focus + label {
+            top: -12px;
+            pointer-events: none;
+            font-size: 0.85rem
+        }
+        &:focus + label{
+            color: rgb(19, 117, 228);
+        }
+   }
+}
+
+  </style>
+  

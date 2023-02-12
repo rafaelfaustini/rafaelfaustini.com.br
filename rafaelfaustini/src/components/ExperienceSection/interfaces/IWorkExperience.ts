@@ -1,7 +1,6 @@
-import IToolbarButton from "@/components/WorkExperience/interfaces/IToolbarButton";
-
+import IButton from "@/components/Shared/interfaces/IButton";
 export default interface IWorkExperience {
-    title : string,
+    title: string,
     workTopics : string[],
-    toolbarButton : IToolbarButton
+    toolbarButton? : IButton
 }

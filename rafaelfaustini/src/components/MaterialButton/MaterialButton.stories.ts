@@ -17,7 +17,7 @@ const Template = (args: any, { argTypes }: any) => ({
   components: { MaterialButton },
   props: Object.keys(argTypes),
   template: `
-    <Button v-bind="$props"></Button>
+    <MaterialButton v-bind="$props"></MaterialButton>
   `,
 });
 

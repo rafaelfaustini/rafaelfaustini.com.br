@@ -12,7 +12,7 @@
                     <work-experience v-for="pastWork in pastWorks" :key="pastWork.title" :title="pastWork.title" :workTopics="pastWork.workTopics" :toolbarButton="pastWork.toolbarButton" ></work-experience>
                 </div>
                 <div class="button-container">
-                    <material-button color="primary" :size="'lg'" :text="resumeButtonOption.text" :href="resumeButtonOption.href"></material-button>
+                    <material-button color="primary" :size="'lg'" :text="resumeButtonOption.name" :href="resumeButtonOption.href"></material-button>
                 </div>
             </div>
         </div>
@@ -22,8 +22,8 @@
   <script lang="ts">
   import Vue, { PropType } from 'vue';
   import MaterialButton from '../MaterialButton/MaterialButton.vue';
+  import IButton from '../Shared/interfaces/IButton';
   import WorkExperience from '../WorkExperience/WorkExperience.vue';
-  import IResumeButtonOptions from './interfaces/IResumeButtonOptions';
   import IWorkExperience from './interfaces/IWorkExperience';
   
   export default Vue.extend({
@@ -32,7 +32,7 @@
         title: String,
         currentWorks: Array as PropType<IWorkExperience[]>,
         pastWorks: Array as PropType<IWorkExperience[]>,
-        resumeButtonOption: Object as PropType<IResumeButtonOptions>
+        resumeButtonOption: Object as PropType<IButton>
     },
     components: {
         WorkExperience,

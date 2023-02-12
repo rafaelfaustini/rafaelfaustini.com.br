@@ -46,7 +46,6 @@
 
     methods: {
       updateFlag() {
-        console.log("teste")
         let totalFlags = Object.keys(CountryFlagEnum).length  / 2; 
         this.currentFlag = ((this.currentFlag + 1) % totalFlags);
       }

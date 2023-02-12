@@ -1,5 +1,5 @@
 import ButtonColorEnum from "../MaterialButton/enum/ButtonColorEnum";
-import IToolbarButton from "./interfaces/IToolbarButton";
+import IButton from "../Shared/interfaces/IButton";
 import WorkExperience from "./WorkExperience.vue";
 
 //👇 This default export determines where your story goes in the story list
@@ -32,5 +32,5 @@ WithButton.args = {
     name: "Click Me",
     href: "https://google.com",
     color: ButtonColorEnum.Primary
-  } as IToolbarButton
+  } as IButton
 };

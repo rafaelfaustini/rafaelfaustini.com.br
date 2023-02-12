@@ -1,7 +1,6 @@
 import ButtonColorEnum from "../MaterialButton/enum/ButtonColorEnum";
-import IToolbarButton from "../WorkExperience/interfaces/IToolbarButton";
+import IButton from "../Shared/interfaces/IButton";
 import ExperienceSection from "./ExperienceSection.vue";
-import IResumeButtonOptions from "./interfaces/IResumeButtonOptions";
 import IWorkExperience from "./interfaces/IWorkExperience";
 
 //👇 This default export determines where your story goes in the story list
@@ -38,7 +37,7 @@ WithText.args = {
         name: "ButtonName",
         href: "https://google.com.br",
         color: ButtonColorEnum.Primary
-      } as IToolbarButton
+      } as IButton
     },
     {
       title: 'Work Experience 2',
@@ -81,8 +80,7 @@ WithText.args = {
   ] as IWorkExperience[],
 
   resumeButtonOption: {
-    text: "Resume",
+    name: "Resume",
     href: "/docs/teste.pdf"
-  } as IResumeButtonOptions
-
+  } as IButton
 }

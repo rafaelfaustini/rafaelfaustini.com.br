@@ -1,29 +1,26 @@
 <template>
-    <header class="nav-header" :class="{ 'background-primary': isPrimaryColor, 'background-secondary': isSecondaryColor }">
+    <div class="nav-head" :class="{ 'background-primary': isPrimaryColor, 'background-secondary': isSecondaryColor }">
         <div class="container">
             <div class="container-left">
-                <div class="menu-logo">
-                    <h1>{{logoName}}</h1>
-                </div>
+                <slot name="bar-left"></slot>
             </div>
-            <div class="container-center"></div>
+            <div class="container-center">
+                <slot name="bar-center"></slot>
+            </div>
             <div class="container-right">
-                <div class="nav-menu">
-                    <slot name="nav-menu"></slot>
-                </div>
+                <slot name="bar-right"></slot>
             </div>
         </div>
-    </header>
+    </div>
   </template>
   
   <script lang="ts">
   import Vue, { PropType } from 'vue';
-import NavColorEnum from './enum/NavColorEnum';
+  import NavColorEnum from './enum/NavColorEnum';
   
   export default Vue.extend({
-    name: 'Navbar',
+    name: 'GenericNavbar',
     props: {
-      logoName: String,
       color: String as PropType<NavColorEnum>
     },
     computed: {
@@ -40,7 +37,7 @@ import NavColorEnum from './enum/NavColorEnum';
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
   <style scoped lang="scss">
-    .nav-header {
+    .nav-head {
         background-color: white;
         &.background-primary {
             background-color: #e65050;
@@ -58,13 +55,6 @@ import NavColorEnum from './enum/NavColorEnum';
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
-        }
-        .menu-logo {
-            h1 {
-                font-size: 2.25em;
-                font-weight: bold;
-                margin: 0 10px;
-            }
         }
     }
   </style>
