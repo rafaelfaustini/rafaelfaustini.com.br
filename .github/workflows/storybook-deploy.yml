@@ -24,6 +24,6 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME_STORYBOOK }}
           password: ${{ secrets.FTP_PASSWORD_STORYBOOK }}
-          local-dir: "storybook-static/"
+          local-dir: "rafaelfaustini/storybook-static/"
           protocol: ftps
           port: ${{ secrets.FTP_PORT }}
