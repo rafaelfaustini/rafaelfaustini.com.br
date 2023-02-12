@@ -4,16 +4,16 @@ on:
     branches:
       - dev
       - vue.js-migration
+
+defaults:
+  run:
+    working-directory: rafaelfaustini
 jobs:
   website-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
       - uses: actions/setup-node@master
-      - name: Move to project
-        run: cd rafaelfaustini/
-      - name: Current dir
-        run: ls
       - name: Installing project dependencies
         run: npm install
       - name: Building the project
