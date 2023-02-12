@@ -12,7 +12,7 @@
                     <work-experience v-for="pastWork in pastWorks" :key="pastWork.title" :title="pastWork.title" :workTopics="pastWork.workTopics" :toolbarButton="pastWork.toolbarButton" ></work-experience>
                 </div>
                 <div class="button-container">
-                    <material-button color="primary" :size="'lg'" :text="resumeButtonOption.name" :href="resumeButtonOption.href"></material-button>
+                    <material-button color="primary" :size="'lg'" :text="resumeButtonOption?.name" :href="resumeButtonOption?.href"></material-button>
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@
                 margin-top: 10px;
                 display: grid;
                 grid-auto-rows: 1fr;
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(3, 1fr);
                 grid-column-gap: 10px;
                 grid-row-gap: 30px;
             }

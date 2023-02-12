@@ -3,7 +3,9 @@ name: Tagging Version
 on:
     push:
         branches: 'main'
-
+defaults:
+  run:
+    working-directory: rafaelfaustini
 jobs:
     build:
         name: Bump tag
@@ -27,7 +29,7 @@ jobs:
               id: previoustag
               uses: 'WyriHaximus/github-action-get-previous-tag@v1'
 
-            - name: Update version in build.json
+            - name: Update version in packages.json
               uses: jossef/action-set-json-field@v1
               with:
                   file: build.json

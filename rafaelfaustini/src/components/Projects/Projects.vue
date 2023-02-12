@@ -30,11 +30,11 @@ export default Vue.extend({
   },
 
   computed: {
-    filteredProjects: function() {
+    filteredProjects: function() : any {
       if(!this.searchText) {
-        return this.projects;
+        return this.sortProjects(this.projects);
       }
-      return this.projects.filter((project : IProject) : boolean => this.doesProjectMatchSearch(project, this.searchText))
+      return this.sortProjects(this.projects.filter((project : IProject) : boolean => this.doesProjectMatchSearch(project, this.searchText)))
     }
   },
 
@@ -57,6 +57,10 @@ export default Vue.extend({
 
       return doesTitleMatch || doesDescriptionMatch || doesYearMatch || doesLanguageMatch || doesTagMatch;
     },
+    sortProjects(projects : any) {
+      return projects.sort((a : any, b : any) => b.year - a.year || a.title.localeCompare(b.title));
+    }
+
   },
 });
 </script>
@@ -64,6 +68,8 @@ export default Vue.extend({
 <style scoped lang="scss">
   .projects {
     .projects-wrapper {
+      height: 30vw;
+      overflow: auto;
       .project {
         margin-bottom: 15px;
       }

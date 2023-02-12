@@ -6,17 +6,20 @@
                 <placeholder-image class="image" :text="title" v-else></placeholder-image>
             </div>
             <div class="project-content">
-                <h3 class="project-title">
-                    <span class="title">{{ title }} </span>
-                    <span class="tag" v-if="year">{{ year }}</span>
-                    <span class="tag" v-if="language">{{ language }}</span>
-                    <span v-for="tag in tags" :key="tag" class="tag">{{ tag }}&#32;</span>
-                </h3>
-                <p class="project-description">{{ description }}</p>
-                <div class="project-buttons">
-                    <material-button v-if="actionButton" :color="actionButtonColor" :href="actionButton.href" :text="actionButton.name"></material-button>
-                    <material-button v-if="sourceCodeButton" :color="sourceCodeButtonColor" :href="sourceCodeButton.href" :text="sourceCodeButton.name"></material-button>
+                <div class="content-wrapper">
+                    <h3 class="project-title">
+                        <span class="title">{{ title }} </span>
+                        <span class="tag" v-if="year">{{ year }}</span>
+                        <span class="tag" v-if="language">{{ language }}</span>
+                        <span v-for="tag in tags" :key="tag" class="tag">{{ tag }}&#32;</span>
+                    </h3>
+                    <p class="project-description" v-html="description"></p>
+                    <div class="project-buttons">
+                        <material-button v-if="actionButton" :color="actionButtonColor" :href="actionButton.href" :text="actionButton.name"></material-button>
+                        <material-button v-if="sourceCodeButton" :color="sourceCodeButtonColor" :href="sourceCodeButton.href" :text="sourceCodeButton.name"></material-button>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -70,6 +73,9 @@ export default Vue.extend({
                 }
             }
             .project-content {
+                display:flex;
+                align-items: center;
+                justify-content: center;
                 .project-title {
                     display: flex;
                     gap: 5px;
@@ -86,6 +92,10 @@ export default Vue.extend({
                         border-radius: 0.25rem;
                         vertical-align: middle;
                     }
+                }
+                .project-buttons {
+                    display: flex;
+                    gap: 5px;
                 }
             }
         }
