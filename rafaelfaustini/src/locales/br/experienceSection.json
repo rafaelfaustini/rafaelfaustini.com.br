@@ -2,7 +2,13 @@
     "title": "💼 Experiência Profissional",
     "currentWorks": [
         {
-            "title": "Aluno Pesquisador - Centro Universitário La Salle do Rio de Janeiro, abr 2020 - agora",
+            "title": "Desenvolvedor de software - Kwan, ago 2021 - agora",
+            "workTopics": [".NET", "SQL", "Angular", "Investigação, análise e desenvolvimento de Software"]
+        }
+    ],
+    "pastWorks": [
+        {
+            "title": "Aluno Pesquisador - Centro Universitário La Salle do Rio de Janeiro, abr 2020 - abr 2022",
             "workTopics": [
                 "Análise de dados com Python", 
                 "Deep Learning com Keras", 
@@ -15,12 +21,6 @@
               "color": "primary"
             }
         },
-        {
-            "title": "Desenvolvedor de software - Kwan, ago 2021 - agora",
-            "workTopics": [".NET", "SQL", "Angular", "Investigação, análise e desenvolvimento de Software"]
-        }
-    ],
-    "pastWorks": [
         {
             "title": "Desenvolvedor de software - 2tech Sistemas, jan 2021 - jun 2021",
             "workTopics": ["ASP .NET WEB API", "Layout Bootstrap 4/3", "Biblioteca Vue", "ASP Clássico", "SQL Server", "SASS", "Cypress (Testes automatizados)"]

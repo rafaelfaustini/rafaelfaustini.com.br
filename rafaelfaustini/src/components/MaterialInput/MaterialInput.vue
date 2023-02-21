@@ -63,9 +63,9 @@
         outline: none;
         color: black;
         border-bottom: rgba(0,0,0, 0.15) solid 2px;
-        caret-color: rgb(19, 117, 228);
+        caret-color: $primary-color;
         &:focus {
-            border-bottom: rgb(19, 117, 228) solid 2px;
+            border-bottom: $primary-color solid 2px;
         }
         &:valid + label,
         &:focus + label {
@@ -74,7 +74,7 @@
             font-size: 0.85rem
         }
         &:focus + label{
-            color: rgb(19, 117, 228);
+            color: $primary-color;
         }
    }
 }

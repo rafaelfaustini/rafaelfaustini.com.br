@@ -86,7 +86,6 @@ export default Vue.extend({
             .project-content {
                 display:flex;
                 align-items: center;
-                justify-content: center;
                 @media screen and (max-width: 768px) {
                     display: block;
                     text-align: center;

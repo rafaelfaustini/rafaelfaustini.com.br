@@ -63,9 +63,15 @@ export default Vue.extend({
 html,
 body {
     scroll-behavior: smooth;
+    @media (prefers-color-scheme: dark) { 
+      color-scheme: dark;
+    }
 }
 body {
-  background-color: #f2f2f2;
+  background-color: $outer-background-color;
+  @media (prefers-color-scheme: dark) { 
+      background-color: $outer-background-color-dark;
+  }
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -85,18 +91,26 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f2f2f2;
+    background: $inner-background-color;
     border-radius: 100vw;
     margin-block: 0.75em;
+    @media (prefers-color-scheme: dark) { 
+      background: $inner-background-color-dark;
+    }
 }
 
 ::-webkit-scrollbar-thumb {
-    background: darken(#f2f2f2, 60%);
-    border: 0.15em solid #f2f2f2;
+    background: darken($outer-background-color, 60%);
+    border: 0.15em solid $outer-background-color;
     border-radius: 100vw;
 
+    @media (prefers-color-scheme: dark) { 
+      background: darken($outer-background-color-dark, 60%);
+      border: 0.15em solid $outer-background-color-dark;
+    }
+
     &:hover {
-        background: darken(#f2f2f2, 41%);
+        background: darken($outer-background-color, 41%);
     }
 }
 

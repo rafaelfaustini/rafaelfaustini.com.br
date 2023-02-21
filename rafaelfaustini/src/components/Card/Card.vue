@@ -23,7 +23,6 @@
   
   <style scoped lang="scss">
     .card {
-        background-color: #fff;
         border-radius: 5px;
         box-shadow: 0 1px 4px 0 rgb(0 0 0 / 18%), 0 2px 11px 0 rgb(0 0 0 / 15%);
 
@@ -38,6 +37,12 @@
         background-color: #fff;
         background-clip: border-box;
         height: 100%;
+        @media (prefers-color-scheme: dark) { 
+              background: darken($inner-background-color-dark, 15%);
+              .card-title {
+                color: $primary-color;
+              }
+        }
 
 
         .card-body {

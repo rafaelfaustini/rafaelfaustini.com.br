@@ -38,10 +38,13 @@
   <!-- Add "scoped" attribute to limit CSS to this component only -->
   <style scoped lang="scss">
     .nav-head {
-        background-color: white;
+        background-color: transparent;
         &.background-primary {
-            background-color: #e65050;
+            background-color: $primary-color;
             color: white;
+            @media (prefers-color-scheme: dark) { 
+              background: darken($inner-background-color-dark, 10%);
+            }
         }
         &.background-secondary {
             background-color: #6002ee;

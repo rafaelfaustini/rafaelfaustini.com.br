@@ -28,7 +28,7 @@
   
   <style lang="scss">
     .about-section {
-        background-color: #fff;
+        background-color: transparent;
         .container {
             max-width: 1242px;
             margin: 0 auto;

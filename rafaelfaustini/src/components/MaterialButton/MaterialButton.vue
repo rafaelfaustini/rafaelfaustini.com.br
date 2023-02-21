@@ -87,13 +87,13 @@
 
     .btn-secondary {
         color: #fff;
-        background-color: #e65050;
+        background-color: $primary-color;
     }
 
     .btn-secondary-outline {
         background-color: transparent;
         color: #222;
-        border: 1px solid #e65050; 
+        border: 1px solid $primary-color; 
     }
 
     .btn-lg {

@@ -25,8 +25,12 @@
       margin-bottom: -1px;
       margin-top: -1px;
         svg {
+            background-color: transparent;
             display: block;
-            fill: #e65050;
+            fill: $primary-color;
+            @media (prefers-color-scheme: dark) { 
+              fill: darken($inner-background-color-dark, 10%);
+            }
         }
         &.flip-down {
           transform: rotate(180deg) scaleX(-1);

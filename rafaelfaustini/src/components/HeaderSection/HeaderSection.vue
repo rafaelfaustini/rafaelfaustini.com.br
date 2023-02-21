@@ -40,6 +40,9 @@
         background-color: #e65050;
         height: 85vh;
         animation: circle-out .65s;
+        @media (prefers-color-scheme: dark) { 
+            background: darken($inner-background-color-dark, 10%);
+        }
         .container {
             padding: 60px 0;
             display: flex;

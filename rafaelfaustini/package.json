@@ -3,8 +3,14 @@
   "version": "3.0.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve:dev": "vue-cli-service serve --mode development",
+    "serve:beta": "vue-cli-service serve --mode beta",
+    "serve:production": "vue-cli-service serve --mode production",
+    "build:dev": "vue-cli-service build --mode development",
+    "build:beta": "vue-cli-service build --mode beta",
+    "build:production": "vue-cli-service build --mode production",
+    "serve": "vue-cli-service serve --mode development",
+    "build": "vue-cli-service build --mode development",
     "lint": "vue-cli-service lint",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook"

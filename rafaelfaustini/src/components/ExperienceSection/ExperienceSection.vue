@@ -44,6 +44,9 @@
   <style scoped lang="scss">
     .experience-section {
         background-color: #e65050;
+        @media (prefers-color-scheme: dark) { 
+            background: darken($inner-background-color-dark, 10%);
+        }
         .container {
             max-width: 1242px;
             margin: 0 auto;
