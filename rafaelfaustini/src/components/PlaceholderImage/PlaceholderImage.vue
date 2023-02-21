@@ -54,10 +54,12 @@ export default Vue.extend({
 <style scoped lang="scss">
     .placeholder-image {
         max-width: 600px;
-
         .wrapper {
             height: 350px;
             width: 1000px;
+            padding: 20%;
+            height: 50%;
+            width: 100%;
             max-width: 100%;
             max-height: 100%;
             display: flex;

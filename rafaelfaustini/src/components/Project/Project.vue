@@ -61,25 +61,47 @@ export default Vue.extend({
 <style scoped lang="scss">
     .project {
         .container {
-            display: flex;
-            align-content: center;
-            justify-content: center; 
+            display: grid;
+            grid-auto-rows: 1fr;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+
+            @media (min-width: 600px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media screen and (max-width: 768px) {
+                    display: block;
+                    text-align: center;
+                    gap: 0; 
+            }
             gap: 20px; 
             .project-image {
                 flex: 1 1 329px;
                 max-width: 600px;
                 .image {
                     max-width: 600px;
+                    width: 100%;
                 }
             }
             .project-content {
                 display:flex;
                 align-items: center;
                 justify-content: center;
+                @media screen and (max-width: 768px) {
+                    display: block;
+                    text-align: center;
+                    .project-description {
+                        text-align: justify;
+                    }
+                }
+
                 .project-title {
                     display: flex;
                     gap: 5px;
                     align-items: center;
+                    @media screen and (max-width: 768px) {
+                        justify-content: center;
+                    }
                     .title {
                         padding: 0 2px;
                     }
@@ -96,6 +118,9 @@ export default Vue.extend({
                 .project-buttons {
                     display: flex;
                     gap: 5px;
+                    @media screen and (max-width: 768px) {
+                        justify-content: center;
+                    }
                 }
             }
         }

@@ -20,21 +20,15 @@ import LayoutContainer from './components/LayoutContainer/LayoutContainer.vue';
 import AboutSection from './components/AboutSection/AboutSection.vue';
 import ExperienceSection from './components/ExperienceSection/ExperienceSection.vue';
 import WaveDivider from './components/WaveDivider/WaveDivider.vue'
-import IWorkExperience from './components/ExperienceSection/interfaces/IWorkExperience';
-import ButtonColorEnum from './components/MaterialButton/enum/ButtonColorEnum';
-import IButton from './components/Shared/interfaces/IButton';
 import HeaderBar from './components/HeaderBar/HeaderBar.vue';
 import FooterBar from './components/FooterBar/FooterBar.vue';
-import IProjectImage from './components/Project/interface/IProjectImage';
 import PortfolioSection from './components/PortfolioSection/PortfolioSection.vue';
-import IPortifolioSection from './components/Shared/interfaces/IPortifolioSection';
-import IProject from './components/Projects/interface/IProject';
-import IExperienceSection from './components/Shared/interfaces/IExperienceSection';
 import IAboutSection from './components/Shared/interfaces/IAboutSection';
 import IHeaderSection from './components/Shared/interfaces/IHeaderSection';
 import IHeaderBar from './components/Shared/interfaces/IHeaderBar';
 
 import {createHeaderBar, createHeaderSection, createAboutSection, createExperienceSection, createPortfolioSection} from './TranslationValues'
+import i18next from 'i18next';
 
 export default Vue.extend({
   name: 'App',
@@ -58,6 +52,9 @@ export default Vue.extend({
      portifolioSection : createPortfolioSection(this.$t)
     }
   },
+  mounted() {
+    i18next.changeLanguage("br");
+  },
 });
 </script>
 
@@ -80,6 +77,11 @@ body {
 ::-webkit-scrollbar {
     width: 0.75em;
     height: 0.5em;
+    @media screen and (max-width: 768px) {
+      -webkit-appearance: none;
+      width: 0;
+      height: 0;
+    }
 }
 
 ::-webkit-scrollbar-track {

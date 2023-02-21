@@ -22,6 +22,8 @@
   
   <style scoped lang="scss">
     .wave-divider{
+      margin-bottom: -1px;
+      margin-top: -1px;
         svg {
             display: block;
             fill: #e65050;

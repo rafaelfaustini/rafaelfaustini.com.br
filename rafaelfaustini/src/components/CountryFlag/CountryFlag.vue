@@ -5,7 +5,6 @@
         <img class="flag-icon" v-if="showItaliaFlag" src="/img/header/italia.svg" alt="" :key="1"/>
         <img class="flag-icon" v-if="showPortugalFlag" src="/img/header/portugal.svg" alt="" :key="2"/>
       </transition>
-
     </div>
 </template>
   
@@ -55,14 +54,22 @@
   
   <style scoped lang="scss">
   .flag {
+    display: flex;
+    align-items: center;
+    width: 1em;
+    height: 0.75em;
+
     .flag-icon {
       display: inline;
-      margin: 10px;
-      width: 1em;
-      height: 1em;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
       vertical-align: middle;
+
+
+    }
   }
-  }
+
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s ease;
 }

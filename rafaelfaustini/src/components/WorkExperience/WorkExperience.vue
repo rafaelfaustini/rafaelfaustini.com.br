@@ -1,12 +1,10 @@
 <template>
-  <div class="work-experience" data-cy="work-experience">
     <Card :title="title">
       <p class="work-topic" v-for="workTopic in workTopics" :key="workTopic">- {{ workTopic }}</p>
       <div class="button-toolbar" v-if="toolbarButton">
         <material-button :text="toolbarButton.name" :color="toolbarButton.color || 'primary'" :href="toolbarButton.href"></material-button>
       </div>
     </Card>
-  </div>
 </template>
   
   <script lang="ts">
@@ -30,7 +28,6 @@
   </script>
   
   <style scoped lang="scss">
-  .work-experience {
     .work-topic {
       line-height: normal;
       margin-bottom: 0.7em;
@@ -38,6 +35,5 @@
       line-height: 1.4;
       color: #7c7c7c;
     }
-  }
   </style>
   

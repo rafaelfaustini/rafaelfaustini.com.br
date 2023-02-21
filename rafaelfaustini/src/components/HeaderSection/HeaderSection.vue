@@ -54,7 +54,10 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-
+                    gap: 10px;
+                    @media screen and (max-width: 768px) {
+                        padding: 0 20px;
+                    }
                 }
                 .subtitle {
                     text-align: center;

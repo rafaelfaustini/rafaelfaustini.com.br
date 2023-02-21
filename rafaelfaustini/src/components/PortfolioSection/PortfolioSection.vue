@@ -1,7 +1,6 @@
 <template>
     <section id="portfolio" class="portfolio-section">
         <div class="container">
-            <div class="inner-container">
                 <h1 class="title">
                     {{ title }}
                 </h1>
@@ -9,7 +8,6 @@
                 <div class="button-toolbar" v-if="githubButton">
                     <material-button size="lg" :text="githubButton.name" :color="githubButton.color" :href="githubButton.href"></material-button>
                 </div>
-            </div>
         </div>
     </section>
 </template>
@@ -47,6 +45,9 @@ export default Vue.extend({
             align-items: center;
             justify-content: center;
             padding: 50px;
+            @media (max-width: 600px) {
+                padding: 10px;
+            }
             .title {
                 font-size: 3em;
                 text-align: center;

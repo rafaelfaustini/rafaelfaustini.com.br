@@ -51,7 +51,6 @@ import IHeaderSection from "./components/Shared/interfaces/IHeaderSection";
             searchPlaceholder: translations("portfolioSection:searchPlaceholder"),
             projects: translations("portfolioSection:projects", { returnObjects: true }),
         }
-        debugger
 
         return portfolioSection
     }

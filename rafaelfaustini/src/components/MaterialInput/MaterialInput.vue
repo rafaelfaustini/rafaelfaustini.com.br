@@ -1,7 +1,7 @@
 <template>
     <div class="md-input">
-        <input @input="updateValue" data-cy="projects-search" required/>
-        <label data-cy="projects-search-placeholder">{{placeholder}}</label>
+        <input @input="updateValue" data-cy="projects-search" ref="projectsSearch" required/>
+        <label data-cy="projects-search-placeholder"  @click="focusSearch()">{{placeholder}}</label>
     </div>
 </template>
   
@@ -19,6 +19,11 @@
     methods: {
         updateValue(event:any) {
             this.$emit('input', event.target.value)
+        },
+        focusSearch() {
+            const searchBar : any = this.$refs.projectsSearch;
+            searchBar.focus();
+            
         }
     },
     components: {
@@ -40,6 +45,11 @@
         top: 10px;
         font-size: 1.20rem;
         transition: .3s ease-in-out;
+        max-width: 100%;
+        text-overflow: ellipsis;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
     }
     input{
         display: block;

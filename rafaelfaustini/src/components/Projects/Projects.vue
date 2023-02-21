@@ -67,11 +67,18 @@ export default Vue.extend({
 
 <style scoped lang="scss">
   .projects {
+    width: 100%;
     .projects-wrapper {
+      @media (max-width: 600px) {
+        height: auto;
+      }
       height: 30vw;
       overflow: auto;
       .project {
         margin-bottom: 15px;
+        @media (max-width: 600px) {
+          margin-bottom: 35px;
+        }
       }
     }
   }

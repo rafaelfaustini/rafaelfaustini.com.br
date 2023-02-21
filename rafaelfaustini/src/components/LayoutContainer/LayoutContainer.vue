@@ -18,6 +18,11 @@
         background: #fff;
         border-radius: 16px;
         overflow: hidden;
+        @media screen and (max-width: 768px) {
+          margin: 0;
+          border-radius: 0;
+        }
     }
+    
   </style>
   
