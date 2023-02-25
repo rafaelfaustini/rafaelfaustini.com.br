@@ -16,13 +16,13 @@ jobs:
       - name: Installing project dependencies
         run: npm install
       - name: Building the project
-        run: npm run build-storybook
+        run: npm run build prod
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME_STORYBOOK }}
-          password: ${{ secrets.FTP_PASSWORD_STORYBOOK }}
-          local-dir: "rafaelfaustini/storybook-static/"
+          username: ${{ secrets.FTP_USERNAME_DEV_ENGLISH }}
+          password: ${{ secrets.FTP_PASSWORD_DEV_ENGLISH }}
+          local-dir: "rafaelfaustini/dist/"
           protocol: ftps
           port: ${{ secrets.FTP_PORT }}
