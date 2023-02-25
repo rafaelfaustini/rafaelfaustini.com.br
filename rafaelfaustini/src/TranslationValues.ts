@@ -1,10 +1,13 @@
 import { TFunction } from "i18next";
 import IWorkExperience from "./components/ExperienceSection/interfaces/IWorkExperience";
 import IAboutSection from "./components/Shared/interfaces/IAboutSection";
-import IButton from "./components/Shared/interfaces/IButton";
-import IExperienceSection from "./components/Shared/interfaces/IExperienceSection";
 import IHeaderBar from "./components/Shared/interfaces/IHeaderBar";
 import IHeaderSection from "./components/Shared/interfaces/IHeaderSection";
+import moment from 'moment'; 
+
+   function getCurrentAge() {
+    return moment().diff('1999-04-17', 'years');
+   }
 
    export function createHeaderBar(translations : TFunction) : IHeaderBar {
         const headerBar = {
@@ -12,6 +15,7 @@ import IHeaderSection from "./components/Shared/interfaces/IHeaderSection";
             navItemList: [
                 { name: translations("headerBar:navItemList.home"), href: '#' },
                 { name: translations("headerBar:navItemList.about"), href: '#about'},
+                { name: translations("headerBar:navItemList.experience"), href: '#experience'},
                 { name: translations("headerBar:navItemList.portfolio"), href: '#portfolio'},
             ]
         } as IHeaderBar
@@ -29,8 +33,9 @@ import IHeaderSection from "./components/Shared/interfaces/IHeaderSection";
     export function createAboutSection(translations : TFunction) : IAboutSection {
         const aboutSection = {
             title: translations("aboutSection:title"),
-            paragraphs: translations("aboutSection:paragraphs", { returnObjects: true }),
+            paragraphs: translations("aboutSection:paragraphs", { age: getCurrentAge() , returnObjects: true }),
         } as IAboutSection
+
         return aboutSection
     }
     

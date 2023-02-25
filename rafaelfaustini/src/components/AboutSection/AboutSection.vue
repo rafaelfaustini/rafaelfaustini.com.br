@@ -13,7 +13,8 @@
 </template>
   
   <script lang="ts">
-  import Vue, {PropType} from 'vue';
+  import i18next from 'i18next';
+import Vue, {PropType} from 'vue';
   
   export default Vue.extend({
     name: 'AboutSection',
@@ -22,7 +23,7 @@
         paragraphs: Array as PropType<string[]>
     },
     components: {
-    }
+    },
   });
   </script>
   
@@ -33,6 +34,10 @@
             max-width: 1242px;
             margin: 0 auto;
             padding: 60px 0 20px 0;
+            @media (max-width: 600px) {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
             display: flex;
             flex-wrap: wrap;
             align-items: center;
@@ -43,6 +48,9 @@
                 .title{
                     font-size: 3em;
                     margin-bottom: 0.5em;
+                    @media (max-width: 600px) {
+                        text-align: center;
+                    }
                 }
                 .paragraph {
                     font-size: 1.35em;
@@ -52,13 +60,16 @@
                 }
                 .destaque {
                         color: inherit;
-                        border-bottom: solid 1px #d32f2f;
+                        border-bottom: solid 1px $primary-color;
                         transition: font-weight .4s ease-out,text-shadow .4s ease-out,color .8s ease-out;
                         font-weight: 200;
                         &:hover {
                             font-weight: bolder;
-                            color: #d32f2f;
+                            color: $primary-color;
                             text-shadow: 1px 1px 0px #dfdfdf, 2px 2px 0px #dfdfdf, 3px 3px 0px #dfdfdf;
+                            @media (prefers-color-scheme: dark) { 
+                                text-shadow: none;
+                            }
                         }
                     }
             }

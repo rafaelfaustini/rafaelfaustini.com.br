@@ -49,6 +49,10 @@
             align-items: center;
             justify-content: center;
             height: inherit;
+            @media (max-width: 600px) {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
             .inner-container {
                 flex: 11 1 100px;
                 .title {

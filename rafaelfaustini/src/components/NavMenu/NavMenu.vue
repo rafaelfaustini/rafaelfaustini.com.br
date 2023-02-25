@@ -37,13 +37,29 @@
           font-size: 1.25em;
           display: block;
           padding: 10px;
-          transition: all .25s;
-          outline: 0;
+          transition: all .5s;
+          outline: 2px solid transparent;
           text-decoration: none;
           color: #000;
+          transition: outline-width 200ms ease, outline-offset 200ms ease;
+          border-radius: 15px;
+          @media (prefers-color-scheme: dark) { 
+              color: white;
+          }
 
           &:hover {
-            outline: solid #000 1px;
+            outline: 2px solid #000;
+            outline-offset: -5px;
+
+            @media (prefers-color-scheme: dark) {
+              &:nth-of-type(odd){
+                outline: solid $primary-color 2px; 
+              }
+              &:nth-of-type(even){
+                outline: solid $secondary-color 2px; 
+              }
+              
+            }
           }
         }
       }

@@ -79,7 +79,7 @@
         "year": 2018,
         "language": "Java",
         "tags": [],
-        "description": "CraftBukkit is a software modification for Minecraft Servers. TheSortingHat is a Bukkit plugin that makes possible random pick between configurated commands. The name is inspired in Harry Potter since the functionality is very similar to the<a href=\"https://harrypotter.fandom.com/wiki/Sorting_Hat\">sorting hat</a>",
+        "description": "CraftBukkit is a software modification for Minecraft Servers. TheSortingHat is a Bukkit plugin that makes possible random pick between configurated commands. The name is inspired in Harry Potter since the functionality is very similar to the <a href=\"https://harrypotter.fandom.com/wiki/Sorting_Hat\">sorting hat</a>",
         "actionButton": {
             "name": "Official Builds",
             "href": "https://dev.bukkit.org/projects/TheSortingHat",
@@ -158,7 +158,7 @@
       "year": 2020,
       "language": "Javascript",
       "tags": ["Vue"],
-      "description": "Uma ferramenta feita com javascript para minificar css em tempo real",
+      "description": "A javascript tool to minify css in real-time",
       "sourceCodeButton": {
         "name": "Source-Code",
         "href": "https://github.com/rafaelfaustini/css-minify",
@@ -169,6 +169,19 @@
         "href": "/minify",
         "color": "secondary"
       }
+  },
+  {
+    "id": 10,
+    "title": "Rafael Faustini",
+    "year": 2023,
+    "language": "Javascript",
+    "tags": ["Vue"],
+    "description": "My open-source website serves as a digital portfolio showcasing my personal projects and experience in a more engaging and visual way. With a clean and modern aesthetic, visitors can easily navigate and explore my work, read about my professional background and skills, and get a sense of who I am as a person and professional. The website is designed to make a strong impression on potential employers or collaborators who may be interested in contacting with me.",
+    "sourceCodeButton": {
+      "name": "Source-Code",
+      "href": "https://github.com/rafaelfaustini/rafaelfaustini.com.br",
+      "color": "secondary-outline"
+    }
   }
     ]
 }

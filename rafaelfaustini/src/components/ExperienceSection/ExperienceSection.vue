@@ -43,7 +43,7 @@
   
   <style scoped lang="scss">
     .experience-section {
-        background-color: #e65050;
+        background-color: $primary-color;
         @media (prefers-color-scheme: dark) { 
             background: darken($inner-background-color-dark, 10%);
         }
@@ -51,10 +51,7 @@
             max-width: 1242px;
             margin: 0 auto;
             padding: 0px 0 5px 0;
-            display: flex;
             flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
             padding: 50px;
             .title {
                 font-size: 3em;
@@ -65,35 +62,21 @@
 
             }
             .current-works {
-                max-width: 1200px;
+                max-width: 500px;
                 margin: 0 auto;
-                display: grid;
-                grid-auto-rows: 1fr;
-                grid-column-gap: 30px;
-                grid-row-gap: 20px;
+                display: flex;
+                align-items: center;
+                gap: 0.75em;
+                margin-bottom: 1.5rem;
 
-                @media (min-width: 600px) {
-                    grid-template-columns: repeat(1, 1fr);
-                }
-
-                @media (min-width: 900px) {
-                    grid-template-columns: repeat(2, 1fr);
-                }
+                grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
             }
             .past-works {
                 margin-top: 10px;
                 display: grid;
-                grid-auto-rows: 1fr;
-                grid-column-gap: 10px;
-                grid-row-gap: 10px;
-
-                @media (min-width: 600px) {
-                    grid-template-columns: repeat(2, 1fr);
-                }
-
-                @media (min-width: 900px) {
-                    grid-template-columns: repeat(3, 1fr);
-                }
+                grid-gap: 0.75rem;
+                justify-content: center;
+                grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
             }
 
             .button-container {

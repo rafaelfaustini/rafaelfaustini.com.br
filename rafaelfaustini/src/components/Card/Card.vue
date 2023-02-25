@@ -26,17 +26,9 @@
         border-radius: 5px;
         box-shadow: 0 1px 4px 0 rgb(0 0 0 / 18%), 0 2px 11px 0 rgb(0 0 0 / 15%);
 
-        position: relative;
-        display: flex;
-         -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        min-width: 0;
         word-wrap: break-word;
         background-color: #fff;
-        background-clip: border-box;
-        height: 100%;
+        width: 100%;
         @media (prefers-color-scheme: dark) { 
               background: darken($inner-background-color-dark, 15%);
               .card-title {
@@ -46,9 +38,6 @@
 
 
         .card-body {
-            -webkit-box-flex: 1;
-            -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
             padding: 1.20rem;
 
             .card-title {

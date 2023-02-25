@@ -49,6 +49,7 @@ import NavColorEnum from './enum/NavColorEnum';
             display: flex;
             align-items: center;
             flex-wrap: wrap;
+            gap: 0.5rem;
             p,a {
                 flex: 1 1 100%;
                 text-align: center;

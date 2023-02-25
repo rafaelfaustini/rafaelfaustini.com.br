@@ -1,5 +1,5 @@
 <template>
-    <Card :title="title">
+    <Card class="work-experience" :title="title">
       <p class="work-topic" v-for="workTopic in workTopics" :key="workTopic">- {{ workTopic }}</p>
       <div class="button-toolbar" v-if="toolbarButton">
         <material-button :text="toolbarButton.name" :color="toolbarButton.color || 'primary'" :href="toolbarButton.href"></material-button>
@@ -34,6 +34,10 @@
       font-size: 1em;
       line-height: 1.4;
       color: #7c7c7c;
+    }
+    .work-experience {
+      width: 100%;
+      height: 100%;
     }
   </style>
   
