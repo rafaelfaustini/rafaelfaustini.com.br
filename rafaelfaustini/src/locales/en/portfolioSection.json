@@ -1,0 +1,187 @@
+{
+    "title": "Portfolio",
+    "searchPlaceholder": "Search by keyword, technology or year",
+    "projects": [
+     {
+        "id": 1,
+        "title": "SmartCare - Machine Learning",
+        "year": 2020,
+        "language": "Python",
+        "tags": [],
+        "description": "The objective is to create an intelligent system to detect and mitigate the agitation behaviour of Alzheimer's patients. My role in the project is machine learning and data analytics. Based on the motion data, it's possible to infer through pattern detection abnormal behaviour.",
+        "actionButton": {
+          "name": "Saiba mais",
+          "href": "https://www.youtube.com/watch?v=nIvv3xGw1js&t=10s",
+          "color": "secondary"
+        },
+        "sourceCodeButton": {
+          "name": "Source-Code",
+          "href": "https://github.com/Unilasalle-SmartCare/smartcare-machinelearning",
+          "color": "secondary-outline"
+        },
+        "projectImage": {
+            "src": "/img/projects/SmartCare.jpg",
+            "alt": "SmartCare Logo"
+        }
+     },
+     {
+        "id": 2,
+        "title": "Cat or dog ?",
+        "year": 2020,
+        "language": "Python",
+        "tags": [],
+        "description": "Deep Learning to classify pictures of dogs and cats",
+        "actionButton": {
+          "name": "Preview",
+          "href": "/catdog",
+          "color": "secondary"
+        },
+        "sourceCodeButton": {
+          "name": "Source-Code",
+          "href": "https://github.com/rafaelfaustini/machinelearning-python/tree/master/cnn/CatorDog",
+          "color": "secondary-outline"
+        }
+     },
+     {
+        "id": 3,
+        "title": "Gas Gun",
+        "year": 2020,
+        "language": "C#",
+        "tags": [],
+        "description": "Script for Grand Theft Auto V Game that when activated replaces grenades from the grenade launcher to teargas or bzgas",
+        "sourceCodeButton": {
+          "name": "Source-Code",
+          "href": "https://github.com/rafaelfaustini/gasgun",
+          "color": "secondary-outline"
+        }
+    },
+    {
+        "id": 4,
+        "title": "Traveler Salesman",
+        "year": 2019,
+        "language": "Javascript",
+        "tags": [],
+        "description": "A genetic algorithm that tries to solve the <b>Traveler Salesman</b> problem by predicting the best path",
+        "actionButton": {
+            "name": "Preview",
+            "href": "/caixeiroviajante",
+            "color": "secondary"
+          },
+        "sourceCodeButton": {
+          "name": "Documentation with code",
+          "href": "docs/caixeiroviajante.pdf",
+          "color": "secondary-outline"
+        }
+    },
+    {
+        "id": 5,
+        "title": "TheSortingHat",
+        "year": 2018,
+        "language": "Java",
+        "tags": [],
+        "description": "CraftBukkit is a software modification for Minecraft Servers. TheSortingHat is a Bukkit plugin that makes possible random pick between configurated commands. The name is inspired in Harry Potter since the functionality is very similar to the <a href=\"https://harrypotter.fandom.com/wiki/Sorting_Hat\">sorting hat</a>",
+        "actionButton": {
+            "name": "Official Builds",
+            "href": "https://dev.bukkit.org/projects/TheSortingHat",
+            "color": "secondary"
+          },
+        "sourceCodeButton": {
+          "name": "Source-Code",
+          "href": "https://github.com/rafaelfaustini/TheSortingHat",
+          "color": "secondary-outline"
+        }
+    },
+    {
+        "id": 6,
+        "title": "Anima !?",
+        "year": 2018,
+        "language": "PHP",
+        "tags": [],
+        "description": "Transport pooling web app made for La Salle Rj's university. Presented in 2018's science and technology week of La Salle RJ. I was a full-stack developer",
+        "actionButton": {
+            "name": "Preview",
+            "href": "/anima",
+            "color": "secondary"
+          },
+        "sourceCodeButton": {
+          "name": "Source-Code",
+          "href": "https://github.com/rafaelfaustini/anima",
+          "color": "secondary-outline"
+        },
+        "projectImage": {
+            "src": "/img/projects/anima.svg",
+            "alt": "Anima Logo"
+        }
+    },
+    {
+        "id": 7,
+        "title": "Text-gene",
+        "year": 2018,
+        "language": "Javascript",
+        "tags": [],
+        "description":  "<p class=\"showcase__description mb-4 color-gray\">Genetic algorithm based on <a href=\"https://en.wikipedia.org/wiki/Infinite_monkey_theorem\">Infinite monkey theorem</a>.</p><p> It discovers the typed text in a better way than bruteforcing</p>",
+        "actionButton": {
+            "name": "Preview",
+            "href": "https://snizer.com.br/gene",
+            "color": "secondary"
+          },
+        "sourceCodeButton": {
+          "name": "Source-Code",
+          "href": "https://github.com/rafaelfaustini/text-gene",
+          "color": "secondary-outline"
+        },
+        "projectImage": {
+            "src": "/img/projects/SnizerGene.webp",
+            "alt": "Snizer Gene Logo"
+        }
+    },
+    {
+        "id": 8,
+        "title": "Snizer Hiit",
+        "year": 2017,
+        "language": "Delphi",
+        "tags": [],
+        "description": "Snizer Hiit is an android application that brings a timer to make your time control during interval training easier, with TextToSpeech warnings to help you alternate the trains.",
+        "sourceCodeButton": {
+          "name": "Source-Code",
+          "href": "https://github.com/rafaelfaustini/snizerhiit",
+          "color": "secondary-outline"
+        },
+        "projectImage": {
+            "src": "/img/projects/SnizerHiit.webp",
+            "alt": "Snizer Hiit Logo"
+        }
+    },
+    {
+      "id": 9,
+      "title": "Minify Your CSS",
+      "year": 2020,
+      "language": "Javascript",
+      "tags": ["Vue"],
+      "description": "A javascript tool to minify css in real-time",
+      "sourceCodeButton": {
+        "name": "Source-Code",
+        "href": "https://github.com/rafaelfaustini/css-minify",
+        "color": "secondary-outline"
+      },
+      "actionButton": {
+        "name": "Preview",
+        "href": "/minify",
+        "color": "secondary"
+      }
+  },
+  {
+    "id": 10,
+    "title": "Rafael Faustini",
+    "year": 2023,
+    "language": "Javascript",
+    "tags": ["Vue"],
+    "description": "My open-source website serves as a digital portfolio showcasing my personal projects and experience in a more engaging and visual way. With a clean and modern aesthetic, visitors can easily navigate and explore my work, read about my professional background and skills, and get a sense of who I am as a person and professional. The website is designed to make a strong impression on potential employers or collaborators who may be interested in contacting with me.",
+    "sourceCodeButton": {
+      "name": "Source-Code",
+      "href": "https://github.com/rafaelfaustini/rafaelfaustini.com.br",
+      "color": "secondary-outline"
+    }
+  }
+    ]
+}

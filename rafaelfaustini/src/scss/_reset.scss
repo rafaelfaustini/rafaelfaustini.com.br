@@ -1,0 +1,37 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+	user-select: none;
+	-webkit-user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	overscroll-behavior-y: contain;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, p, ul, li, a {
+	margin: 0;
+	padding: 0;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+$teste: red;
