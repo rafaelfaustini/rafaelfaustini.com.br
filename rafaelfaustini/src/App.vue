@@ -53,7 +53,20 @@ export default Vue.extend({
     }
   },
   mounted() {
-    i18next.changeLanguage("br");
+    this.$nextTick(() => {
+      i18next.on('languageChanged', () => {
+        this.reloadTexts();
+      });
+    });
+  },
+  methods: {
+    reloadTexts() {
+     this.headerBar = createHeaderBar(this.$t) as IHeaderBar,
+     this.headerSection = createHeaderSection(this.$t) as IHeaderSection,
+     this.aboutSection = createAboutSection(this.$t) as IAboutSection,
+     this.experienceSection = createExperienceSection(this.$t),
+     this.portifolioSection = createPortfolioSection(this.$t)
+    }
   },
 });
 </script>

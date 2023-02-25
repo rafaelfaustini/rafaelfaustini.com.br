@@ -3,7 +3,7 @@
         <div class="container">
             <div class="inner-container">
                 <h1 class="title">
-                  <country-flag :slideAnimation="true" :slideInterval="5" />{{ title }}<country-flag :slideAnimation="true" :slideInterval="5" />
+                  <country-flag :slideAnimation="true" :slideInterval="3" />{{ title }}<country-flag :slideAnimation="true" :slideInterval="3" />
                 </h1>
                 <p class="subtitle">{{ subtitle }}</p>
             </div>

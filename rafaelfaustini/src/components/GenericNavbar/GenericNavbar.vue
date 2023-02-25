@@ -59,6 +59,11 @@
             justify-content: space-between;
             align-items: center;
         }
+        .container-right {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
     }
   </style>
   

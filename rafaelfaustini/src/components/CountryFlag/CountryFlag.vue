@@ -1,9 +1,9 @@
 <template>
     <div class="flag">
       <transition name="fade" mode="out-in">
-        <img class="flag-icon" v-if="showBrasilFlag" src="/img/header/brasil.svg" alt="" :key="0" />
-        <img class="flag-icon" v-if="showItaliaFlag" src="/img/header/italia.svg" alt="" :key="1"/>
-        <img class="flag-icon" v-if="showPortugalFlag" src="/img/header/portugal.svg" alt="" :key="2"/>
+        <img class="flag-icon" v-if="showBrasilFlag" src="https://hatscripts.github.io/circle-flags/flags/br.svg" alt="" :key="0" />
+        <img class="flag-icon" v-if="showItaliaFlag" src="https://hatscripts.github.io/circle-flags/flags/it.svg" alt="" :key="1"/>
+        <img class="flag-icon" v-if="showPortugalFlag" src="https://hatscripts.github.io/circle-flags/flags/pt.svg" alt="" :key="2"/>
       </transition>
     </div>
 </template>

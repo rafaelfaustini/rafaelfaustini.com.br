@@ -9,6 +9,7 @@
             </template>
             <template v-slot:bar-right>
                 <nav-menu :itemList="navItemList"></nav-menu>
+                <LanguageSwitcher></LanguageSwitcher>
             </template>
         </generic-navbar>
     </header>
@@ -20,9 +21,10 @@ import GenericNavbar from '../GenericNavbar/GenericNavbar.vue';
 import INavMenuItem from '../NavMenu/interfaces/INavMenuItem';
 import NavColorEnum from './enum/NavColorEnum';
 import NavMenu from '../NavMenu/NavMenu.vue';
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher.vue';
   
   export default Vue.extend({
-  components: { GenericNavbar, NavMenu },
+  components: { GenericNavbar, NavMenu, LanguageSwitcher },
     name: 'HeaderBar',
     props: {
       logoName: String,
