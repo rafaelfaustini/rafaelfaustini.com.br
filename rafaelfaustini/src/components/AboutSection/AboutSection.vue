@@ -6,7 +6,7 @@
                 <p class="paragraph" v-for="paragraph in paragraphs" :key="paragraph" v-html="paragraph"></p>
             </div>
             <div class="about-image">
-                <img loading="lazy" src="/img/about/me.png" />
+                <img loading="lazy" :src="basePath + 'img/about/me.png'" />
             </div>
         </div>
     </section>
@@ -22,7 +22,10 @@ import Vue, {PropType} from 'vue';
         title: String,
         paragraphs: Array as PropType<string[]>
     },
-    components: {
+    computed: {
+        basePath() {
+            return process.env.BASE_URL;
+        }
     },
   });
   </script>

@@ -1,4 +1,4 @@
 {
     "title": "🧑🏻‍ A bit about me",
-    "paragraphs": ["My name is Rafael Faustini, I'm a {{age}} years old Italian and Brazilian full-stack software developer, bachelor in Information Systems by <a href=\"https://www.unilasalle.edu.br/rj\" class=\"destaque\">Centro Universitário La Salle do Rio de Janeiro</a>, living in Lisbon.", "I started programming when I was 11 years old and never stopped, since then always searching new solutions to new problems."]
+    "paragraphs": ["My name is Rafael Faustini, I'm a {{age}} years old brazilian, italian and portuguese full-stack software developer, bachelor in Information Systems by <a href=\"https://www.unilasalle.edu.br/rj\" class=\"destaque\">Centro Universitário La Salle do Rio de Janeiro</a>, living in Lisbon.", "I started programming when I was 11 years old and never stopped, since then always searching new solutions to new problems."]
 }
