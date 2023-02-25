@@ -1,4 +1,4 @@
-name: Deploy Dev [pt-br]
+name: Deploy Dev [en]
 on:
   push:
     branches:
@@ -16,7 +16,7 @@ jobs:
       - name: Installing project dependencies
         run: npm install
       - name: Building the project
-        run: npm run build prod
+        run: npm run build:production --lang en
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
