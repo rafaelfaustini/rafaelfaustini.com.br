@@ -2,7 +2,7 @@ name: Deploy Dev [pt-br]
 on:
   push:
     branches:
-      - dev
+      - disabled
 
 defaults:
   run:
