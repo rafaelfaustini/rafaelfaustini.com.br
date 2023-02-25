@@ -2,7 +2,7 @@
     <div class="project">
         <div class="container">
             <div class="project-image">
-                <img class="image" v-if="projectImage" loading="lazy" :src="projectImage.src" :alt="projectImage.alt">
+                <img class="image" v-if="projectImage" loading="lazy" :src="basePath + projectImage.src" :alt="projectImage.alt">
                 <placeholder-image class="image" :text="title" v-else></placeholder-image>
             </div>
             <div class="project-content">
@@ -49,6 +49,11 @@ export default Vue.extend({
     return {
         actionButtonColor: ButtonColorEnum.Secondary,
         sourceCodeButtonColor: ButtonColorEnum.SecondaryOutline
+    }
+  },
+  computed: {
+    basePath() {
+        return process.env.BASE_URL;
     }
   },
   components: {

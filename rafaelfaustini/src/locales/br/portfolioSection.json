@@ -20,7 +20,7 @@
           "color": "secondary-outline"
         },
         "projectImage": {
-          "src": "/img/projects/SmartCare.jpg",
+          "src": "img/projects/SmartCare.jpg",
           "alt": "Logotipo do SmartCare"
         }
      },
@@ -127,7 +127,7 @@
           "color": "secondary-outline"
         },
         "projectImage": {
-          "src": "/img/projects/SnizerGene.webp",
+          "src": "img/projects/SnizerGene.webp",
           "alt": "Logotipo do Snizer Gene"
         }
     },
@@ -144,7 +144,7 @@
           "color": "secondary-outline"
         },
         "projectImage": {
-          "src": "/img/projects/SnizerHiit.webp",
+          "src": "img/projects/SnizerHiit.webp",
           "alt": "Logotipo do Snizer Hiit"
         }
     },

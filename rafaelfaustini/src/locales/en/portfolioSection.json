@@ -20,7 +20,7 @@
           "color": "secondary-outline"
         },
         "projectImage": {
-            "src": "/img/projects/SmartCare.jpg",
+            "src": "img/projects/SmartCare.jpg",
             "alt": "SmartCare Logo"
         }
      },
@@ -109,7 +109,7 @@
           "color": "secondary-outline"
         },
         "projectImage": {
-            "src": "/img/projects/anima.svg",
+            "src": "img/projects/anima.svg",
             "alt": "Anima Logo"
         }
     },
@@ -131,7 +131,7 @@
           "color": "secondary-outline"
         },
         "projectImage": {
-            "src": "/img/projects/SnizerGene.webp",
+            "src": "img/projects/SnizerGene.webp",
             "alt": "Snizer Gene Logo"
         }
     },
@@ -148,7 +148,7 @@
           "color": "secondary-outline"
         },
         "projectImage": {
-            "src": "/img/projects/SnizerHiit.webp",
+            "src": "img/projects/SnizerHiit.webp",
             "alt": "Snizer Hiit Logo"
         }
     },
