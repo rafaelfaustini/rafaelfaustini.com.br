@@ -75,7 +75,7 @@ body {
 }
 body {
   background-color: #fff;
-
+  overflow-x: hidden;
 }
 #app {
   -webkit-font-smoothing: antialiased;

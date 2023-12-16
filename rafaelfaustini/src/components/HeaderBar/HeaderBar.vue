@@ -59,9 +59,8 @@ import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher.vue';
   <!-- Add "scoped" attribute to limit CSS to this component only -->
   <style scoped lang="scss">
     .header-bar {
-        position: fixed;
+        position: sticky;
         top: 0;
-        left: 0;
         width: 100%;
         background-color: white;
         z-index: 100;
