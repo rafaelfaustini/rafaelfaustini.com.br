@@ -3,9 +3,11 @@
         <generic-navbar :color="navbarColor">
             <template v-slot:bar-left>
                 <div class="menu-logo">
-                    <h1>{{logoName}} <span v-if="EnvironmentBadgeText" class="environment-badge">{{ EnvironmentBadgeText }}</span></h1>
-                    
+                    <h1>{{logoName}} 
+                    </h1>
+                    <span class="suffix">.com</span>
                 </div>
+                <span v-if="EnvironmentBadgeText && false" class="environment-badge">{{ EnvironmentBadgeText }}</span>
             </template>
             <template v-slot:bar-right>
                 <nav-menu :itemList="navItemList"></nav-menu>
@@ -57,10 +59,17 @@ import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher.vue';
   <!-- Add "scoped" attribute to limit CSS to this component only -->
   <style scoped lang="scss">
     .header-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 100;
         .menu-logo {
             display: flex;
-            justify-items: center;
-            gap: 2px;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            max-width: 230px;
             .environment-badge {
                 display: inline-block;
                 padding: 0.25em 0.3em;
@@ -75,10 +84,17 @@ import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher.vue';
                 background-color: #6002ee;
             }
             h1 {
-                font-size: 2.25em;
+                font-size: 30px;
                 font-weight: bold;
-                margin: 0 10px;
                 line-height: 1;
+                color: #D76262;
+                flex: 0 0 100%;
+            }
+            .suffix {
+                font-size: 17px;
+                font-weight: normal;
+                color: #D76262;
+                margin-top: -8px;
             }
         }
     }

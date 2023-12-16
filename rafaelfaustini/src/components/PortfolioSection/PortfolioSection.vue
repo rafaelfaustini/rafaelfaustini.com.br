@@ -1,5 +1,6 @@
 <template>
     <section id="portfolio" class="portfolio-section">
+        <wave-divider :flipDown="true"></wave-divider>
         <div class="container">
                 <h1 class="title">
                     {{ title }}
@@ -18,6 +19,7 @@ import IButton from '../Shared/interfaces/IButton';
 import MaterialButton from '../MaterialButton/MaterialButton.vue';
 import Projects from '../Projects/Projects.vue';
 import IProject from '../Projects/interface/IProject';
+import WaveDivider from '../WaveDivider/WaveDivider.vue';
 
 export default Vue.extend({
   name: 'PortfolioSection',
@@ -29,7 +31,8 @@ export default Vue.extend({
   },
   components: {
     MaterialButton,
-    Projects
+    Projects,
+    WaveDivider
   }
 });
 </script>

@@ -42,9 +42,6 @@
         &.background-primary {
             background-color: $primary-color;
             color: white;
-            @media (prefers-color-scheme: dark) { 
-              background: darken($inner-background-color-dark, 10%);
-            }
         }
         &.background-secondary {
             background-color: #6002ee;

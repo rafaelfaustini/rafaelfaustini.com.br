@@ -64,12 +64,7 @@
         color: black;
         border-bottom: rgba(0,0,0, 0.15) solid 2px;
         caret-color: $primary-color;
-        @media (prefers-color-scheme: dark) { 
-            background-color: transparent;
-            border-color: white;
-            color: white;
-          }
-          transition: all ease-in 0.25s;
+        transition: all ease-in 0.25s;
         &:focus {
             border-bottom: $primary-color solid 2px;
         }

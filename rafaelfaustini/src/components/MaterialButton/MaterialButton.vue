@@ -83,9 +83,6 @@
         background-color: transparent;
         color: #222;
         border: 1px solid $secondary-color; 
-        @media (prefers-color-scheme: dark) { 
-            color: #fff;
-        }
     }
 
     .btn-secondary {
@@ -97,9 +94,6 @@
         background-color: transparent;
         color: #222;
         border: 1px solid $primary-color; 
-        @media (prefers-color-scheme: dark) { 
-            color: #fff;
-        }
     }
 
     .btn-lg {

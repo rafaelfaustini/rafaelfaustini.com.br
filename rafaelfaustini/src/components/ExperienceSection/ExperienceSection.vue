@@ -43,10 +43,8 @@
   
   <style scoped lang="scss">
     .experience-section {
+        padding-top: 78px;
         background-color: $primary-color;
-        @media (prefers-color-scheme: dark) { 
-            background: darken($inner-background-color-dark, 10%);
-        }
         .container {
             max-width: 1242px;
             margin: 0 auto;

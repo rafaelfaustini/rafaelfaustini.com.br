@@ -1,7 +1,8 @@
 <template>
 <nav class="nav-menu">
     <ul class="nav-list">
-        <li class="nav-item" v-for="item in itemList" :key="item.name">
+
+        <li :class="{ 'nav-item': true, 'active': item.href == activeNav}" v-for="item in itemList" :key="item.name">
           <a class="nav-item-anchor" :href="item.href">{{ item.name }}</a>
         </li>
     </ul>
@@ -18,6 +19,29 @@
     props: {
       itemList: Array as PropType<INavMenuItem[]>,
     },
+    data() {
+    return {
+      activeNav: "#",
+    }
+  },
+    mounted() {
+      let sections = document.querySelectorAll('section')
+      window.onscroll = () => {
+        sections.forEach(section => {
+          let top = window.scrollY;
+          let offset = section.offsetTop;
+          let height = section.offsetHeight;
+          let id = section.getAttribute('id');
+
+          let href = id == 'header' ? "#" : `#${id}`;
+
+          if(top >= offset && top < offset + height) {
+            this.activeNav = href || '#'
+            console.log(this.activeNav)
+          }
+        });
+      }
+    }
   });
   </script>
   
@@ -33,34 +57,19 @@
       }
 
       .nav-item {
+
         .nav-item-anchor {
-          font-size: 1.25em;
+          font-size: 18px;
+          font-style: normal;
           display: block;
           padding: 10px;
           transition: all .5s;
-          outline: 2px solid transparent;
           text-decoration: none;
           color: #000;
-          transition: outline-width 200ms ease, outline-offset 200ms ease;
           border-radius: 15px;
-          @media (prefers-color-scheme: dark) { 
-              color: white;
-          }
-
-          &:hover {
-            outline: 2px solid #000;
-            outline-offset: -5px;
-
-            @media (prefers-color-scheme: dark) {
-              &:nth-of-type(odd){
-                outline: solid $primary-color 2px; 
-              }
-              &:nth-of-type(even){
-                outline: solid $secondary-color 2px; 
-              }
-              
-            }
-          }
+        }
+        &:hover, &.active {
+            font-weight: bold;
         }
       }
     }

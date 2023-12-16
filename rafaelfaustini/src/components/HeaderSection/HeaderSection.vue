@@ -14,6 +14,7 @@
   <script lang="ts">
   import Vue from 'vue';
   import CountryFlag from '../CountryFlag/CountryFlag.vue';
+  import WaveDivider from '../WaveDivider/WaveDivider.vue';
   
   export default Vue.extend({
     name: 'HeaderSection',
@@ -22,7 +23,7 @@
         subtitle: String
     },
     components: {
-        CountryFlag
+        CountryFlag,
     }
   });
   </script>
@@ -38,17 +39,13 @@
     }
     .header-section {
         background-color: #e65050;
-        height: 85vh;
         animation: circle-out .65s;
-        @media (prefers-color-scheme: dark) { 
-            background: darken($inner-background-color-dark, 10%);
-        }
         .container {
             padding: 60px 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            height: inherit;
+            height: 85vh;
             @media (max-width: 600px) {
                 padding-left: 10px;
                 padding-right: 10px;

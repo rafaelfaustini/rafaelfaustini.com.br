@@ -1,5 +1,6 @@
 <template>
     <section id="about" class="about-section">
+        <wave-divider :flipDown="true"></wave-divider>
         <div class="container">
             <div class="about-info">
                 <h1 class="title">{{ title }}</h1>
@@ -9,11 +10,12 @@
                 <img loading="lazy" :src="basePath + 'img/about/me.png'" />
             </div>
         </div>
+        <wave-divider></wave-divider>
     </section>
 </template>
   
   <script lang="ts">
-  import i18next from 'i18next';
+import WaveDivider from '@/components/WaveDivider/WaveDivider.vue'
 import Vue, {PropType} from 'vue';
   
   export default Vue.extend({
@@ -27,6 +29,9 @@ import Vue, {PropType} from 'vue';
             return process.env.BASE_URL;
         }
     },
+    components: {
+        WaveDivider
+    }
   });
   </script>
   
@@ -70,9 +75,6 @@ import Vue, {PropType} from 'vue';
                             font-weight: bolder;
                             color: $primary-color;
                             text-shadow: 1px 1px 0px #dfdfdf, 2px 2px 0px #dfdfdf, 3px 3px 0px #dfdfdf;
-                            @media (prefers-color-scheme: dark) { 
-                                text-shadow: none;
-                            }
                         }
                     }
             }

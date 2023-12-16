@@ -29,14 +29,6 @@
         word-wrap: break-word;
         background-color: #fff;
         width: 100%;
-        @media (prefers-color-scheme: dark) { 
-              background: darken($inner-background-color-dark, 15%);
-              .card-title {
-                color: $primary-color;
-              }
-        }
-
-
         .card-body {
             padding: 1.20rem;
 

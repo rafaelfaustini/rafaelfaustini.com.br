@@ -1,22 +1,19 @@
 <template>
   <div id="app">
-    <layout-container>
-      <HeaderBar v-bind="headerBar"></HeaderBar>
-      <header-section v-bind="headerSection"></header-section>
-      <about-section v-bind="aboutSection"></about-section>
-      <wave-divider></wave-divider>
-      <experience-section v-bind="experienceSection"></experience-section>
-      <wave-divider :flipDown="true"></wave-divider>
-      <portfolio-section v-bind="portifolioSection"></portfolio-section>
-      <footer-bar email="📬 contato@rafaelfaustini.com.br"></footer-bar>
-    </layout-container>
+    <HeaderBar v-bind="headerBar"></HeaderBar>
+    <div class="app-content">
+        <header-section v-bind="headerSection"></header-section>
+        <about-section v-bind="aboutSection"></about-section>
+        <experience-section v-bind="experienceSection"></experience-section>
+        <portfolio-section v-bind="portifolioSection"></portfolio-section>
+        <footer-bar email="📬 contato@rafaelfaustini.com.br"></footer-bar>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import HeaderSection from './components/HeaderSection/HeaderSection.vue';
-import LayoutContainer from './components/LayoutContainer/LayoutContainer.vue';
 import AboutSection from './components/AboutSection/AboutSection.vue';
 import ExperienceSection from './components/ExperienceSection/ExperienceSection.vue';
 import WaveDivider from './components/WaveDivider/WaveDivider.vue'
@@ -34,11 +31,9 @@ export default Vue.extend({
   name: 'App',
   
   components: {
-    LayoutContainer,
     HeaderSection,
     AboutSection,
     ExperienceSection,
-    WaveDivider,
     HeaderBar,
     FooterBar,
     PortfolioSection
@@ -76,20 +71,17 @@ export default Vue.extend({
 html,
 body {
     scroll-behavior: smooth;
-    @media (prefers-color-scheme: dark) { 
-      color-scheme: dark;
-    }
+
 }
 body {
-  background-color: $outer-background-color;
-  @media (prefers-color-scheme: dark) { 
-      background-color: $outer-background-color-dark;
-  }
+  background-color: #fff;
+
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.app-content {
   overflow: auto;
 }
 
@@ -105,11 +97,6 @@ body {
 
 ::-webkit-scrollbar-track {
     background: $inner-background-color;
-    border-radius: 100vw;
-    margin-block: 0.75em;
-    @media (prefers-color-scheme: dark) { 
-      background: $inner-background-color-dark;
-    }
 }
 
 ::-webkit-scrollbar-thumb {
@@ -117,10 +104,6 @@ body {
     border: 0.15em solid $outer-background-color;
     border-radius: 100vw;
 
-    @media (prefers-color-scheme: dark) { 
-      background: darken($outer-background-color-dark, 60%);
-      border: 0.15em solid $outer-background-color-dark;
-    }
 
     &:hover {
         background: darken($outer-background-color, 41%);
