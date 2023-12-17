@@ -1,7 +1,6 @@
 <template>
 <nav class="nav-menu">
     <ul class="nav-list">
-
         <li :class="{ 'nav-item': true, 'active': item.href == activeNav}" v-for="item in itemList" :key="item.name">
           <a class="nav-item-anchor" :href="item.href">{{ item.name }}</a>
         </li>

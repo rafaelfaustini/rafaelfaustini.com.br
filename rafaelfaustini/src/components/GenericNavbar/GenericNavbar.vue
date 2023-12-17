@@ -56,11 +56,16 @@
             justify-content: space-between;
             align-items: center;
         }
+        .container-left, .container-right {
+            flex: 1;
+        }
         .container-right {
             display: flex;
             gap: 1rem;
             align-items: center;
+            flex-direction: row-reverse;
         }
+        
     }
   </style>
   

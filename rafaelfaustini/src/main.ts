@@ -16,10 +16,8 @@ import br_aboutSection from '@/locales/br/aboutSection.json'
 import br_experienceSection from '@/locales/br/experienceSection.json'
 import br_portfolioSection from '@/locales/br/portfolioSection.json'
 
-
-
-
 Vue.use(I18NextVue, { i18next })
+
 
 Vue.config.productionTip = false
 i18next.on("initialized", () => {

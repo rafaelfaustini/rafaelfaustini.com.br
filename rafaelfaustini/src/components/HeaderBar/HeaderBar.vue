@@ -9,8 +9,10 @@
                 </div>
                 <span v-if="EnvironmentBadgeText && false" class="environment-badge">{{ EnvironmentBadgeText }}</span>
             </template>
-            <template v-slot:bar-right>
+            <template v-slot:bar-center>
                 <nav-menu :itemList="navItemList"></nav-menu>
+            </template>
+            <template v-slot:bar-right>
                 <LanguageSwitcher></LanguageSwitcher>
             </template>
         </generic-navbar>
