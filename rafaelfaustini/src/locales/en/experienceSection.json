@@ -1,0 +1,44 @@
+{
+    "title": "💼 Professional Experiences",
+    "currentWorks": [
+        {
+            "title": "Software Developer - Kwan, ago 2021 - now",
+            "workTopics": [".NET", "SQL", "Angular", "Research, analysis and software development"]
+        }
+    ],
+    "pastWorks": [
+        {
+            "title": "Student Researcher - Centro Universitário La Salle do Rio de Janeiro, apr 2020 - apr 2022",
+            "workTopics": ["Data analysis with Python", "Deep Learning with Keras", "Paper writing accepted by an international conference", "Data generator using Javascript"],
+            "toolbarButton": {
+              "name": "Paper",
+              "href": "https://www.scitepress.org/Link.aspx?doi=10.5220/0010379902530260",
+              "color": "primary"
+            }
+        },
+        {
+            "title": "Software Developer - 2tech Sistemas, jan 2021 - jun 2021",
+            "workTopics": ["ASP .NET WEB API", "Bootstrap 4/3 layouts", "Vue library", "Classic ASP", "SQL Server", "SASS", "Cypress (Automated Tests)"]
+        },
+        {
+            "title": "Software developer intern - 2tech Sistemas, jan 2020 - dec 2020",
+            "workTopics": ["ASP .NET WEB API", "Bootstrap 4/3 layouts", "Vue library", "Classic ASP", "Small project with Vue Framework", "SASS", "SQL Server"]
+        },
+        {
+            "title": "Software developer intern - CFM Energy Consultancy, sep 2018 - dec 2018",
+            "workTopics": ["Helping with web application User Experience", "Bootstrap 4 layouts", "JavaScript and a bit of React", "PHP and MySQL"]
+        },
+        {
+            "title": "Student Researcher - Centro Universitário La Salle do Rio de Janeiro, jun 2018 - sep 2018",
+            "workTopics": ["Immersive environments research", "Basic arduino handling", "C programming with arduinos"]
+        },
+        {
+            "title": "Information Systems consultant - La Salle Júnior Consultoria Empresarial (Junior Enterprise), mar 2017 - jul 2017",
+            "workTopics": ["Costs structuring", "Business analysis and modelling", "Bootstrap, Php and MySQL"]
+        }
+    ],
+    "resumeButton": {
+        "name": "📄 Resume",
+        "href": "docs/resume.pdf"
+    }
+}
