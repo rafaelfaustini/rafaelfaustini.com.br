@@ -56,16 +56,16 @@
   .flag {
     display: flex;
     align-items: center;
-    width: 1em;
-    height: 0.75em;
+    max-width: 64px;
 
     .flag-icon {
       display: inline;
       width: 100%;
       height: 100%;
-      border-radius: 10px;
+      border-radius: 50%;
       vertical-align: middle;
-
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
 
     }
   }

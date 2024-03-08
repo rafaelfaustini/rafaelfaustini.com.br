@@ -59,6 +59,11 @@
         .container-left, .container-right {
             flex: 1;
         }
+        @media screen and (max-width: 768px) {
+            .container-left {
+                padding: 0 10px
+            }
+        }
         .container-right {
             display: flex;
             gap: 1rem;

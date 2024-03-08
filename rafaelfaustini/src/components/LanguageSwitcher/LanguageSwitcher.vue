@@ -1,5 +1,5 @@
 <template>
-    <div class="dropdown">
+    <div class="dropdown" :class="{'active': isDropdownOpen}">
         <div class="language-switcher" @click="isDropdownOpen = !isDropdownOpen">
             <img src="https://hatscripts.github.io/circle-flags/flags/br.svg" v-if="currentLanguage == 'br'" width="48" loading="lazy">
             <img src="https://hatscripts.github.io/circle-flags/flags/gb.svg"  v-if="currentLanguage == 'en'" width="48" loading="lazy">
@@ -36,11 +36,9 @@
             
         },
         handleClick(el: any): void {
-            console.log(el)
             if(!this.isDropdownOpen) {
                 return;
             }
-            //this.isDropdownOpen = false;
         }
     },
   });
@@ -100,6 +98,12 @@
             opacity: 1;
             transform: translateY(10px);
             pointer-events: auto;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .dropdown {
+            display: none;
         }
     }
 
