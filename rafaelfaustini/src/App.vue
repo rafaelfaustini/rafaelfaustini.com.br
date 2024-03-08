@@ -70,7 +70,7 @@ export default Vue.extend({
 @import url(./scss/_reset.scss);
 html,
 body {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
 
 }
 body {
